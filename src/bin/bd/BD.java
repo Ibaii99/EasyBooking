@@ -1,20 +1,16 @@
 package bin.bd;
 
 import java.io.IOException;
-import java.sql.ResultSet;
 import java.util.logging.ConsoleHandler;
-import java.util.logging.FileHandler;
 import java.util.logging.Logger;
-
-import com.sun.jdi.connect.spi.Connection;
 
 public class BD {
 	
 	public String location = "src/bin/bd/EasyBooking.db"; 
-	
+	private String name = "EasyBooking.db"; 
 	private static Logger logger = Logger.getLogger("BDlogger");
-	private static Connection con;
-	private static ResultSet rs;
+//	private static Connection con;
+//	private static ResultSet rs;
 	
 	
 	public BD() throws SecurityException, IOException {
@@ -25,7 +21,11 @@ public class BD {
 		ConsoleHandler fh = new ConsoleHandler();
 		logger.addHandler(fh);
 		logger.info("Logger created succesfully."); 
+	}
 	
+	public void anyadirABdEjemplo(){
+
+		
 	}
 	
 	
