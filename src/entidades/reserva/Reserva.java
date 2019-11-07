@@ -27,6 +27,64 @@ public class Reserva {
 	
 	@Persistent(mappedBy="reserva", dependentElement="true")
 	private Pago pago;
+
+	public int getId_reserva() {
+		return id_reserva;
+	}
+
+	public void setId_reserva(int id_reserva) {
+		this.id_reserva = id_reserva;
+	}
+
+	public String getTipo_pago() {
+		return tipo_pago;
+	}
+
+	public void setTipo_pago(String tipo_pago) {
+		this.tipo_pago = tipo_pago;
+	}
+
+	public int getNumero_asientos() {
+		return numero_asientos;
+	}
+
+	public void setNumero_asientos(int numero_asientos) {
+		this.numero_asientos = numero_asientos;
+	}
+
+	public String getFecha() {
+		return fecha;
+	}
+
+	public void setFecha(String fecha) {
+		this.fecha = fecha;
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+
+	public Vuelo getVuelo() {
+		return vuelo;
+	}
+
+	public void setVuelo(Vuelo vuelo) {
+		this.vuelo = vuelo;
+	}
+
+	public Pago getPago() {
+		return pago;
+	}
+
+	public void setPago(Pago pago) {
+		this.pago = pago;
+	}
+	
+	
 	
 	
 	
