@@ -1,6 +1,8 @@
 package entidades.vuelo;
 
+import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
 import entidades.aerolinea.Aerolinea;
@@ -8,11 +10,15 @@ import entidades.aerolinea.Aerolinea;
 public class Vuelo {
 	
 	@PrimaryKey
-	private int id_vuelo;
-	
-	private String codigo_aeropuerto;
-	private Aerolinea a; //private int id_aerolinea
-	
+	@Persistent(valueStrategy=IdGeneratorStrategy.INCREMENT)
+	private long id_vuelo;
 
+	private String aeropuerto_destino;
+	private String aeropuerto_origen;
+	
+	
+	private Aerolinea aerolinea; 
+	
+	
 }
  
