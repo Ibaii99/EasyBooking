@@ -101,10 +101,25 @@ public class Usuario {
 		return reservas;
 	}
 
-
-	public void setReservas(List<Reserva> reservas) {
-		this.reservas = reservas;
+	//Obtener numero de reservas
+	public int getNumeroReservas() {
+		return reservas.size();
 	}
+	
+	//añadir reservas en la lista
+	public void addReserva(Reserva reserva) {
+		reservas.add(reserva);
+	}
+
+	//eliminar reserva de la lista
+	public void removeReserva(Reserva reserva) {
+		reservas.remove(reserva);
+	}
+
+	
+	
+	
+	
 	
 	
 	
