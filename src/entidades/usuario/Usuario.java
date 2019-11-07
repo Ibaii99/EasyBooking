@@ -22,10 +22,14 @@ public class Usuario {
 	
 	
 	private String nombre;
+	
 	private String email;
+	
 	private int edad;
+	
 	private String tipo_login;
-	private String cod_aeropuerto;
+	
+	private String aeropuerto_preferido;
 	
 	
 	@Join

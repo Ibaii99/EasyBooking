@@ -25,7 +25,9 @@ public class Reserva {
 	
 	private Vuelo vuelo;
 	
+	@Persistent(mappedBy="reserva", dependentElement="true")
 	private Pago pago;
+	
 	
 	
 }
