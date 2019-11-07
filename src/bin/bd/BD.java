@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.Logger;
 
+
 public class BD {
 	
 	public String location = "src/bin/bd/EasyBooking.db"; 
