@@ -4,6 +4,11 @@ import java.io.IOException;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.Logger;
 
+import javax.jdo.JDOHelper;
+import javax.jdo.PersistenceManager;
+import javax.jdo.PersistenceManagerFactory;
+import javax.jdo.Transaction;
+
 
 public class BD {
 	
@@ -26,6 +31,15 @@ public class BD {
 	
 	public void anyadirABdEjemplo(){
 
+
+		// Load Persistence Manager Factory - referencing the Persistence Unit defined in persistence.xml
+		PersistenceManagerFactory pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
+		// Persistence Manager
+		PersistenceManager pm = null;
+		//Transaction to group DB operations
+		Transaction tx = null;
+		
+		
 		
 	}
 	
