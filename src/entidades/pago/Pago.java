@@ -1,5 +1,7 @@
 package entidades.pago;
 
+
+
 import javax.jdo.annotations.IdGeneratorStrategy;
 import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
@@ -19,7 +21,7 @@ public class Pago {
 	
 	private double precio;
 	
-	private long tarjeta_numero;
+	private String tarjeta_numero;
 	private String tarjeta_tipo;
 	private String tarjeta_fecha_caducidad;
 	
@@ -37,10 +39,10 @@ public class Pago {
 	}
 	
 	//Constructor de pago con tarjeta
-	public Pago(String tarjeta_tipo, long tarjeta_numero,
+	public Pago(String tarjeta_tipo, String tarjeta_numero,
 			String tarjeta_fecha_caducidad, double precio) {
 		this.tarjeta_tipo = tarjeta_tipo;
-		this.tarjeta_numero = tarjeta_numero;
+		this.tarjeta_numero = new String(tarjeta_numero);
 		this.tarjeta_fecha_caducidad = tarjeta_fecha_caducidad;
 		this.precio = precio;
 	}
@@ -69,11 +71,11 @@ public class Pago {
 		this.precio = precio;
 	}
 
-	public long getTarjeta_numero() {
+	public String getTarjeta_numero() {
 		return tarjeta_numero;
 	}
 
-	public void setTarjeta_numero(long tarjeta_numero) {
+	public void setTarjeta_numero(String tarjeta_numero) {
 		this.tarjeta_numero = tarjeta_numero;
 	}
 
