@@ -116,7 +116,7 @@ public class Main {
 				reservas.deletePersistentAll();
 				
 				Query<Pago> pagos = pm.newQuery(Pago.class);
-				usuarios.deletePersistentAll();
+				pagos.deletePersistentAll();
 
 				//End the transaction
 				tx.commit();
