@@ -35,6 +35,12 @@ public class Usuario {
 	@Join
 	@Persistent(mappedBy="usuario", dependentElement="true")
 	private List<Reserva> reservas = new ArrayList<>();
+	
+	public Usuario(String nombre, String email, int edad) {
+		this.nombre = nombre;
+		this.email = email;
+		this.edad = edad;
+	}
 
 
 	public int getId_usuario() {

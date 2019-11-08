@@ -26,6 +26,22 @@ public class Pago {
 	
 	@Persistent(mappedBy="pago", dependentElement="true")
 	private Reserva reserva;
+	
+	
+	//Constructor de pago con paypal
+	public Pago(String email, double precio) {
+		this.paypal_email = email;
+		this.precio = precio;
+	}
+	
+	//Constructor de pago con tarjeta
+	public Pago(String tarjeta_tipo, long tarjeta_numero,
+			String tarjeta_fecha_caducidad, double precio) {
+		this.tarjeta_tipo = tarjeta_tipo;
+		this.tarjeta_numero = tarjeta_numero;
+		this.tarjeta_fecha_caducidad = tarjeta_fecha_caducidad;
+		this.precio = precio;
+	}
 
 	public int getId_pago() {
 		return id_pago;

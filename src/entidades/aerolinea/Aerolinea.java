@@ -23,6 +23,10 @@ public class Aerolinea {
 	@Join
 	@Persistent(mappedBy = "aerolinea", dependentElement = "true")
 	private List<Vuelo> vuelos = new ArrayList<>();
+	
+	public Aerolinea(String nombre) {
+		this.nombre = nombre;
+	}
 
 	public int getId_aerolinea() {
 		return id_aerolinea;

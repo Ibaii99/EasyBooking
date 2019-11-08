@@ -27,6 +27,12 @@ public class Reserva {
 	
 	@Persistent(mappedBy="reserva", dependentElement="true")
 	private Pago pago;
+	
+	public Reserva(String tipo_pago, int numero_asientos, String fecha) {
+		this.tipo_pago = tipo_pago;
+		this.numero_asientos = numero_asientos;
+		this.fecha = fecha;
+	}
 
 	public int getId_reserva() {
 		return id_reserva;

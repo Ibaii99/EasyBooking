@@ -20,13 +20,22 @@ public class Vuelo {
 
 	private String aeropuerto_destino;
 	private String aeropuerto_origen;
-	
-	
+	private String fecha;
+
+
+	private int num_asientos;
+
+
 	private Aerolinea aerolinea; 
 	
 	@Join
 	@Persistent(mappedBy="vuelo", dependentElement="true")
 	private List<Reserva> reservas = new ArrayList<>();
+	
+	public Vuelo(int num_asientos, String fecha) {
+		this.num_asientos = num_asientos;
+		this.fecha = fecha;
+	}
 
 	public long getId_vuelo() {
 		return id_vuelo;
@@ -34,6 +43,22 @@ public class Vuelo {
 
 	public void setId_vuelo(long id_vuelo) {
 		this.id_vuelo = id_vuelo;
+	}
+	
+	public String getFecha() {
+		return fecha;
+	}
+
+	public void setFecha(String fecha) {
+		this.fecha = fecha;
+	}
+	
+	public int getNum_asientos() {
+		return num_asientos;
+	}
+	
+	public void setNum_asientos(int num_asientos) {
+		this.num_asientos = num_asientos;
 	}
 
 	public String getAeropuerto_destino() {
