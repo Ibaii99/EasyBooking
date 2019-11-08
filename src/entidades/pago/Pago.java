@@ -26,7 +26,7 @@ public class Pago {
 	private String paypal_email;
 	
 	@Join
-	@Persistent(mappedBy="pago", dependentElement="true")
+	//@Persistent(mappedBy="pago", dependentElement="true")
 	private Reserva reserva;
 	
 	

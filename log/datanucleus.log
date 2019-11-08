@@ -1,0 +1,83 @@
+10:22:41,625 (main) ERROR [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha lanzado una excepción. Por favor consulte el Log para ver más detalles: La generación del nuevo tipo de Mapping org.datanucleus.store.rdbms.mapping.java.PersistableMapping ha fallada : We do not currently support 1-1 relations via join table : entidades.reserva.Reserva.pago
+We do not currently support 1-1 relations via join table : entidades.reserva.Reserva.pago
+org.datanucleus.exceptions.NucleusUserException: We do not currently support 1-1 relations via join table : entidades.reserva.Reserva.pago
+	at org.datanucleus.store.rdbms.mapping.java.PersistableMapping.prepareColumnMapping(PersistableMapping.java:242)
+	at org.datanucleus.store.rdbms.mapping.java.PersistableMapping.initialize(PersistableMapping.java:119)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:667)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:545)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:451)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1277)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:269)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3310)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2930)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
+
+La generación del nuevo tipo de Mapping org.datanucleus.store.rdbms.mapping.java.PersistableMapping ha fallada : We do not currently support 1-1 relations via join table : entidades.reserva.Reserva.pago
+We do not currently support 1-1 relations via join table : entidades.reserva.Reserva.pago
+org.datanucleus.exceptions.NucleusUserException: We do not currently support 1-1 relations via join table : entidades.reserva.Reserva.pago
+	at org.datanucleus.store.rdbms.mapping.java.PersistableMapping.prepareColumnMapping(PersistableMapping.java:242)
+	at org.datanucleus.store.rdbms.mapping.java.PersistableMapping.initialize(PersistableMapping.java:119)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:667)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:545)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:451)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1277)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:269)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3310)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2930)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
+
+org.datanucleus.exceptions.NucleusException: La generación del nuevo tipo de Mapping org.datanucleus.store.rdbms.mapping.java.PersistableMapping ha fallada : We do not currently support 1-1 relations via join table : entidades.reserva.Reserva.pago
+We do not currently support 1-1 relations via join table : entidades.reserva.Reserva.pago
+org.datanucleus.exceptions.NucleusUserException: We do not currently support 1-1 relations via join table : entidades.reserva.Reserva.pago
+	at org.datanucleus.store.rdbms.mapping.java.PersistableMapping.prepareColumnMapping(PersistableMapping.java:242)
+	at org.datanucleus.store.rdbms.mapping.java.PersistableMapping.initialize(PersistableMapping.java:119)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:667)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:545)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:451)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1277)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:269)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3310)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2930)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
+
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:677)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:545)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:451)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1277)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:269)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3310)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2930)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
+Caused by: org.datanucleus.exceptions.NucleusUserException: We do not currently support 1-1 relations via join table : entidades.reserva.Reserva.pago
+	at org.datanucleus.store.rdbms.mapping.java.PersistableMapping.prepareColumnMapping(PersistableMapping.java:242)
+	at org.datanucleus.store.rdbms.mapping.java.PersistableMapping.initialize(PersistableMapping.java:119)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:667)
+	... 10 more
+Nested Throwables StackTrace:
+We do not currently support 1-1 relations via join table : entidades.reserva.Reserva.pago
+org.datanucleus.exceptions.NucleusUserException: We do not currently support 1-1 relations via join table : entidades.reserva.Reserva.pago
+	at org.datanucleus.store.rdbms.mapping.java.PersistableMapping.prepareColumnMapping(PersistableMapping.java:242)
+	at org.datanucleus.store.rdbms.mapping.java.PersistableMapping.initialize(PersistableMapping.java:119)
+	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:667)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:545)
+	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:451)
+	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1277)
+	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:269)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3310)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2930)
+	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
+	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
+	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)

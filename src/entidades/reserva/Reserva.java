@@ -27,7 +27,7 @@ public class Reserva {
 	private Vuelo vuelo;
 	
 	@Join
-	@Persistent(mappedBy="reserva", dependentElement="true")
+	//@Persistent(mappedBy="reserva", dependentElement="true")
 	private Pago pago;
 	
 	public Reserva(String tipo_pago, int numero_asientos, String fecha) {
