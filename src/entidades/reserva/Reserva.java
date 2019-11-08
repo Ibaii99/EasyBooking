@@ -36,6 +36,7 @@ public class Reserva {
 		this.fecha = fecha;
 	}
 
+	
 	public int getId_reserva() {
 		return id_reserva;
 	}

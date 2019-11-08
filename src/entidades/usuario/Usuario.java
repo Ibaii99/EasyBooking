@@ -16,13 +16,14 @@ import entidades.reserva.Reserva;
 public class Usuario {
 
 	
-	@PrimaryKey
+	
 	@Persistent(valueStrategy=IdGeneratorStrategy.INCREMENT)
-	private int id_usuario;
+	private long id_usuario;
 	
 	
 	private String nombre;
 	
+	@PrimaryKey
 	private String email;
 	
 	private int edad;
@@ -44,7 +45,7 @@ public class Usuario {
 	}
 
 
-	public int getId_usuario() {
+	public long getId_usuario() {
 		return id_usuario;
 	}
 

@@ -14,7 +14,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Usuario u = new Usuario("ibai", "asidhaiubuad@jasnka.es", 20, "BIO");
+		Usuario u = new Usuario("ibai", "ibai@jasnka.es", 20, "BIO");
 		
 		
 		try {
