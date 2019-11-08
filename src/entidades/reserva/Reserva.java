@@ -1,6 +1,7 @@
 package entidades.reserva;
 
 import javax.jdo.annotations.IdGeneratorStrategy;
+import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
@@ -25,6 +26,7 @@ public class Reserva {
 	
 	private Vuelo vuelo;
 	
+	@Join
 	@Persistent(mappedBy="reserva", dependentElement="true")
 	private Pago pago;
 	

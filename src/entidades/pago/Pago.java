@@ -1,6 +1,7 @@
 package entidades.pago;
 
 import javax.jdo.annotations.IdGeneratorStrategy;
+import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
@@ -24,6 +25,7 @@ public class Pago {
 	
 	private String paypal_email;
 	
+	@Join
 	@Persistent(mappedBy="pago", dependentElement="true")
 	private Reserva reserva;
 	
