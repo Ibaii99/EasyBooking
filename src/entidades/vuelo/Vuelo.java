@@ -32,7 +32,9 @@ public class Vuelo {
 	@Persistent(mappedBy="vuelo", dependentElement="true")
 	private List<Reserva> reservas = new ArrayList<>();
 	
-	public Vuelo(int num_asientos, String fecha) {
+	public Vuelo(String aeropuerto_origen, String aeropuerto_destino, int num_asientos, String fecha) {
+		this.aeropuerto_origen = aeropuerto_origen;
+		this.aeropuerto_destino = aeropuerto_destino;
 		this.num_asientos = num_asientos;
 		this.fecha = fecha;
 	}

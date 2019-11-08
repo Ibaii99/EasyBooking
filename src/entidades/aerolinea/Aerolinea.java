@@ -17,23 +17,24 @@ public class Aerolinea {
 
 	@PrimaryKey
 	@Persistent(valueStrategy = IdGeneratorStrategy.INCREMENT)
-	private int id_aerolinea;
+	private String cod_aerolinea;
 	private String nombre;
 
 	@Join
 	@Persistent(mappedBy = "aerolinea", dependentElement = "true")
 	private List<Vuelo> vuelos = new ArrayList<>();
 	
-	public Aerolinea(String nombre) {
+	public Aerolinea(String nombre, String cod_aerolinea) {
 		this.nombre = nombre;
+		this.cod_aerolinea = cod_aerolinea;
 	}
-
-	public int getId_aerolinea() {
-		return id_aerolinea;
+	
+	public String getCodAerolinea() {
+		return this.cod_aerolinea;
 	}
-
-	public void setId_aerolinea(int id_aerolinea) {
-		this.id_aerolinea = id_aerolinea;
+	
+	public void setCodAerolinea(String cod_aerolinea) {
+		this.cod_aerolinea = cod_aerolinea;
 	}
 
 	public String getNombre() {
