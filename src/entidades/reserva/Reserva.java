@@ -19,7 +19,7 @@ public class Reserva {
 	
 	private String tipo_pago;
 	private int numero_asientos;
-	private String fecha; // Habria que mmirar la clase date de java
+	private String fecha; // Habria que mirar la clase Date de java
 	
 	
 	private Usuario usuario;

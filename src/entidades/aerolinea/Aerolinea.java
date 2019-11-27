@@ -24,10 +24,7 @@ public class Aerolinea {
 	@Persistent(mappedBy = "aerolinea", dependentElement = "true")
 	private List<Vuelo> vuelos = new ArrayList<>();
 	
-	public Aerolinea(String nombre, String cod_aerolinea) {
-		this.nombre = nombre;
-		this.cod_aerolinea = cod_aerolinea;
-	}
+	public Aerolinea() {}
 	
 	public String getCodAerolinea() {
 		return this.cod_aerolinea;

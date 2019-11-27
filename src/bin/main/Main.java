@@ -18,18 +18,35 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Usuario u1 = new Usuario("ibai", "asidhaiubuad@jasnka.es", 20, "BIO");
-		Usuario u2 = new Usuario("Jon", "jjj@jojo.com", 19, "BIO");
-		Usuario u3 = new Usuario("Gorka", "gor@do.com", 20, "MAD");
-		Usuario u4 = new Usuario("Yeray","yeray@elcrack.com",20,"BCN");
+		Usuario u1 = new Usuario();
+		u1.setNombre("ibai");u1.setEmail("asidhaiubuad@jasnka.es");
+		u1.setEdad(20);u1.setAeropuerto_preferido("BIO");
+		
+		Usuario u2 = new Usuario();
+		u2.setNombre("Jon");u1.setEmail("jjj@jojo.com");
+		u2.setEdad(19);u1.setAeropuerto_preferido("BIO");
+		
+		Usuario u3 = new Usuario();
+		u3.setNombre("Gorka");u3.setEmail("gor@do.com");
+		u3.setEdad(20);u3.setAeropuerto_preferido("MAD");
+		
+		Usuario u4 = new Usuario();
+		u4.setNombre("Yeray");u4.setEmail("yeray@elcrack.com");
+		u4.setEdad(20);u4.setAeropuerto_preferido("BCN");
 		
 		
 		
 		Reserva r1 = new Reserva("tarjeta", 2, "8-11-2019");
 		Reserva r2 = new Reserva("paypal", 3, "7-11-2019");
 		
-		Pago p1 = new Pago(u1.getEmail(), 149.98);
-		Pago p2 = new Pago("VISA","0000 1111 2222 3333", "06/22", 231.97);
+		Pago p1 = new Pago();
+		p1.setPaypal_email(u1.getEmail());
+		p1.setPrecio(149.98);
+		Pago p2 = new Pago();
+		p2.setTarjeta_tipo("VISA");
+		p2.setTarjeta_numero("0000 1111 2222 3333");
+		p2.setTarjeta_fecha_caducidad("06/22");
+		p2.setPrecio(231.97);
 		
 
 		u1.addReserva(r1);

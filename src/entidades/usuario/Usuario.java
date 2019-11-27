@@ -36,12 +36,18 @@ public class Usuario {
 	@Persistent(mappedBy="usuario", dependentElement="true")
 	private List<Reserva> reservas = new ArrayList<>();
 	
-	public Usuario(String nombre, String email, int edad, String aeropuerto_preferido) {
-		this.nombre = nombre;
-		this.email = email;
-		this.edad = edad;
-		this.aeropuerto_preferido = aeropuerto_preferido;
+	public Usuario() {
+		this.nombre = "";
+		this.email = "";
+		this.edad = 0;
 	}
+	
+//	public Usuario(String nombre, String email, int edad, String aeropuerto_preferido) {
+//		this.nombre = nombre;
+//		this.email = email;
+//		this.edad = edad;
+//		this.aeropuerto_preferido = aeropuerto_preferido;
+//	}
 
 
 	public int getId_usuario() {
