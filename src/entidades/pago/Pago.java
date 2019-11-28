@@ -15,44 +15,44 @@ public class Pago {
 
 	@PrimaryKey
 	@Persistent(valueStrategy=IdGeneratorStrategy.INCREMENT)
-	private int id_pago;
+	private int idPago;
 	
 	private String tipo; // PayPal || Tarjeta
 	
 	private double precio;
 	
-	private String tarjeta_numero;
-	private String tarjeta_tipo;
-	private String tarjeta_fecha_caducidad;
+	private String tarjetaNumero;
+	private String tarjetaTipo;
+	private String tarjetaFechaCaducidad;
 	
-	private String paypal_email;
+	private String paypalEmail;
 	
 	@Join
 	//@Persistent(mappedBy="pago", dependentElement="true")
 	private Reserva reserva;
 	
 	
-	//Constructor de pago universal
+	//Constructor de pago por defecto
 	public Pago() {
 		this.tipo = "";
 		this.precio = 0.0;
 	}
 	
 //	//Constructor de pago con tarjeta
-//	public Pago(String tarjeta_tipo, String tarjeta_numero,
-//			String tarjeta_fecha_caducidad, double precio) {
-//		this.tarjeta_tipo = tarjeta_tipo;
-//		this.tarjeta_numero = new String(tarjeta_numero);
-//		this.tarjeta_fecha_caducidad = tarjeta_fecha_caducidad;
+//	public Pago(String tarjetaTipo, String tarjetaNumero,
+//			String tarjetaFecha_caducidad, double precio) {
+//		this.tarjetaTipo = tarjetaTipo;
+//		this.tarjetaNumero = new String(tarjetaNumero);
+//		this.tarjetaFechaCaducidad = tarjetaFechaCaducidad;
 //		this.precio = precio;
 //	}
 
-	public int getId_pago() {
-		return id_pago;
+	public int getIdPago() {
+		return idPago;
 	}
 
-	public void setId_pago(int id_pago) {
-		this.id_pago = id_pago;
+	public void setIdPago(int idPago) {
+		this.idPago = idPago;
 	}
 
 	public String getTipo() {
@@ -71,36 +71,36 @@ public class Pago {
 		this.precio = precio;
 	}
 
-	public String getTarjeta_numero() {
-		return tarjeta_numero;
+	public String getTarjetaNumero() {
+		return tarjetaNumero;
 	}
 
-	public void setTarjeta_numero(String tarjeta_numero) {
-		this.tarjeta_numero = tarjeta_numero;
+	public void setTarjetaNumero(String tarjetaNumero) {
+		this.tarjetaNumero = tarjetaNumero;
 	}
 
-	public String getTarjeta_tipo() {
-		return tarjeta_tipo;
+	public String getTarjetaTipo() {
+		return tarjetaTipo;
 	}
 
-	public void setTarjeta_tipo(String tarjeta_tipo) {
-		this.tarjeta_tipo = tarjeta_tipo;
+	public void setTarjetaTipo(String tarjetaTipo) {
+		this.tarjetaTipo = tarjetaTipo;
 	}
 
-	public String getTarjeta_fecha_caducidad() {
-		return tarjeta_fecha_caducidad;
+	public String getTarjetaFechaCaducidad() {
+		return tarjetaFechaCaducidad;
 	}
 
-	public void setTarjeta_fecha_caducidad(String tarjeta_fecha_caducidad) {
-		this.tarjeta_fecha_caducidad = tarjeta_fecha_caducidad;
+	public void setTarjetaFechaCaducidad(String tarjetaFechaCaducidad) {
+		this.tarjetaFechaCaducidad = tarjetaFechaCaducidad;
 	}
 
-	public String getPaypal_email() {
-		return paypal_email;
+	public String getPaypalEmail() {
+		return paypalEmail;
 	}
 
-	public void setPaypal_email(String paypal_email) {
-		this.paypal_email = paypal_email;
+	public void setPaypalEmail(String paypalEmail) {
+		this.paypalEmail = paypalEmail;
 	}
 
 	public Reserva getReserva() {

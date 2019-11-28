@@ -36,16 +36,20 @@ public class Main {
 		
 		
 		
-		Reserva r1 = new Reserva("tarjeta", 2, "8-11-2019");
-		Reserva r2 = new Reserva("paypal", 3, "7-11-2019");
+		Reserva r1 = new Reserva();
+		r1.setTipoPago("tarjeta");r1.setNumeroAsientos(2);
+		r1.setFecha("8-11-2019");
+		Reserva r2 = new Reserva();
+		r2.setTipoPago("paypal");r2.setNumeroAsientos(3);
+		r2.setFecha("7-11-2019");
 		
 		Pago p1 = new Pago();
-		p1.setPaypal_email(u1.getEmail());
+		p1.setPaypalEmail(u1.getEmail());
 		p1.setPrecio(149.98);
 		Pago p2 = new Pago();
-		p2.setTarjeta_tipo("VISA");
-		p2.setTarjeta_numero("0000 1111 2222 3333");
-		p2.setTarjeta_fecha_caducidad("06/22");
+		p2.setTarjetaNumero("VISA");
+		p2.setTarjetaNumero("0000 1111 2222 3333");
+		p2.setTarjetaFechaCaducidad("06/22");
 		p2.setPrecio(231.97);
 		
 

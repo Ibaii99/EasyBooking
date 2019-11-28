@@ -16,14 +16,14 @@ public class Vuelo {
 	
 	@PrimaryKey
 	@Persistent(valueStrategy=IdGeneratorStrategy.INCREMENT)
-	private long id_vuelo;
+	private long idVuelo;
 
-	private String aeropuerto_destino;
-	private String aeropuerto_origen;
+	private String aeropuertoDestino;
+	private String aeropuertoOrigen;
 	private String fecha;
 
 
-	private int num_asientos;
+	private int numAsientos;
 
 
 	private Aerolinea aerolinea; 
@@ -32,19 +32,24 @@ public class Vuelo {
 	@Persistent(mappedBy="vuelo", dependentElement="true")
 	private List<Reserva> reservas = new ArrayList<>();
 	
-	public Vuelo(String aeropuerto_origen, String aeropuerto_destino, int num_asientos, String fecha) {
-		this.aeropuerto_origen = aeropuerto_origen;
-		this.aeropuerto_destino = aeropuerto_destino;
-		this.num_asientos = num_asientos;
+	public Vuelo(String aeropuertoOrigen, String aeropuertoDestino, int numAsientos, String fecha) {
+		this.aeropuertoOrigen = aeropuertoOrigen;
+		this.aeropuertoDestino = aeropuertoDestino;
+		this.numAsientos = numAsientos;
 		this.fecha = fecha;
 	}
-
-	public long getId_vuelo() {
-		return id_vuelo;
+	
+	public Vuelo() {
+		this.numAsientos = 0;
+		this.fecha = "";
 	}
 
-	public void setId_vuelo(long id_vuelo) {
-		this.id_vuelo = id_vuelo;
+	public long getIdVuelo() {
+		return idVuelo;
+	}
+
+	public void setIdVuelo(long idVuelo) {
+		this.idVuelo = idVuelo;
 	}
 	
 	public String getFecha() {
@@ -55,28 +60,28 @@ public class Vuelo {
 		this.fecha = fecha;
 	}
 	
-	public int getNum_asientos() {
-		return num_asientos;
+	public int getNumAsientos() {
+		return numAsientos;
 	}
 	
-	public void setNum_asientos(int num_asientos) {
-		this.num_asientos = num_asientos;
+	public void setNumAsientos(int numAsientos) {
+		this.numAsientos = numAsientos;
 	}
 
-	public String getAeropuerto_destino() {
-		return aeropuerto_destino;
+	public String getAeropuertoDestino() {
+		return aeropuertoDestino;
 	}
 
-	public void setAeropuerto_destino(String aeropuerto_destino) {
-		this.aeropuerto_destino = aeropuerto_destino;
+	public void setAeropuertoDestino(String aeropuertoDestino) {
+		this.aeropuertoDestino = aeropuertoDestino;
 	}
 
-	public String getAeropuerto_origen() {
-		return aeropuerto_origen;
+	public String getAeropuertoOrigen() {
+		return aeropuertoOrigen;
 	}
 
-	public void setAeropuerto_origen(String aeropuerto_origen) {
-		this.aeropuerto_origen = aeropuerto_origen;
+	public void setAeropuertoOrigen(String aeropuertoOrigen) {
+		this.aeropuertoOrigen = aeropuertoOrigen;
 	}
 
 	public Aerolinea getAerolinea() {

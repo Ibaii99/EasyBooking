@@ -14,11 +14,11 @@ public class Reserva {
 
 	@PrimaryKey
 	@Persistent(valueStrategy=IdGeneratorStrategy.INCREMENT)
-	private int id_reserva;
+	private int idReserva;
 	
 	
-	private String tipo_pago;
-	private int numero_asientos;
+	private String tipoPago;
+	private int numeroAsientos;
 	private String fecha; // Habria que mirar la clase Date de java
 	
 	
@@ -30,34 +30,38 @@ public class Reserva {
 	//@Persistent(mappedBy="reserva", dependentElement="true")
 	private Pago pago;
 	
-	public Reserva(String tipo_pago, int numero_asientos, String fecha) {
-		this.tipo_pago = tipo_pago;
-		this.numero_asientos = numero_asientos;
-		this.fecha = fecha;
+//	public Reserva(String tipoPago, int numeroAsientos, String fecha) {
+//		this.tipoPago = tipoPago;
+//		this.numeroAsientos = numeroAsientos;
+//		this.fecha = fecha;
+//	}
+	
+	public Reserva() {
+		
 	}
 
-	public int getId_reserva() {
-		return id_reserva;
+	public int getIdReserva() {
+		return idReserva;
 	}
 
-	public void setId_reserva(int id_reserva) {
-		this.id_reserva = id_reserva;
+	public void setIdReserva(int idReserva) {
+		this.idReserva = idReserva;
 	}
 
-	public String getTipo_pago() {
-		return tipo_pago;
+	public String getTipoPago() {
+		return tipoPago;
 	}
 
-	public void setTipo_pago(String tipo_pago) {
-		this.tipo_pago = tipo_pago;
+	public void setTipoPago(String tipoPago) {
+		this.tipoPago = tipoPago;
 	}
 
-	public int getNumero_asientos() {
-		return numero_asientos;
+	public int getNumeroAsientos() {
+		return numeroAsientos;
 	}
 
-	public void setNumero_asientos(int numero_asientos) {
-		this.numero_asientos = numero_asientos;
+	public void setNumeroAsientos(int numeroAsientos) {
+		this.numeroAsientos = numeroAsientos;
 	}
 
 	public String getFecha() {

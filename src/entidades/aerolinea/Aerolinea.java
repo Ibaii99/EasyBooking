@@ -17,7 +17,7 @@ public class Aerolinea {
 
 	@PrimaryKey
 	@Persistent(valueStrategy = IdGeneratorStrategy.INCREMENT)
-	private String cod_aerolinea;
+	private String codAerolinea;
 	private String nombre;
 
 	@Join
@@ -27,11 +27,11 @@ public class Aerolinea {
 	public Aerolinea() {}
 	
 	public String getCodAerolinea() {
-		return this.cod_aerolinea;
+		return this.codAerolinea;
 	}
 	
-	public void setCodAerolinea(String cod_aerolinea) {
-		this.cod_aerolinea = cod_aerolinea;
+	public void setCodAerolinea(String codAerolinea) {
+		this.codAerolinea = codAerolinea;
 	}
 
 	public String getNombre() {

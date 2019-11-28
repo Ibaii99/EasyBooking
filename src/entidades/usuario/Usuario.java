@@ -18,7 +18,7 @@ public class Usuario {
 	
 	@PrimaryKey
 	@Persistent(valueStrategy=IdGeneratorStrategy.INCREMENT)
-	private int id_usuario;
+	private int idUsuario;
 	
 	
 	private String nombre;
@@ -27,9 +27,9 @@ public class Usuario {
 	
 	private int edad;
 	
-	private String tipo_login;
+	private String tipoLogin;
 	
-	private String aeropuerto_preferido;
+	private String aeropuertoPreferido;
 	
 	
 	@Join
@@ -50,13 +50,13 @@ public class Usuario {
 //	}
 
 
-	public int getId_usuario() {
-		return id_usuario;
+	public int getIdUsuario() {
+		return idUsuario;
 	}
 
 
-	public void setId_usuario(int id_usuario) {
-		this.id_usuario = id_usuario;
+	public void setIdUsuario(int idUsuario) {
+		this.idUsuario = idUsuario;
 	}
 
 
@@ -90,23 +90,23 @@ public class Usuario {
 	}
 
 
-	public String getTipo_login() {
-		return tipo_login;
+	public String getTipoLogin() {
+		return tipoLogin;
 	}
 
 
-	public void setTipo_login(String tipo_login) {
-		this.tipo_login = tipo_login;
+	public void setTipoLogin(String tipoLogin) {
+		this.tipoLogin = tipoLogin;
 	}
 
 
-	public String getAeropuerto_preferido() {
-		return aeropuerto_preferido;
+	public String getAeropuertoPreferido() {
+		return aeropuertoPreferido;
 	}
 
 
-	public void setAeropuerto_preferido(String aeropuerto_preferido) {
-		this.aeropuerto_preferido = aeropuerto_preferido;
+	public void setAeropuerto_preferido(String aeropuertoPreferido) {
+		this.aeropuertoPreferido = aeropuertoPreferido;
 	}
 
 
