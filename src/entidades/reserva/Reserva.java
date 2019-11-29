@@ -1,51 +1,22 @@
 package entidades.reserva;
 
-import javax.jdo.annotations.IdGeneratorStrategy;
-import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
-import javax.jdo.annotations.Persistent;
-import javax.jdo.annotations.PrimaryKey;
 
 import entidades.pago.Pago;
 import entidades.usuario.Usuario;
 import entidades.vuelo.Vuelo;
 @PersistenceCapable
 public class Reserva {
-
-	@PrimaryKey
-	@Persistent(valueStrategy=IdGeneratorStrategy.INCREMENT)
-	private int idReserva;
-	
 	
 	private String tipoPago;
 	private int numeroAsientos;
 	private String fecha; // Habria que mirar la clase Date de java
 	
-	
 	private Usuario usuario;
-	
 	private Vuelo vuelo;
-	
-	@Join
-	//@Persistent(mappedBy="reserva", dependentElement="true")
 	private Pago pago;
 	
-//	public Reserva(String tipoPago, int numeroAsientos, String fecha) {
-//		this.tipoPago = tipoPago;
-//		this.numeroAsientos = numeroAsientos;
-//		this.fecha = fecha;
-//	}
-	
-	public Reserva() {
-		
-	}
-
-	public int getIdReserva() {
-		return idReserva;
-	}
-
-	public void setIdReserva(int idReserva) {
-		this.idReserva = idReserva;
+	public Reserva() {	
 	}
 
 	public String getTipoPago() {

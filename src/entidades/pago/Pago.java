@@ -1,21 +1,13 @@
 package entidades.pago;
 
 
-
-import javax.jdo.annotations.IdGeneratorStrategy;
-import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
-import javax.jdo.annotations.PrimaryKey;
 
 import entidades.reserva.Reserva;
 
 @PersistenceCapable
 public class Pago {
-
-	@PrimaryKey
-	@Persistent(valueStrategy=IdGeneratorStrategy.INCREMENT)
-	private int idPago;
 	
 	private String tipo; // PayPal || Tarjeta
 	
@@ -27,32 +19,10 @@ public class Pago {
 	
 	private String paypalEmail;
 	
-	@Join
-	//@Persistent(mappedBy="pago", dependentElement="true")
 	private Reserva reserva;
-	
 	
 	//Constructor de pago por defecto
 	public Pago() {
-		this.tipo = "";
-		this.precio = 0.0;
-	}
-	
-//	//Constructor de pago con tarjeta
-//	public Pago(String tarjetaTipo, String tarjetaNumero,
-//			String tarjetaFecha_caducidad, double precio) {
-//		this.tarjetaTipo = tarjetaTipo;
-//		this.tarjetaNumero = new String(tarjetaNumero);
-//		this.tarjetaFechaCaducidad = tarjetaFechaCaducidad;
-//		this.precio = precio;
-//	}
-
-	public int getIdPago() {
-		return idPago;
-	}
-
-	public void setIdPago(int idPago) {
-		this.idPago = idPago;
 	}
 
 	public String getTipo() {

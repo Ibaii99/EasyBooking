@@ -2,7 +2,6 @@ package bin.main;
 
 import java.util.List;
 
-import javax.jdo.Extent;
 import javax.jdo.JDOHelper;
 import javax.jdo.PersistenceManager;
 import javax.jdo.PersistenceManagerFactory;
@@ -64,12 +63,17 @@ public class Main {
 			PersistenceManager pm = pmf.getPersistenceManager();				
 			Transaction tx = pm.currentTransaction();	
 			try {
+				System.out.println("Entra en el segundo try");
 				tx.begin();
 				// 	TODO 
 				pm.makePersistent(u1);
+				System.out.println("1º usuario guardado");
 				pm.makePersistent(u2);
+				System.out.println("3º usuario guardado");
 				pm.makePersistent(u3);
+				System.out.println("3º usuario guardado");
 				pm.makePersistent(u4);
+				System.out.println("4º usuario guardado");
 				
 				
 				System.out.println("- Inserted into db: ");
