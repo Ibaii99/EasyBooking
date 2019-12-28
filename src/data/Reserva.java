@@ -1,10 +1,6 @@
-package entidades.reserva;
+package data;
 
 import javax.jdo.annotations.PersistenceCapable;
-
-import entidades.pago.Pago;
-import entidades.usuario.Usuario;
-import entidades.vuelo.Vuelo;
 @PersistenceCapable
 public class Reserva {
 	

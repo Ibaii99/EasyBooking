@@ -1,10 +1,8 @@
-package entidades.pago;
+package data;
 
 
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
-
-import entidades.reserva.Reserva;
 
 @PersistenceCapable
 public class Pago {

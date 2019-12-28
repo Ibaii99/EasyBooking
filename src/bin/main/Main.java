@@ -8,9 +8,9 @@ import javax.jdo.PersistenceManagerFactory;
 import javax.jdo.Query;
 import javax.jdo.Transaction;
 
-import entidades.pago.Pago;
-import entidades.reserva.Reserva;
-import entidades.usuario.Usuario;
+import data.Pago;
+import data.Reserva;
+import data.Usuario;
 
 
 public class Main {
