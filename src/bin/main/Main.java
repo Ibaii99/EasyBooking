@@ -16,9 +16,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-<<<<<<< HEAD
 		Usuario u = new Usuario("ibai", "ibai@jasnka.es", 20, "BIO");
-=======
 		Usuario u1 = new Usuario("ibai", "asidhaiubuad@jasnka.es", 20, "BIO");
 		Usuario u2 = new Usuario("Jon", "jjj@jojo.com", 19, "BIO");
 		Usuario u3 = new Usuario("Gorka", "gor@do.com", 20, "MAD");
@@ -31,7 +29,6 @@ public class Main {
 		
 		u1.getReservas().add(r1);
 		u2.getReservas().add(r2);
->>>>>>> 35a909157f335ecc2bcca61f0fc84dd7dbfe84f3
 		
 		
 		try {
