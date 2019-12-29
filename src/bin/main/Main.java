@@ -16,17 +16,10 @@ import data.Usuario;
 public class Main {
 
 	public static void main(String[] args) {
-		
-<<<<<<< HEAD
-		Usuario u = new Usuario("ibai", "ibai@jasnka.es", 20, "BIO");
-		Usuario u1 = new Usuario("ibai", "asidhaiubuad@jasnka.es", 20, "BIO");
-		Usuario u2 = new Usuario("Jon", "jjj@jojo.com", 19, "BIO");
-		Usuario u3 = new Usuario("Gorka", "gor@do.com", 20, "MAD");
-=======
+
 		Usuario u1 = new Usuario();
 		u1.setNombre("ibai");u1.setEmail("asidhaiubuad@jasnka.es");
 		u1.setEdad(20);u1.setAeropuerto_preferido("BIO");
->>>>>>> branch 'master' of https://github.com/Ibaii99/EasyBooking.git
 		
 		Usuario u2 = new Usuario();
 		u2.setNombre("Jon");u1.setEmail("jjj@jojo.com");

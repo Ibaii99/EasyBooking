@@ -6,9 +6,10 @@ import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 
-import entidades.pago.Pago;
-import entidades.usuario.Usuario;
-import entidades.vuelo.Vuelo;
+import data.Pago;
+import data.Usuario;
+import data.Vuelo;
+
 @PersistenceCapable
 public class Reserva {
 
