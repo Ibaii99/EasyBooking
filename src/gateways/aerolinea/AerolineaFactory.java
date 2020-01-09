@@ -45,7 +45,6 @@ public class AerolineaFactory {
 	
 	private void initializeIberia() {
 		IberiaAirlineGateway iberia = new IberiaAirlineGateway();
-		iberia.connect();
 		gatewaysAerolineas.add(iberia);
 		
 	}
