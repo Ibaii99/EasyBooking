@@ -14,7 +14,16 @@ public class Usuario {
 	private int edad;
 	private String tipoLogin;
 	private String aeropuertoPreferido;
+	private String password;
 	
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
 	@Persistent(mappedBy = "usuario")
 	private List<Reserva> reservas = new ArrayList<>();
 	
