@@ -6,10 +6,10 @@ import data.dto.VueloDTO;
 public interface IGatewayPago {
 
 	/**
-	 * @param vuelo Vuelo a pagar
-	 * @param usuario Usuairo que paga el vuelo
+	 * @param precio Precio a pagar
+	 * @param email Usuairo que paga el vuelo
 	 * @return True si se realiza el pago, False si no
 	 */
-	public boolean realizarPago(VueloDTO vuelo, UsuarioDTO usuario);
+	public boolean realizarPago(int precio, String email);
 	
 }

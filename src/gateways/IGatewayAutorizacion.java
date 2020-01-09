@@ -4,14 +4,17 @@ import data.dto.UsuarioDTO;
 
 public interface IGatewayAutorizacion {
 
-	/** 
-	 * @param usuario Registra al usuario
+
+	/** Registra al usuario con email y password
+	 * @param email
+	 * @param password
 	 */
-	public void registrar(UsuarioDTO usuario);
+	public void registrar(String email, String password);
 	/**
-	 * @param usuario Usuario que se comprueba si esta registrado
+	 * @param email Nombre que se comprueba si esta registrado
+	 * @param password Contrasenya que se comprueba si esta registrado
 	 * @return devuelve true si es un login correcto, false si no
 	 */
-	public boolean login(UsuarioDTO usuario); 
+	public boolean login(String email, String password); 
 	
 }
