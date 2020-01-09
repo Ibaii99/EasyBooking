@@ -1,6 +1,7 @@
 package services;
 
 import data.Aerolinea;
+import gateways.aerolinea.AerolineaFactory;
 
 public class AerolineaService {
 //TODO Implement Aerolinea object function

@@ -1,10 +1,8 @@
-package services;
+package gateways.aerolinea;
 
 import java.util.ArrayList;
 
 import gateways.IGatewayAerolinea;
-import gateways.aerolinea.IberiaAirlineGateway;
-import gateways.aerolinea.NumeracionAerolinea;
 
 public class AerolineaFactory {
 //TODO initialize all Aerolinea Gateways
