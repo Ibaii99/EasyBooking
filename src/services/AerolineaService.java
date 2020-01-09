@@ -14,6 +14,7 @@ public class AerolineaService {
 	public AerolineaService() {
 		// TODO Auto-generated constructor stub
 		AerolineaFactory factory = new AerolineaFactory();
+		factory.initializeGateways();
 		factory.getGatewaysAerolineas();
 		
 	}
