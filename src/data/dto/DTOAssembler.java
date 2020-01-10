@@ -42,7 +42,7 @@ public class DTOAssembler {
 		p.setTarjetaTipo(dto.getTarjetaTipo());
 		p.setTipo(dto.getTipo());
 		return p;
-	}
+	} 
 	
 	public static ReservaDTO assemble(Reserva r) {
 		ReservaDTO dto = new ReservaDTO();
