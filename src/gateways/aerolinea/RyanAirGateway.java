@@ -1,14 +1,11 @@
 package gateways.aerolinea;
 
 import java.util.ArrayList;
-import java.util.Date;
 
-import data.Vuelo;
-import data.dto.UsuarioDTO;
 import data.dto.VueloDTO;
 import gateways.IGatewayAerolinea;
 
-public class IberiaAirlineGateway implements IGatewayAerolinea {
+public class RyanAirGateway implements IGatewayAerolinea{
 
 	@Override
 	public ArrayList<VueloDTO> getAllVuelos() {
@@ -29,14 +26,10 @@ public class IberiaAirlineGateway implements IGatewayAerolinea {
 		return null;
 	}
 
-
 	@Override
 	public boolean reservarVuelo(VueloDTO vuelo, String nombre) {
 		// TODO Auto-generated method stub
 		return false;
 	}
-	
-	
-
 
 }

@@ -1,22 +1,24 @@
 package data;
 
 
+import java.io.Serializable;
+
+import javax.jdo.annotations.Column;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
 
-@PersistenceCapable
-public class Pago {
+@PersistenceCapable(detachable = "true")
+public class Pago implements Serializable{
 	
+	private static final long serialVersionUID = 1L;
 	private String tipo; // PayPal || Tarjeta
-	
 	private double precio;
-	
 	private String tarjetaNumero;
 	private String tarjetaTipo;
 	private String tarjetaFechaCaducidad;
-	
 	private String paypalEmail;
 	
+	@Persistent(defaultFetchGroup = "true")
 	private Reserva reserva;
 	
 	//Constructor de pago por defecto

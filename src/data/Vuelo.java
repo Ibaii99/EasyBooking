@@ -1,17 +1,19 @@
 package data;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
-@PersistenceCapable
-public class Vuelo {
+
+@PersistenceCapable(detachable = "true")
+public class Vuelo implements Serializable{
 	
+	private static final long serialVersionUID = 1L;
 	private String aeropuertoDestino;
 	private String aeropuertoOrigen;
 	private String fecha;
 	private int numAsientos;
-
 	private Aerolinea aerolinea; 
 	
 	@Persistent(mappedBy = "vuelo")

@@ -9,6 +9,9 @@ public class UsuarioDTO implements Serializable{
 	private String nombre;	
 	private String email;
 	
+	public UsuarioDTO() {
+		// TODO Auto-generated constructor stub
+	}
 	public String getNombre() {
 		return nombre;
 	}

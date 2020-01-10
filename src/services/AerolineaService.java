@@ -1,23 +1,21 @@
 package services;
 
+
+import java.util.List;
+
 import data.Aerolinea;
+import gateways.IGatewayAerolinea;
 import gateways.aerolinea.AerolineaFactory;
 
 public class AerolineaService {
 //TODO Implement Aerolinea object function
 	
-	private Aerolinea aerolinea;
+	private List<IGatewayAerolinea> aerolineas;
 	
-	private void reservarVuelo() {
-		
-	}
- 
 	public AerolineaService() {
 		// TODO Auto-generated constructor stub
 		AerolineaFactory factory = new AerolineaFactory();
-		factory.initializeGateways();
-		factory.getGatewaysAerolineas();
-		
+		aerolineas = factory.getGatewaysAerolineas();	
 	}
 	
 	

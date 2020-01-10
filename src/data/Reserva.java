@@ -1,16 +1,26 @@
 package data;
 
+import java.io.Serializable;
+
+import javax.jdo.annotations.IdGeneratorStrategy;
+import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
-@PersistenceCapable
-public class Reserva {
+import javax.jdo.annotations.Persistent;
+import javax.jdo.annotations.PrimaryKey;
+
+@PersistenceCapable(detachable = "true")
+public class Reserva implements Serializable{
 	
+	private static final long serialVersionUID = 1L;
 	private String tipoPago;
 	private int numeroAsientos;
 	private String fecha; // Habria que mirar la clase Date de java
-	
 	private Usuario usuario;
 	private Vuelo vuelo;
+	
+	@Persistent(defaultFetchGroup = "true")
 	private Pago pago;
+	
 	
 	public Reserva() {	
 	}

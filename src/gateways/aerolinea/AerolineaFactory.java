@@ -11,19 +11,19 @@ public class AerolineaFactory {
 	 *  Aerolineas.
 	 */
 	private ArrayList<IGatewayAerolinea> gatewaysAerolineas;
-	
+	NumeracionAerolinea allAerolineas;
 	
 	public ArrayList<IGatewayAerolinea> getGatewaysAerolineas() {
 		return gatewaysAerolineas;
 	}
 
 	public AerolineaFactory() {
-		// TODO Auto-generated constructor stub
+		NumeracionAerolinea allAerolineas = new NumeracionAerolinea();
+		allAerolineas.loadAerolineas();
+		initializeGateways();
 	}
 	
 	public void initializeGateways() {
-		NumeracionAerolinea allAerolineas = new NumeracionAerolinea();
-		allAerolineas.loadAerolineas();	
 		gatewaysAerolineas = new ArrayList<IGatewayAerolinea>();
 		
 		for (String e : allAerolineas.getCodAerolineas()) {
@@ -46,11 +46,11 @@ public class AerolineaFactory {
 	private void initializeIberia() {
 		IberiaAirlineGateway iberia = new IberiaAirlineGateway();
 		gatewaysAerolineas.add(iberia);
-		
 	}
 	
 	private void initializeRyanAir() {
-		
+		RyanAirGateway ryanair = new RyanAirGateway();
+		gatewaysAerolineas.add(ryanair);
 	}
 }
 

@@ -11,6 +11,10 @@ public class VueloDTO implements Serializable{
 	private String fecha;
 	private int numAsientos;
 	
+	public VueloDTO() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public int getNumAsientos() {
 		return numAsientos;
 	}

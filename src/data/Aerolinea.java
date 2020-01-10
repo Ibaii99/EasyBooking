@@ -1,14 +1,19 @@
 package data;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
+import javax.jdo.annotations.PrimaryKey;
 
-@PersistenceCapable
-public class Aerolinea {
+@PersistenceCapable(detachable = "true")
+public class Aerolinea implements Serializable{
 
+	private static final long serialVersionUID = 1L;
+	
+	@PrimaryKey
 	private String codAerolinea;
 	private String nombre;
 

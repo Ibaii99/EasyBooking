@@ -1,20 +1,32 @@
 package data;
 
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.jdo.annotations.Join;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.Persistent;
+import javax.jdo.annotations.PrimaryKey;
 
-@PersistenceCapable
-public class Usuario {
+@PersistenceCapable(detachable = "true")
+public class Usuario implements Serializable{
 	
-	private String nombre;	
+	private static final long serialVersionUID = 1L;
+	private String nombre;
+	@PrimaryKey
 	private String email;
 	private int edad;
 	private String tipoLogin;
 	private String aeropuertoPreferido;
 	private String password;
+	
+	@Persistent(mappedBy = "usuario")
+	@Join
+	private List<Reserva> reservas = new ArrayList<>();
+	
+	
 	
 	public String getPassword() {
 		return password;
@@ -24,9 +36,6 @@ public class Usuario {
 		this.password = password;
 	}
 
-	@Persistent(mappedBy = "usuario")
-	private List<Reserva> reservas = new ArrayList<>();
-	
 	public Usuario() {
 	}
 

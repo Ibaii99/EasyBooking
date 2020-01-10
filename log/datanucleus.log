@@ -1,958 +1,376 @@
-<<<<<<< HEAD
-10:22:41,625 (main) ERROR [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha lanzado una excepci髇. Por favor consulte el Log para ver m醩 detalles: La generaci髇 del nuevo tipo de Mapping org.datanucleus.store.rdbms.mapping.java.PersistableMapping ha fallada : We do not currently support 1-1 relations via join table : entidades.reserva.Reserva.pago
-We do not currently support 1-1 relations via join table : entidades.reserva.Reserva.pago
-org.datanucleus.exceptions.NucleusUserException: We do not currently support 1-1 relations via join table : entidades.reserva.Reserva.pago
-	at org.datanucleus.store.rdbms.mapping.java.PersistableMapping.prepareColumnMapping(PersistableMapping.java:242)
-	at org.datanucleus.store.rdbms.mapping.java.PersistableMapping.initialize(PersistableMapping.java:119)
-	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:667)
-	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:545)
-	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:451)
-	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1277)
-	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:269)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3310)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2930)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-
-La generaci髇 del nuevo tipo de Mapping org.datanucleus.store.rdbms.mapping.java.PersistableMapping ha fallada : We do not currently support 1-1 relations via join table : entidades.reserva.Reserva.pago
-We do not currently support 1-1 relations via join table : entidades.reserva.Reserva.pago
-org.datanucleus.exceptions.NucleusUserException: We do not currently support 1-1 relations via join table : entidades.reserva.Reserva.pago
-	at org.datanucleus.store.rdbms.mapping.java.PersistableMapping.prepareColumnMapping(PersistableMapping.java:242)
-	at org.datanucleus.store.rdbms.mapping.java.PersistableMapping.initialize(PersistableMapping.java:119)
-	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:667)
-	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:545)
-	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:451)
-	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1277)
-	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:269)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3310)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2930)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-
-org.datanucleus.exceptions.NucleusException: La generaci髇 del nuevo tipo de Mapping org.datanucleus.store.rdbms.mapping.java.PersistableMapping ha fallada : We do not currently support 1-1 relations via join table : entidades.reserva.Reserva.pago
-We do not currently support 1-1 relations via join table : entidades.reserva.Reserva.pago
-org.datanucleus.exceptions.NucleusUserException: We do not currently support 1-1 relations via join table : entidades.reserva.Reserva.pago
-	at org.datanucleus.store.rdbms.mapping.java.PersistableMapping.prepareColumnMapping(PersistableMapping.java:242)
-	at org.datanucleus.store.rdbms.mapping.java.PersistableMapping.initialize(PersistableMapping.java:119)
-	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:667)
-	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:545)
-	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:451)
-	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1277)
-	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:269)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3310)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2930)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-
-	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:677)
-	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:545)
-	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:451)
-	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1277)
-	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:269)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3310)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2930)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-Caused by: org.datanucleus.exceptions.NucleusUserException: We do not currently support 1-1 relations via join table : entidades.reserva.Reserva.pago
-	at org.datanucleus.store.rdbms.mapping.java.PersistableMapping.prepareColumnMapping(PersistableMapping.java:242)
-	at org.datanucleus.store.rdbms.mapping.java.PersistableMapping.initialize(PersistableMapping.java:119)
-	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:667)
-	... 10 more
-Nested Throwables StackTrace:
-We do not currently support 1-1 relations via join table : entidades.reserva.Reserva.pago
-org.datanucleus.exceptions.NucleusUserException: We do not currently support 1-1 relations via join table : entidades.reserva.Reserva.pago
-	at org.datanucleus.store.rdbms.mapping.java.PersistableMapping.prepareColumnMapping(PersistableMapping.java:242)
-	at org.datanucleus.store.rdbms.mapping.java.PersistableMapping.initialize(PersistableMapping.java:119)
-	at org.datanucleus.store.rdbms.mapping.MappingManagerImpl.getMapping(MappingManagerImpl.java:667)
-	at org.datanucleus.store.rdbms.table.ClassTable.manageMembers(ClassTable.java:545)
-	at org.datanucleus.store.rdbms.table.ClassTable.manageClass(ClassTable.java:451)
-	at org.datanucleus.store.rdbms.table.ClassTable.initializeForClass(ClassTable.java:1277)
-	at org.datanucleus.store.rdbms.table.ClassTable.initialize(ClassTable.java:269)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.initializeClassTables(RDBMSStoreManager.java:3310)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2930)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-10:32:19,520 (main) ERROR [DataNucleus.Datastore.Schema] - La inicializaci贸n del base de datos ha fallado.
-Access denied for user 'user'@'localhost' (using password: YES)
-org.datanucleus.exceptions.NucleusDataStoreException: Access denied for user 'user'@'localhost' (using password: YES)
-	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:518)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:288)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:651)
-	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
-	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
-	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
-	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.freezeConfiguration(JDOPersistenceManagerFactory.java:859)
-	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.createPersistenceManagerFactory(JDOPersistenceManagerFactory.java:346)
-	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.getPersistenceManagerFactory(JDOPersistenceManagerFactory.java:225)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at javax.jdo.JDOHelper$16.run(JDOHelper.java:1975)
-	at java.base/java.security.AccessController.doPrivileged(Native Method)
-	at javax.jdo.JDOHelper.invoke(JDOHelper.java:1970)
-	at javax.jdo.JDOHelper.invokeGetPersistenceManagerFactoryOnImplementation(JDOHelper.java:1177)
-	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:814)
-	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:1093)
-	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:924)
-	at bin.main.Main.main(Unknown Source)
-Caused by: java.sql.SQLException: Access denied for user 'user'@'localhost' (using password: YES)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
-	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
-	... 24 more
-Nested Throwables StackTrace:
-java.sql.SQLException: Access denied for user 'user'@'localhost' (using password: YES)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
-	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:288)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:651)
-	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
-	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
-	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
-	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.freezeConfiguration(JDOPersistenceManagerFactory.java:859)
-	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.createPersistenceManagerFactory(JDOPersistenceManagerFactory.java:346)
-	at org.datanucleus.api.jdo.JDOPersistenceManagerFactory.getPersistenceManagerFactory(JDOPersistenceManagerFactory.java:225)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at javax.jdo.JDOHelper$16.run(JDOHelper.java:1975)
-	at java.base/java.security.AccessController.doPrivileged(Native Method)
-	at javax.jdo.JDOHelper.invoke(JDOHelper.java:1970)
-	at javax.jdo.JDOHelper.invokeGetPersistenceManagerFactoryOnImplementation(JDOHelper.java:1177)
-	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:814)
-	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:1093)
-	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:924)
-	at bin.main.Main.main(Unknown Source)
-10:32:19,524 (main) ERROR [DataNucleus.Datastore] - Exception thrown creating StoreManager : Access denied for user 'user'@'localhost' (using password: YES)
-10:34:43,821 (main) ERROR [DataNucleus.Datastore.Schema] - La inicializaci贸n del base de datos ha fallado.
-Access denied for user 'user'@'localhost' (using password: YES)
-org.datanucleus.exceptions.NucleusDataStoreException: Access denied for user 'user'@'localhost' (using password: YES)
-	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:518)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:288)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:651)
-	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
-	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
-	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
-	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
-Caused by: java.sql.SQLException: Access denied for user 'user'@'localhost' (using password: YES)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
-	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
-	... 11 more
-Nested Throwables StackTrace:
-java.sql.SQLException: Access denied for user 'user'@'localhost' (using password: YES)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
-	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:288)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:651)
-	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
-	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
-	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
-	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
-10:34:43,825 (main) ERROR [DataNucleus.Datastore] - Exception thrown creating StoreManager : Access denied for user 'user'@'localhost' (using password: YES)
-10:34:43,825 (main) ERROR [DataNucleus.SchemaTool] - Error creating NucleusContext
-Access denied for user 'user'@'localhost' (using password: YES)
-org.datanucleus.exceptions.NucleusDataStoreException: Access denied for user 'user'@'localhost' (using password: YES)
-	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:518)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:288)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:651)
-	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
-	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
-	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
-	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
-Caused by: java.sql.SQLException: Access denied for user 'user'@'localhost' (using password: YES)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
-	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
-	... 11 more
-Nested Throwables StackTrace:
-java.sql.SQLException: Access denied for user 'user'@'localhost' (using password: YES)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:447)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:189)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:254)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:864)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:362)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:132)
-	at org.datanucleus.store.rdbms.ConnectionFactoryImpl$ManagedConnectionImpl.getConnection(ConnectionFactoryImpl.java:501)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.<init>(RDBMSStoreManager.java:288)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.datanucleus.plugin.NonManagedPluginRegistry.createExecutableExtension(NonManagedPluginRegistry.java:651)
-	at org.datanucleus.plugin.PluginManager.createExecutableExtension(PluginManager.java:295)
-	at org.datanucleus.NucleusContextHelper.createStoreManagerForProperties(NucleusContextHelper.java:140)
-	at org.datanucleus.PersistenceNucleusContextImpl.initialise(PersistenceNucleusContextImpl.java:445)
-	at org.datanucleus.store.schema.SchemaTool.getNucleusContextForMode(SchemaTool.java:729)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:300)
-=======
-10:55:51,070 (main) ERROR [DataNucleus.Datastore] - Un error estaba tirado con ALTER TABLE `RESERVA` ADD COLUMN `RESERVA_ID` BIGINT NOT NULL AUTO_INCREMENT : Incorrect table definition; there can be only one auto column and it must be defined as a key
-java.sql.SQLSyntaxErrorException: Incorrect table definition; there can be only one auto column and it must be defined as a key
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateColumns(TableImpl.java:256)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3429)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-
-10:55:51,084 (main) ERROR [DataNucleus.Datastore] - Un error estaba tirado con ALTER TABLE `PAGO` ADD COLUMN `PAGO_ID` BIGINT NOT NULL AUTO_INCREMENT : Incorrect table definition; there can be only one auto column and it must be defined as a key
-java.sql.SQLSyntaxErrorException: Incorrect table definition; there can be only one auto column and it must be defined as a key
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateColumns(TableImpl.java:256)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3429)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-
-10:55:51,097 (main) ERROR [DataNucleus.Datastore] - Un error estaba tirado con ALTER TABLE `VUELO` ADD COLUMN `VUELO_ID` BIGINT NOT NULL AUTO_INCREMENT : Incorrect table definition; there can be only one auto column and it must be defined as a key
-java.sql.SQLSyntaxErrorException: Incorrect table definition; there can be only one auto column and it must be defined as a key
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateColumns(TableImpl.java:256)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3429)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-
-10:55:51,110 (main) ERROR [DataNucleus.Datastore] - Un error estaba tirado con ALTER TABLE `USUARIO` ADD COLUMN `USUARIO_ID` BIGINT NOT NULL AUTO_INCREMENT : Incorrect table definition; there can be only one auto column and it must be defined as a key
-java.sql.SQLSyntaxErrorException: Incorrect table definition; there can be only one auto column and it must be defined as a key
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateColumns(TableImpl.java:256)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3429)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-
-10:55:51,125 (main) ERROR [DataNucleus.Datastore] - Un error estaba tirado con ALTER TABLE `AEROLINEA` ADD COLUMN `AEROLINEA_ID` BIGINT NOT NULL AUTO_INCREMENT : Incorrect table definition; there can be only one auto column and it must be defined as a key
-java.sql.SQLSyntaxErrorException: Incorrect table definition; there can be only one auto column and it must be defined as a key
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateColumns(TableImpl.java:256)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3429)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-
-10:55:51,220 (main) ERROR [DataNucleus.Datastore] - Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : Incorrect table definition; there can be only one auto column and it must be defined as a key
-java.sql.SQLSyntaxErrorException: Incorrect table definition; there can be only one auto column and it must be defined as a key
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateColumns(TableImpl.java:256)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3429)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-
-10:55:51,220 (main) ERROR [DataNucleus.Datastore] - Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : Incorrect table definition; there can be only one auto column and it must be defined as a key
-java.sql.SQLSyntaxErrorException: Incorrect table definition; there can be only one auto column and it must be defined as a key
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateColumns(TableImpl.java:256)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3429)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-
-10:55:51,221 (main) ERROR [DataNucleus.Datastore] - Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : Incorrect table definition; there can be only one auto column and it must be defined as a key
-java.sql.SQLSyntaxErrorException: Incorrect table definition; there can be only one auto column and it must be defined as a key
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateColumns(TableImpl.java:256)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3429)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-
-10:55:51,221 (main) ERROR [DataNucleus.Datastore] - Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : Incorrect table definition; there can be only one auto column and it must be defined as a key
-java.sql.SQLSyntaxErrorException: Incorrect table definition; there can be only one auto column and it must be defined as a key
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateColumns(TableImpl.java:256)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3429)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-
-10:55:51,222 (main) ERROR [DataNucleus.Datastore] - Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : Incorrect table definition; there can be only one auto column and it must be defined as a key
-java.sql.SQLSyntaxErrorException: Incorrect table definition; there can be only one auto column and it must be defined as a key
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateColumns(TableImpl.java:256)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3429)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-
-10:55:51,222 (main) ERROR [DataNucleus.Datastore] - Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : Key column 'PAGO_PAGO_ID_OID' doesn't exist in table
-java.sql.SQLSyntaxErrorException: Key column 'PAGO_PAGO_ID_OID' doesn't exist in table
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.TableImpl.createIndices(TableImpl.java:629)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateIndices(TableImpl.java:581)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateConstraints(TableImpl.java:386)
-	at org.datanucleus.store.rdbms.table.ClassTable.validateConstraints(ClassTable.java:3596)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3502)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-
-10:55:51,222 (main) ERROR [DataNucleus.Datastore] - Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : Key column 'USUARIO_USUARIO_ID_OID' doesn't exist in table
-java.sql.SQLSyntaxErrorException: Key column 'USUARIO_USUARIO_ID_OID' doesn't exist in table
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.TableImpl.createIndices(TableImpl.java:629)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateIndices(TableImpl.java:581)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateConstraints(TableImpl.java:386)
-	at org.datanucleus.store.rdbms.table.ClassTable.validateConstraints(ClassTable.java:3596)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3502)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-
-10:55:51,223 (main) ERROR [DataNucleus.Datastore] - Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : Key column 'PAGO_PAGO_ID_OID' doesn't exist in table
-java.sql.SQLSyntaxErrorException: Key column 'PAGO_PAGO_ID_OID' doesn't exist in table
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.TableImpl.createForeignKeys(TableImpl.java:516)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateForeignKeys(TableImpl.java:467)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateConstraints(TableImpl.java:387)
-	at org.datanucleus.store.rdbms.table.ClassTable.validateConstraints(ClassTable.java:3596)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3502)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-
-10:55:51,223 (main) ERROR [DataNucleus.Datastore] - Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : Failed to add the foreign key constraint. Missing column 'VUELO_ID' for constraint 'RESERVA_FK3' in the referenced table 'VUELO'
-java.sql.SQLException: Failed to add the foreign key constraint. Missing column 'VUELO_ID' for constraint 'RESERVA_FK3' in the referenced table 'VUELO'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.TableImpl.createForeignKeys(TableImpl.java:516)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateForeignKeys(TableImpl.java:467)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateConstraints(TableImpl.java:387)
-	at org.datanucleus.store.rdbms.table.ClassTable.validateConstraints(ClassTable.java:3596)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3502)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-
-10:55:51,224 (main) ERROR [DataNucleus.Datastore] - Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : Key column 'USUARIO_USUARIO_ID_OID' doesn't exist in table
-java.sql.SQLSyntaxErrorException: Key column 'USUARIO_USUARIO_ID_OID' doesn't exist in table
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.TableImpl.createForeignKeys(TableImpl.java:516)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateForeignKeys(TableImpl.java:467)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateConstraints(TableImpl.java:387)
-	at org.datanucleus.store.rdbms.table.ClassTable.validateConstraints(ClassTable.java:3596)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3502)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-
-10:55:51,224 (main) ERROR [DataNucleus.Datastore] - Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : Key column 'RESERVA_RESERVA_ID_OID' doesn't exist in table
-java.sql.SQLSyntaxErrorException: Key column 'RESERVA_RESERVA_ID_OID' doesn't exist in table
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.TableImpl.createIndices(TableImpl.java:629)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateIndices(TableImpl.java:581)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateConstraints(TableImpl.java:386)
-	at org.datanucleus.store.rdbms.table.ClassTable.validateConstraints(ClassTable.java:3596)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3502)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-
-10:55:51,224 (main) ERROR [DataNucleus.Datastore] - Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : Key column 'RESERVA_RESERVA_ID_OID' doesn't exist in table
-java.sql.SQLSyntaxErrorException: Key column 'RESERVA_RESERVA_ID_OID' doesn't exist in table
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.TableImpl.createForeignKeys(TableImpl.java:516)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateForeignKeys(TableImpl.java:467)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateConstraints(TableImpl.java:387)
-	at org.datanucleus.store.rdbms.table.ClassTable.validateConstraints(ClassTable.java:3596)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3502)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-
-10:55:51,225 (main) ERROR [DataNucleus.Datastore] - Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : Key column 'AEROLINEA_AEROLINEA_ID_OID' doesn't exist in table
-java.sql.SQLSyntaxErrorException: Key column 'AEROLINEA_AEROLINEA_ID_OID' doesn't exist in table
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.TableImpl.createIndices(TableImpl.java:629)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateIndices(TableImpl.java:581)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateConstraints(TableImpl.java:386)
-	at org.datanucleus.store.rdbms.table.ClassTable.validateConstraints(ClassTable.java:3596)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3502)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-
-10:55:51,225 (main) ERROR [DataNucleus.Datastore] - Una excepcion estaba tirada durante la addicion/validacion de algunas class(es) : Key column 'AEROLINEA_AEROLINEA_ID_OID' doesn't exist in table
-java.sql.SQLSyntaxErrorException: Key column 'AEROLINEA_AEROLINEA_ID_OID' doesn't exist in table
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.TableImpl.createForeignKeys(TableImpl.java:516)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateForeignKeys(TableImpl.java:467)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateConstraints(TableImpl.java:387)
-	at org.datanucleus.store.rdbms.table.ClassTable.validateConstraints(ClassTable.java:3596)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3502)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-
-10:55:51,259 (main) ERROR [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha lanzado una excepci贸n. Por favor consulte el Log para ver m谩s detalles: Hemos encontrado unos errores durante la validaci贸n o creaci贸n de las tablas. Los errores estan en el log, y estan adjuntados a esta excepci贸n.
-Hemos encontrado unos errores durante la validaci贸n o creaci贸n de las tablas. Los errores estan en el log, y estan adjuntados a esta excepci贸n.
-org.datanucleus.exceptions.NucleusDataStoreException: Hemos encontrado unos errores durante la validaci贸n o creaci贸n de las tablas. Los errores estan en el log, y estan adjuntados a esta excepci贸n.
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2971)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-Caused by: java.sql.SQLSyntaxErrorException: Incorrect table definition; there can be only one auto column and it must be defined as a key
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateColumns(TableImpl.java:256)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3429)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	... 4 more
-Nested Throwables StackTrace:
-java.sql.SQLSyntaxErrorException: Incorrect table definition; there can be only one auto column and it must be defined as a key
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateColumns(TableImpl.java:256)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3429)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-java.sql.SQLSyntaxErrorException: Incorrect table definition; there can be only one auto column and it must be defined as a key
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateColumns(TableImpl.java:256)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3429)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-java.sql.SQLSyntaxErrorException: Incorrect table definition; there can be only one auto column and it must be defined as a key
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateColumns(TableImpl.java:256)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3429)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-java.sql.SQLSyntaxErrorException: Incorrect table definition; there can be only one auto column and it must be defined as a key
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateColumns(TableImpl.java:256)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3429)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-java.sql.SQLSyntaxErrorException: Incorrect table definition; there can be only one auto column and it must be defined as a key
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatementList(AbstractTable.java:795)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateColumns(TableImpl.java:256)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3429)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-java.sql.SQLSyntaxErrorException: Key column 'PAGO_PAGO_ID_OID' doesn't exist in table
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.TableImpl.createIndices(TableImpl.java:629)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateIndices(TableImpl.java:581)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateConstraints(TableImpl.java:386)
-	at org.datanucleus.store.rdbms.table.ClassTable.validateConstraints(ClassTable.java:3596)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3502)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-java.sql.SQLSyntaxErrorException: Key column 'USUARIO_USUARIO_ID_OID' doesn't exist in table
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.TableImpl.createIndices(TableImpl.java:629)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateIndices(TableImpl.java:581)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateConstraints(TableImpl.java:386)
-	at org.datanucleus.store.rdbms.table.ClassTable.validateConstraints(ClassTable.java:3596)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3502)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-java.sql.SQLSyntaxErrorException: Key column 'PAGO_PAGO_ID_OID' doesn't exist in table
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.TableImpl.createForeignKeys(TableImpl.java:516)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateForeignKeys(TableImpl.java:467)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateConstraints(TableImpl.java:387)
-	at org.datanucleus.store.rdbms.table.ClassTable.validateConstraints(ClassTable.java:3596)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3502)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-java.sql.SQLException: Failed to add the foreign key constraint. Missing column 'VUELO_ID' for constraint 'RESERVA_FK3' in the referenced table 'VUELO'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.TableImpl.createForeignKeys(TableImpl.java:516)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateForeignKeys(TableImpl.java:467)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateConstraints(TableImpl.java:387)
-	at org.datanucleus.store.rdbms.table.ClassTable.validateConstraints(ClassTable.java:3596)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3502)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-java.sql.SQLSyntaxErrorException: Key column 'USUARIO_USUARIO_ID_OID' doesn't exist in table
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.TableImpl.createForeignKeys(TableImpl.java:516)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateForeignKeys(TableImpl.java:467)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateConstraints(TableImpl.java:387)
-	at org.datanucleus.store.rdbms.table.ClassTable.validateConstraints(ClassTable.java:3596)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3502)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-java.sql.SQLSyntaxErrorException: Key column 'RESERVA_RESERVA_ID_OID' doesn't exist in table
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.TableImpl.createIndices(TableImpl.java:629)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateIndices(TableImpl.java:581)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateConstraints(TableImpl.java:386)
-	at org.datanucleus.store.rdbms.table.ClassTable.validateConstraints(ClassTable.java:3596)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3502)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-java.sql.SQLSyntaxErrorException: Key column 'RESERVA_RESERVA_ID_OID' doesn't exist in table
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.TableImpl.createForeignKeys(TableImpl.java:516)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateForeignKeys(TableImpl.java:467)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateConstraints(TableImpl.java:387)
-	at org.datanucleus.store.rdbms.table.ClassTable.validateConstraints(ClassTable.java:3596)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3502)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-java.sql.SQLSyntaxErrorException: Key column 'AEROLINEA_AEROLINEA_ID_OID' doesn't exist in table
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.TableImpl.createIndices(TableImpl.java:629)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateIndices(TableImpl.java:581)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateConstraints(TableImpl.java:386)
-	at org.datanucleus.store.rdbms.table.ClassTable.validateConstraints(ClassTable.java:3596)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3502)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
-java.sql.SQLSyntaxErrorException: Key column 'AEROLINEA_AEROLINEA_ID_OID' doesn't exist in table
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.datasource.dbcp2.DelegatingStatement.execute(DelegatingStatement.java:291)
-	at org.datanucleus.store.rdbms.table.AbstractTable.executeDdlStatement(AbstractTable.java:844)
-	at org.datanucleus.store.rdbms.table.TableImpl.createForeignKeys(TableImpl.java:516)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateForeignKeys(TableImpl.java:467)
-	at org.datanucleus.store.rdbms.table.TableImpl.validateConstraints(TableImpl.java:387)
-	at org.datanucleus.store.rdbms.table.ClassTable.validateConstraints(ClassTable.java:3596)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.performTablesValidation(RDBMSStoreManager.java:3502)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager$ClassAdder.run(RDBMSStoreManager.java:2938)
-	at org.datanucleus.store.rdbms.AbstractSchemaTransaction.execute(AbstractSchemaTransaction.java:118)
-	at org.datanucleus.store.rdbms.RDBMSStoreManager.createSchemaForClasses(RDBMSStoreManager.java:3915)
-	at org.datanucleus.store.schema.SchemaTool.createSchemaForClasses(SchemaTool.java:510)
-	at org.datanucleus.store.schema.SchemaTool.main(SchemaTool.java:426)
->>>>>>> branch 'master' of https://github.com/Ibaii99/EasyBooking.git
+06:02:02,570 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+06:02:02,998 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2826f61" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+06:02:03,006 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4bd1f8dd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+06:02:03,010 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@793138bd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+06:02:03,013 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ae67cad" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+06:02:03,072 (main) INFO  [DataNucleus.JDO] - Exception thrown
+El valor 0 no tiene ningun sentido para maxFetchDepth. Usted tiene que poner -1 (no hay limite) o un valor positivo.
+org.datanucleus.exceptions.NucleusUserException: El valor 0 no tiene ningun sentido para maxFetchDepth. Usted tiene que poner -1 (no hay limite) o un valor positivo.
+	at org.datanucleus.FetchPlan.setMaxFetchDepth(FetchPlan.java:502)
+	at org.datanucleus.api.jdo.JDOFetchPlan.setMaxFetchDepth(JDOFetchPlan.java:158)
+	at db.DataAccessObject.getUsuarios(DataAccessObject.java:172)
+	at bin.EasyBookingServer.main(Unknown Source)
+06:03:20,890 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+06:03:21,321 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2826f61" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+06:03:21,329 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4bd1f8dd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+06:03:21,332 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@793138bd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+06:03:21,336 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ae67cad" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+06:03:21,409 (main) INFO  [DataNucleus.JDO] - Exception thrown
+El valor 0 no tiene ningun sentido para maxFetchDepth. Usted tiene que poner -1 (no hay limite) o un valor positivo.
+org.datanucleus.exceptions.NucleusUserException: El valor 0 no tiene ningun sentido para maxFetchDepth. Usted tiene que poner -1 (no hay limite) o un valor positivo.
+	at org.datanucleus.FetchPlan.setMaxFetchDepth(FetchPlan.java:502)
+	at org.datanucleus.api.jdo.JDOFetchPlan.setMaxFetchDepth(JDOFetchPlan.java:158)
+	at db.DataAccessObject.getUsuarios(DataAccessObject.java:172)
+	at bin.EasyBookingServer.main(Unknown Source)
+06:03:40,663 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+06:03:41,088 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2826f61" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+06:03:41,096 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4bd1f8dd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+06:03:41,098 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@793138bd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+06:03:41,102 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ae67cad" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+06:03:41,181 (main) INFO  [DataNucleus.JDO] - Exception thrown
+El valor 0 no tiene ningun sentido para maxFetchDepth. Usted tiene que poner -1 (no hay limite) o un valor positivo.
+org.datanucleus.exceptions.NucleusUserException: El valor 0 no tiene ningun sentido para maxFetchDepth. Usted tiene que poner -1 (no hay limite) o un valor positivo.
+	at org.datanucleus.FetchPlan.setMaxFetchDepth(FetchPlan.java:502)
+	at org.datanucleus.api.jdo.JDOFetchPlan.setMaxFetchDepth(JDOFetchPlan.java:158)
+	at db.DataAccessObject.getUsuarios(DataAccessObject.java:172)
+	at bin.EasyBookingServer.main(Unknown Source)
+06:04:09,026 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+06:04:09,471 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2826f61" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+06:04:09,479 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4bd1f8dd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+06:04:09,482 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@793138bd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+06:04:09,485 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ae67cad" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+06:04:09,557 (main) INFO  [DataNucleus.JDO] - Exception thrown
+El valor 0 no tiene ningun sentido para maxFetchDepth. Usted tiene que poner -1 (no hay limite) o un valor positivo.
+org.datanucleus.exceptions.NucleusUserException: El valor 0 no tiene ningun sentido para maxFetchDepth. Usted tiene que poner -1 (no hay limite) o un valor positivo.
+	at org.datanucleus.FetchPlan.setMaxFetchDepth(FetchPlan.java:502)
+	at org.datanucleus.api.jdo.JDOFetchPlan.setMaxFetchDepth(JDOFetchPlan.java:158)
+	at db.DataAccessObject.getUsuarios(DataAccessObject.java:172)
+	at bin.EasyBookingServer.main(Unknown Source)
+06:06:32,902 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+06:06:33,423 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2826f61" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+06:06:33,431 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4bd1f8dd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+06:06:33,433 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@793138bd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+06:06:33,436 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ae67cad" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+06:07:24,938 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+06:07:25,361 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2826f61" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+06:07:25,370 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4bd1f8dd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+06:07:25,373 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@793138bd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+06:07:25,376 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ae67cad" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+06:08:48,521 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+06:08:48,989 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2826f61" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+06:08:48,998 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4bd1f8dd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+06:08:49,002 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@793138bd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+06:08:49,005 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ae67cad" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+06:11:51,033 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+06:11:51,448 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2826f61" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+06:11:51,457 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4bd1f8dd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+06:11:51,461 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@793138bd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+06:11:51,464 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ae67cad" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+06:12:25,231 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+06:12:25,677 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2826f61" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+06:12:25,689 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4bd1f8dd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+06:12:25,693 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@793138bd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+06:12:25,698 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ae67cad" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+06:13:18,669 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+06:13:19,115 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2826f61" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+06:13:19,125 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4bd1f8dd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+06:13:19,129 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@793138bd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+06:13:19,132 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ae67cad" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+06:13:55,607 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+06:13:56,174 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2826f61" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+06:13:56,184 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4bd1f8dd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+06:13:56,188 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@793138bd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+06:13:56,191 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ae67cad" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+06:13:56,264 (main) WARN  [DataNucleus.Query] - Candidate class for JDOQL single-string query (easybooking.usuario;) could not be resolved
+a clase easybooking.usuario; no esta en el CLASSPATH!. Por favor compruebe la especificaci髇 y el CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: a clase easybooking.usuario; no esta en el CLASSPATH!. Por favor compruebe la especificaci髇 y el CLASSPATH.
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:219)
+	at org.datanucleus.util.Imports.resolveClassDeclaration(Imports.java:203)
+	at org.datanucleus.store.query.AbstractJDOQLQuery.<init>(AbstractJDOQLQuery.java:129)
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.<init>(JDOQLQuery.java:159)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newQuery(RDBMSStoreManager.java:1192)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.newQuery(JDOPersistenceManager.java:1299)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.newQuery(JDOPersistenceManager.java:1246)
+	at db.DataAccessObject.getCantUsuarios(DataAccessObject.java:211)
+	at db.DataAccessObject.getUsuarios(DataAccessObject.java:171)
+	at bin.EasyBookingServer.main(EasyBookingServer.java:16)
+06:13:56,270 (main) INFO  [DataNucleus.JDO] - Exception thrown
+Method/Identifier expected at character 1 in "*"
+org.datanucleus.store.query.QueryCompilerSyntaxException: Method/Identifier expected at character 1 in "*"
+	at org.datanucleus.query.compiler.JDOQLParser.processPrimary(JDOQLParser.java:804)
+	at org.datanucleus.query.compiler.JDOQLParser.processUnaryExpression(JDOQLParser.java:645)
+	at org.datanucleus.query.compiler.JDOQLParser.processMultiplicativeExpression(JDOQLParser.java:571)
+	at org.datanucleus.query.compiler.JDOQLParser.processAdditiveExpression(JDOQLParser.java:542)
+	at org.datanucleus.query.compiler.JDOQLParser.processRelationalExpression(JDOQLParser.java:456)
+	at org.datanucleus.query.compiler.JDOQLParser.processAndExpression(JDOQLParser.java:439)
+	at org.datanucleus.query.compiler.JDOQLParser.processExclusiveOrExpression(JDOQLParser.java:425)
+	at org.datanucleus.query.compiler.JDOQLParser.processInclusiveOrExpression(JDOQLParser.java:411)
+	at org.datanucleus.query.compiler.JDOQLParser.processConditionalAndExpression(JDOQLParser.java:397)
+	at org.datanucleus.query.compiler.JDOQLParser.processConditionalOrExpression(JDOQLParser.java:378)
+	at org.datanucleus.query.compiler.JDOQLParser.processExpression(JDOQLParser.java:367)
+	at org.datanucleus.query.compiler.JDOQLParser.parseResult(JDOQLParser.java:210)
+	at org.datanucleus.query.compiler.JavaQueryCompiler.compileResult(JavaQueryCompiler.java:752)
+	at org.datanucleus.query.compiler.JDOQLCompiler.compile(JDOQLCompiler.java:106)
+	at org.datanucleus.store.query.AbstractJDOQLQuery.compileGeneric(AbstractJDOQLQuery.java:379)
+	at org.datanucleus.store.query.AbstractJDOQLQuery.compileInternal(AbstractJDOQLQuery.java:437)
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.compileInternal(JDOQLQuery.java:263)
+	at org.datanucleus.store.query.Query.executeQuery(Query.java:1934)
+	at org.datanucleus.store.query.Query.executeWithArray(Query.java:1862)
+	at org.datanucleus.store.query.Query.execute(Query.java:1844)
+	at org.datanucleus.api.jdo.JDOQuery.executeInternal(JDOQuery.java:439)
+	at org.datanucleus.api.jdo.JDOQuery.execute(JDOQuery.java:263)
+	at db.DataAccessObject.getCantUsuarios(DataAccessObject.java:214)
+	at db.DataAccessObject.getUsuarios(DataAccessObject.java:171)
+	at bin.EasyBookingServer.main(EasyBookingServer.java:16)
+06:14:11,179 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+06:14:11,682 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2826f61" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+06:14:11,692 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4bd1f8dd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+06:14:11,695 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@793138bd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+06:14:11,698 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ae67cad" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+06:14:11,767 (main) WARN  [DataNucleus.Query] - Candidate class for JDOQL single-string query (easybooking.usuario;) could not be resolved
+a clase easybooking.usuario; no esta en el CLASSPATH!. Por favor compruebe la especificaci髇 y el CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: a clase easybooking.usuario; no esta en el CLASSPATH!. Por favor compruebe la especificaci髇 y el CLASSPATH.
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:219)
+	at org.datanucleus.util.Imports.resolveClassDeclaration(Imports.java:203)
+	at org.datanucleus.store.query.AbstractJDOQLQuery.<init>(AbstractJDOQLQuery.java:129)
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.<init>(JDOQLQuery.java:159)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newQuery(RDBMSStoreManager.java:1192)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.newQuery(JDOPersistenceManager.java:1299)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.newQuery(JDOPersistenceManager.java:1246)
+	at db.DataAccessObject.getCantUsuarios(DataAccessObject.java:211)
+	at db.DataAccessObject.getUsuarios(DataAccessObject.java:171)
+	at bin.EasyBookingServer.main(EasyBookingServer.java:16)
+06:14:11,773 (main) INFO  [DataNucleus.JDO] - Exception thrown
+Method/Identifier expected at character 1 in "*"
+org.datanucleus.store.query.QueryCompilerSyntaxException: Method/Identifier expected at character 1 in "*"
+	at org.datanucleus.query.compiler.JDOQLParser.processPrimary(JDOQLParser.java:804)
+	at org.datanucleus.query.compiler.JDOQLParser.processUnaryExpression(JDOQLParser.java:645)
+	at org.datanucleus.query.compiler.JDOQLParser.processMultiplicativeExpression(JDOQLParser.java:571)
+	at org.datanucleus.query.compiler.JDOQLParser.processAdditiveExpression(JDOQLParser.java:542)
+	at org.datanucleus.query.compiler.JDOQLParser.processRelationalExpression(JDOQLParser.java:456)
+	at org.datanucleus.query.compiler.JDOQLParser.processAndExpression(JDOQLParser.java:439)
+	at org.datanucleus.query.compiler.JDOQLParser.processExclusiveOrExpression(JDOQLParser.java:425)
+	at org.datanucleus.query.compiler.JDOQLParser.processInclusiveOrExpression(JDOQLParser.java:411)
+	at org.datanucleus.query.compiler.JDOQLParser.processConditionalAndExpression(JDOQLParser.java:397)
+	at org.datanucleus.query.compiler.JDOQLParser.processConditionalOrExpression(JDOQLParser.java:378)
+	at org.datanucleus.query.compiler.JDOQLParser.processExpression(JDOQLParser.java:367)
+	at org.datanucleus.query.compiler.JDOQLParser.parseResult(JDOQLParser.java:210)
+	at org.datanucleus.query.compiler.JavaQueryCompiler.compileResult(JavaQueryCompiler.java:752)
+	at org.datanucleus.query.compiler.JDOQLCompiler.compile(JDOQLCompiler.java:106)
+	at org.datanucleus.store.query.AbstractJDOQLQuery.compileGeneric(AbstractJDOQLQuery.java:379)
+	at org.datanucleus.store.query.AbstractJDOQLQuery.compileInternal(AbstractJDOQLQuery.java:437)
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.compileInternal(JDOQLQuery.java:263)
+	at org.datanucleus.store.query.Query.executeQuery(Query.java:1934)
+	at org.datanucleus.store.query.Query.executeWithArray(Query.java:1862)
+	at org.datanucleus.store.query.Query.execute(Query.java:1844)
+	at org.datanucleus.api.jdo.JDOQuery.executeInternal(JDOQuery.java:439)
+	at org.datanucleus.api.jdo.JDOQuery.execute(JDOQuery.java:263)
+	at db.DataAccessObject.getCantUsuarios(DataAccessObject.java:214)
+	at db.DataAccessObject.getUsuarios(DataAccessObject.java:171)
+	at bin.EasyBookingServer.main(EasyBookingServer.java:16)
+06:15:51,084 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+06:15:51,589 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2826f61" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+06:15:51,601 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4bd1f8dd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+06:15:51,606 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@793138bd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+06:15:51,610 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ae67cad" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+06:15:51,684 (main) WARN  [DataNucleus.Query] - Candidate class for JDOQL single-string query (easybooking.usuario;) could not be resolved
+a clase easybooking.usuario; no esta en el CLASSPATH!. Por favor compruebe la especificaci髇 y el CLASSPATH.
+org.datanucleus.exceptions.ClassNotResolvedException: a clase easybooking.usuario; no esta en el CLASSPATH!. Por favor compruebe la especificaci髇 y el CLASSPATH.
+	at org.datanucleus.ClassLoaderResolverImpl.classForName(ClassLoaderResolverImpl.java:219)
+	at org.datanucleus.util.Imports.resolveClassDeclaration(Imports.java:203)
+	at org.datanucleus.store.query.AbstractJDOQLQuery.<init>(AbstractJDOQLQuery.java:129)
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.<init>(JDOQLQuery.java:159)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newQuery(RDBMSStoreManager.java:1192)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.newQuery(JDOPersistenceManager.java:1299)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.newQuery(JDOPersistenceManager.java:1246)
+	at db.DataAccessObject.getCantUsuarios(DataAccessObject.java:211)
+	at db.DataAccessObject.getUsuarios(DataAccessObject.java:171)
+	at bin.EasyBookingServer.main(EasyBookingServer.java:16)
+06:15:51,692 (main) INFO  [DataNucleus.JDO] - Exception thrown
+La clase de candidato "easybooking.usuario;" no existe!
+org.datanucleus.exceptions.NucleusUserException: La clase de candidato "easybooking.usuario;" no existe!
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.compileInternal(JDOQLQuery.java:277)
+	at org.datanucleus.store.query.Query.executeQuery(Query.java:1934)
+	at org.datanucleus.store.query.Query.executeWithArray(Query.java:1862)
+	at org.datanucleus.store.query.Query.execute(Query.java:1844)
+	at org.datanucleus.api.jdo.JDOQuery.executeInternal(JDOQuery.java:439)
+	at org.datanucleus.api.jdo.JDOQuery.execute(JDOQuery.java:263)
+	at db.DataAccessObject.getCantUsuarios(DataAccessObject.java:214)
+	at db.DataAccessObject.getUsuarios(DataAccessObject.java:171)
+	at bin.EasyBookingServer.main(EasyBookingServer.java:16)
+06:16:07,830 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+06:16:08,296 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2826f61" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+06:16:08,305 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4bd1f8dd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+06:16:08,308 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@793138bd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+06:16:08,312 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ae67cad" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+06:16:08,377 (main) WARN  [DataNucleus.Query] - Candidate class for JDOQL single-string query (usuario;) could not be resolved
+usuario;
+org.datanucleus.exceptions.ClassNotResolvedException: usuario;
+	at org.datanucleus.util.Imports.resolveClassDeclaration(Imports.java:192)
+	at org.datanucleus.store.query.AbstractJDOQLQuery.<init>(AbstractJDOQLQuery.java:129)
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.<init>(JDOQLQuery.java:159)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newQuery(RDBMSStoreManager.java:1192)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.newQuery(JDOPersistenceManager.java:1299)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.newQuery(JDOPersistenceManager.java:1246)
+	at db.DataAccessObject.getCantUsuarios(DataAccessObject.java:211)
+	at db.DataAccessObject.getUsuarios(DataAccessObject.java:171)
+	at bin.EasyBookingServer.main(EasyBookingServer.java:16)
+06:16:08,385 (main) INFO  [DataNucleus.JDO] - Exception thrown
+La clase de candidato "usuario;" no existe!
+org.datanucleus.exceptions.NucleusUserException: La clase de candidato "usuario;" no existe!
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.compileInternal(JDOQLQuery.java:277)
+	at org.datanucleus.store.query.Query.executeQuery(Query.java:1934)
+	at org.datanucleus.store.query.Query.executeWithArray(Query.java:1862)
+	at org.datanucleus.store.query.Query.execute(Query.java:1844)
+	at org.datanucleus.api.jdo.JDOQuery.executeInternal(JDOQuery.java:439)
+	at org.datanucleus.api.jdo.JDOQuery.execute(JDOQuery.java:263)
+	at db.DataAccessObject.getCantUsuarios(DataAccessObject.java:214)
+	at db.DataAccessObject.getUsuarios(DataAccessObject.java:171)
+	at bin.EasyBookingServer.main(EasyBookingServer.java:16)
+06:16:29,418 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+06:16:29,853 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2826f61" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+06:16:29,862 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4bd1f8dd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+06:16:29,865 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@793138bd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+06:16:29,868 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ae67cad" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+06:16:29,940 (main) WARN  [DataNucleus.Query] - Candidate class for JDOQL single-string query (usuario;) could not be resolved
+usuario;
+org.datanucleus.exceptions.ClassNotResolvedException: usuario;
+	at org.datanucleus.util.Imports.resolveClassDeclaration(Imports.java:192)
+	at org.datanucleus.store.query.AbstractJDOQLQuery.<init>(AbstractJDOQLQuery.java:129)
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.<init>(JDOQLQuery.java:159)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newQuery(RDBMSStoreManager.java:1192)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.newQuery(JDOPersistenceManager.java:1299)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.newQuery(JDOPersistenceManager.java:1246)
+	at db.DataAccessObject.getCantUsuarios(DataAccessObject.java:211)
+	at db.DataAccessObject.getUsuarios(DataAccessObject.java:171)
+	at bin.EasyBookingServer.main(EasyBookingServer.java:16)
+06:16:29,948 (main) INFO  [DataNucleus.JDO] - Exception thrown
+La clase de candidato "usuario;" no existe!
+org.datanucleus.exceptions.NucleusUserException: La clase de candidato "usuario;" no existe!
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.compileInternal(JDOQLQuery.java:277)
+	at org.datanucleus.store.query.Query.executeQuery(Query.java:1934)
+	at org.datanucleus.store.query.Query.executeWithArray(Query.java:1862)
+	at org.datanucleus.store.query.Query.execute(Query.java:1844)
+	at org.datanucleus.api.jdo.JDOQuery.executeInternal(JDOQuery.java:439)
+	at org.datanucleus.api.jdo.JDOQuery.execute(JDOQuery.java:263)
+	at db.DataAccessObject.getCantUsuarios(DataAccessObject.java:214)
+	at db.DataAccessObject.getUsuarios(DataAccessObject.java:171)
+	at bin.EasyBookingServer.main(EasyBookingServer.java:16)
+06:16:42,278 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+06:16:42,711 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2826f61" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+06:16:42,721 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4bd1f8dd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+06:16:42,725 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@793138bd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+06:16:42,729 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ae67cad" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+06:16:42,802 (main) WARN  [DataNucleus.Query] - Candidate class for JDOQL single-string query (usuario;) could not be resolved
+usuario;
+org.datanucleus.exceptions.ClassNotResolvedException: usuario;
+	at org.datanucleus.util.Imports.resolveClassDeclaration(Imports.java:192)
+	at org.datanucleus.store.query.AbstractJDOQLQuery.<init>(AbstractJDOQLQuery.java:129)
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.<init>(JDOQLQuery.java:159)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newQuery(RDBMSStoreManager.java:1192)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.newQuery(JDOPersistenceManager.java:1299)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.newQuery(JDOPersistenceManager.java:1246)
+	at db.DataAccessObject.getCantUsuarios(DataAccessObject.java:211)
+	at db.DataAccessObject.getUsuarios(DataAccessObject.java:171)
+	at bin.EasyBookingServer.main(EasyBookingServer.java:16)
+06:16:42,811 (main) INFO  [DataNucleus.JDO] - Exception thrown
+La clase de candidato "usuario;" no existe!
+org.datanucleus.exceptions.NucleusUserException: La clase de candidato "usuario;" no existe!
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.compileInternal(JDOQLQuery.java:277)
+	at org.datanucleus.store.query.Query.executeQuery(Query.java:1934)
+	at org.datanucleus.store.query.Query.executeWithArray(Query.java:1862)
+	at org.datanucleus.store.query.Query.execute(Query.java:1844)
+	at org.datanucleus.api.jdo.JDOQuery.executeInternal(JDOQuery.java:439)
+	at org.datanucleus.api.jdo.JDOQuery.execute(JDOQuery.java:263)
+	at db.DataAccessObject.getCantUsuarios(DataAccessObject.java:214)
+	at db.DataAccessObject.getUsuarios(DataAccessObject.java:171)
+	at bin.EasyBookingServer.main(EasyBookingServer.java:16)
+06:17:04,537 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+06:17:05,033 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2826f61" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+06:17:05,047 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4bd1f8dd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+06:17:05,052 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@793138bd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+06:17:05,056 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ae67cad" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+06:17:05,196 (main) WARN  [DataNucleus.Query] - Candidate class for JDOQL single-string query (usuario) could not be resolved
+usuario
+org.datanucleus.exceptions.ClassNotResolvedException: usuario
+	at org.datanucleus.util.Imports.resolveClassDeclaration(Imports.java:192)
+	at org.datanucleus.store.query.AbstractJDOQLQuery.<init>(AbstractJDOQLQuery.java:129)
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.<init>(JDOQLQuery.java:159)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newQuery(RDBMSStoreManager.java:1192)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.newQuery(JDOPersistenceManager.java:1299)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.newQuery(JDOPersistenceManager.java:1246)
+	at db.DataAccessObject.getCantUsuarios(DataAccessObject.java:211)
+	at db.DataAccessObject.getUsuarios(DataAccessObject.java:171)
+	at bin.EasyBookingServer.main(EasyBookingServer.java:16)
+06:17:05,203 (main) INFO  [DataNucleus.JDO] - Exception thrown
+La clase de candidato "usuario" no existe!
+org.datanucleus.exceptions.NucleusUserException: La clase de candidato "usuario" no existe!
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.compileInternal(JDOQLQuery.java:277)
+	at org.datanucleus.store.query.Query.executeQuery(Query.java:1934)
+	at org.datanucleus.store.query.Query.executeWithArray(Query.java:1862)
+	at org.datanucleus.store.query.Query.execute(Query.java:1844)
+	at org.datanucleus.api.jdo.JDOQuery.executeInternal(JDOQuery.java:439)
+	at org.datanucleus.api.jdo.JDOQuery.execute(JDOQuery.java:263)
+	at db.DataAccessObject.getCantUsuarios(DataAccessObject.java:214)
+	at db.DataAccessObject.getUsuarios(DataAccessObject.java:171)
+	at bin.EasyBookingServer.main(EasyBookingServer.java:16)
+06:17:15,607 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+06:17:16,377 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2826f61" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+06:17:16,385 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4bd1f8dd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+06:17:16,390 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@793138bd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+06:17:16,393 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ae67cad" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+06:17:44,743 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+06:17:45,244 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2826f61" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+06:17:45,254 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4bd1f8dd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+06:17:45,257 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@793138bd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+06:17:45,260 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ae67cad" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+06:17:45,336 (main) WARN  [DataNucleus.Query] - Candidate class for JDOQL single-string query (usuario;) could not be resolved
+usuario;
+org.datanucleus.exceptions.ClassNotResolvedException: usuario;
+	at org.datanucleus.util.Imports.resolveClassDeclaration(Imports.java:192)
+	at org.datanucleus.store.query.AbstractJDOQLQuery.<init>(AbstractJDOQLQuery.java:129)
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.<init>(JDOQLQuery.java:159)
+	at org.datanucleus.store.rdbms.RDBMSStoreManager.newQuery(RDBMSStoreManager.java:1192)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.newQuery(JDOPersistenceManager.java:1299)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.newQuery(JDOPersistenceManager.java:1246)
+	at db.DataAccessObject.getCantUsuarios(DataAccessObject.java:211)
+	at db.DataAccessObject.getUsuarios(DataAccessObject.java:171)
+	at bin.EasyBookingServer.main(EasyBookingServer.java:16)
+06:17:45,342 (main) INFO  [DataNucleus.JDO] - Exception thrown
+Method/Identifier expected at character 1 in "*"
+org.datanucleus.store.query.QueryCompilerSyntaxException: Method/Identifier expected at character 1 in "*"
+	at org.datanucleus.query.compiler.JDOQLParser.processPrimary(JDOQLParser.java:804)
+	at org.datanucleus.query.compiler.JDOQLParser.processUnaryExpression(JDOQLParser.java:645)
+	at org.datanucleus.query.compiler.JDOQLParser.processMultiplicativeExpression(JDOQLParser.java:571)
+	at org.datanucleus.query.compiler.JDOQLParser.processAdditiveExpression(JDOQLParser.java:542)
+	at org.datanucleus.query.compiler.JDOQLParser.processRelationalExpression(JDOQLParser.java:456)
+	at org.datanucleus.query.compiler.JDOQLParser.processAndExpression(JDOQLParser.java:439)
+	at org.datanucleus.query.compiler.JDOQLParser.processExclusiveOrExpression(JDOQLParser.java:425)
+	at org.datanucleus.query.compiler.JDOQLParser.processInclusiveOrExpression(JDOQLParser.java:411)
+	at org.datanucleus.query.compiler.JDOQLParser.processConditionalAndExpression(JDOQLParser.java:397)
+	at org.datanucleus.query.compiler.JDOQLParser.processConditionalOrExpression(JDOQLParser.java:378)
+	at org.datanucleus.query.compiler.JDOQLParser.processExpression(JDOQLParser.java:367)
+	at org.datanucleus.query.compiler.JDOQLParser.parseResult(JDOQLParser.java:210)
+	at org.datanucleus.query.compiler.JavaQueryCompiler.compileResult(JavaQueryCompiler.java:752)
+	at org.datanucleus.query.compiler.JDOQLCompiler.compile(JDOQLCompiler.java:106)
+	at org.datanucleus.store.query.AbstractJDOQLQuery.compileGeneric(AbstractJDOQLQuery.java:379)
+	at org.datanucleus.store.query.AbstractJDOQLQuery.compileInternal(AbstractJDOQLQuery.java:437)
+	at org.datanucleus.store.rdbms.query.JDOQLQuery.compileInternal(JDOQLQuery.java:263)
+	at org.datanucleus.store.query.Query.executeQuery(Query.java:1934)
+	at org.datanucleus.store.query.Query.executeWithArray(Query.java:1862)
+	at org.datanucleus.store.query.Query.execute(Query.java:1844)
+	at org.datanucleus.api.jdo.JDOQuery.executeInternal(JDOQuery.java:439)
+	at org.datanucleus.api.jdo.JDOQuery.execute(JDOQuery.java:263)
+	at db.DataAccessObject.getCantUsuarios(DataAccessObject.java:214)
+	at db.DataAccessObject.getUsuarios(DataAccessObject.java:171)
+	at bin.EasyBookingServer.main(EasyBookingServer.java:16)
+06:18:26,642 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+06:18:27,105 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2826f61" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+06:18:27,114 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4bd1f8dd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+06:18:27,117 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@793138bd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+06:18:27,120 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ae67cad" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+06:19:33,849 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+06:19:34,460 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2826f61" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+06:19:34,474 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4bd1f8dd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+06:19:34,479 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@793138bd" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+06:19:34,485 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ae67cad" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`PASSWORD`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
