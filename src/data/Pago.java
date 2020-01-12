@@ -21,10 +21,20 @@ public class Pago implements Serializable{
 	@Persistent(defaultFetchGroup = "true")
 	private Reserva reserva;
 	
+	
 	//Constructor de pago por defecto
 	public Pago() {
 	}
 
+	public void testToString() {
+		System.out.println(tipo);
+		System.out.println(precio);
+		System.out.println(tarjetaNumero);
+		System.out.println(tarjetaTipo);
+		System.out.println(tarjetaFechaCaducidad);
+		System.out.println(paypalEmail);
+		
+	}
 	public String getTipo() {
 		return tipo;
 	}

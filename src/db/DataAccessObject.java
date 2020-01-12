@@ -46,10 +46,13 @@ public class DataAccessObject {
 		Usuario u1 = new Usuario();
 		u1.setNombre("ibai");u1.setEmail("ibai.guillen@opendeusto.es");
 		u1.setEdad(20);u1.setAeropuerto_preferido("BIO");
+		u1.setPassword("asdasddasd"); u1.setTipoLogin("Google");
 		
+		 
 		Usuario u2 = new Usuario();
 		u2.setNombre("Jon");u2.setEmail("jjj@jojo.com");
 		u2.setEdad(19);u1.setAeropuerto_preferido("BIO");
+		u2.setPassword("asdasddasd"); u2.setTipoLogin("Google");
 		
 		Usuario u3 = new Usuario();
 		u3.setNombre("Gorka");u3.setEmail("gor@do.com");
@@ -63,29 +66,59 @@ public class DataAccessObject {
 		r1.setTipoPago("tarjeta");
 		r1.setNumeroAsientos(2);
 		r1.setFecha("8-11-2019");
+		r1.setUsuario(u1);
 		
 		Reserva r2 = new Reserva();
 		r2.setTipoPago("paypal");
 		r2.setNumeroAsientos(3);
 		r2.setFecha("7-11-2019");
-	
+		r2.setUsuario(u2);
+		
+		
 		Pago p1 = new Pago();
 		p1.setPaypalEmail("ibai.guillen@opendeusto.es");
 		p1.setPrecio(149.98);
+
+		p1.setTipo("Paypal");
 		
 		Pago p2 = new Pago();
 		p2.setTarjetaNumero("VISA");
 		p2.setTarjetaNumero("0000 1111 2222 3333");
 		p2.setTarjetaFechaCaducidad("06/22");
 		p2.setPrecio(231.97);
+		p2.setTipo("Tarjeta");
+
 		
-		r1.setPago(p1);
-		r2.setPago(p2);
+		ArrayList<Reserva> vuelres = new ArrayList<Reserva>();
+		vuelres.add(r1);
+		vuelres.add(r2);
+		
+		Aerolinea a1 = new Aerolinea();
+		a1.setCodAerolinea("IBE");
+		a1.setNombre("Iberia");
+		
+		Vuelo v1 = new Vuelo();
+		v1.setAeropuertoDestino("Madrid");
+		v1.setAeropuertoOrigen("Loiu");
+		v1.setFecha("15/1/2020");
+		v1.setNumAsientos(500);
+		v1.setReservas(vuelres);
+		v1.setAerolinea(a1);
+		
+		r1.setVuelo(v1);
+		r2.setVuelo(v1);
+		r1.setPago(p1); 
+		r2.setPago(p2); 
+		u1.addReserva(r1);
+		u2.addReserva(r2);
+		p2.setReserva(r1);
+		p1.setReserva(r2);
+
+		
+		
 		
 		u1.addReserva(r1);
 		u2.addReserva(r2);
-		u3.addReserva(null);
-		u4.addReserva(null);
 		
 		store(u1);
 		store(u2);
@@ -97,6 +130,9 @@ public class DataAccessObject {
 		
 		store(p1);
 		store(p2);
+		
+		store(a1);
+		store(v1);
 		
 	}
 	
@@ -196,26 +232,44 @@ public class DataAccessObject {
 	}
 	
 	public List<Reserva> getReservas(){
-		List <Reserva> usr = new ArrayList<Reserva>();
+		ArrayList <Reserva> res = new ArrayList<Reserva>();
 		PersistenceManager pm = pmf.getPersistenceManager();
 		Transaction tx = pm.currentTransaction();
 		try {
-			System.out.println("   * Retrieving an Extent for Usuarios.");
+			System.out.println("   * Retrieving an Extent for Reservas.");
 			tx.begin();
 			Extent<Reserva> extent = pm.getExtent(Reserva.class, true);
+			
 			for (Reserva product : extent) {
-				usr.add(product);
+				if(product != null) {
+					Reserva reserva = product;
+					Usuario u = product.getUsuario();
+					Pago p = product.getPago();
+					Vuelo v = product.getVuelo();
+					
+					reserva.setPago(p);
+					reserva.setVuelo(v);
+					reserva.setUsuario(u);
+					//TODO
+//					reserva.testToString();
+//					reserva.getUsuario().testToString();
+//					reserva.getPago().testToString();
+//					reserva.getVuelo().testToString();
+//					System.out.println("------------------");
+					
+					res.add(reserva);
+				}
 			}
 			tx.commit();
 		} catch (Exception ex) {
-			System.out.println("   $ Error retrieving an usuario: " + ex.getMessage());
+			System.out.println("   $ Error retrieving an Reservas: " + ex.getMessage());
 		} finally {
 			if (tx != null && tx.isActive()) {
 				tx.rollback();
 			}
 			pm.close();
 		}
-		return usr;
+		return res;
 	}
 	
 	

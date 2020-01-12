@@ -18,8 +18,17 @@ public class Vuelo implements Serializable{
 	
 	@Persistent(mappedBy = "vuelo")
 	private List<Reserva> reservas = new ArrayList<>();
-		
+	
+	
 	public Vuelo() {
+	}
+	
+	public void testToString() {
+		System.out.println(aeropuertoDestino);
+		System.out.println(aeropuertoOrigen);
+		System.out.println(fecha);
+		System.out.println(numAsientos);
+		System.out.println(aerolinea.getNombre());
 	}
 	
 	public String getFecha() {

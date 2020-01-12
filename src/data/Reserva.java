@@ -24,7 +24,11 @@ public class Reserva implements Serializable{
 	
 	public Reserva() {	
 	}
-
+	public void testToString() {
+		System.out.println(tipoPago);
+		System.out.println(numeroAsientos);
+		System.out.println(fecha);
+		}
 	public String getTipoPago() {
 		return tipoPago;
 	}

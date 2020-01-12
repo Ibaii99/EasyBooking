@@ -2,6 +2,8 @@ package data.dto;
 
 import java.io.Serializable;
 
+import data.Reserva;
+
 public class UsuarioDTO implements Serializable{
 
 	private static final long serialVersionUID = 1L;
@@ -12,6 +14,12 @@ public class UsuarioDTO implements Serializable{
 	public UsuarioDTO() {
 		// TODO Auto-generated constructor stub
 	}
+	
+	public void testToString() {
+		System.out.println(nombre);
+		System.out.println(email);
+	}
+	
 	public String getNombre() {
 		return nombre;
 	}

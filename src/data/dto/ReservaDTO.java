@@ -12,38 +12,75 @@ public class ReservaDTO implements Serializable{
 	
 	private String tipoPago;
 	private int numeroAsientos;
-	private String fecha; // Habria que mirar la clase Date de java
-	private UsuarioDTO usuario;
-	private VueloDTO vuelo;
-	private PagoDTO pago;
+	private String fecha; 
+	private String email;
+	private double precio;
+	private String paypalEmail;
+	private String tarjetaNumero;
 	
 	public ReservaDTO() {
 		// TODO Auto-generated constructor stub
 	}
+	public void testToString() {
+		System.out.println(tipoPago);
+		System.out.println(numeroAsientos);
+		System.out.println(fecha);
+		System.out.println(email);
+		System.out.println(precio);
+		System.out.println(paypalEmail);
+		System.out.println(tarjetaNumero);
+	}
+
 	
-	public PagoDTO getPago() {
-		return pago;
+	public double getPrecio() {
+		return precio;
 	}
 
-	public void setPago(PagoDTO pago) {
-		this.pago = pago;
+
+
+	public void setPrecio(double precio) {
+		this.precio = precio;
 	}
 
-	public UsuarioDTO getUsuario() {
-		return usuario;
+
+
+	public String getPaypalEmail() {
+		return paypalEmail;
 	}
 
-	public void setUsuario(UsuarioDTO usuario) {
-		this.usuario = usuario;
+
+
+	public void setPaypalEmail(String paypalEmail) {
+		this.paypalEmail = paypalEmail;
 	}
 
-	public VueloDTO getVuelo() {
-		return vuelo;
+
+
+	public String getTarjetaNumero() {
+		return tarjetaNumero;
 	}
 
-	public void setVuelo(VueloDTO vuelo) {
-		this.vuelo = vuelo;
+
+
+	public void setTarjetaNumero(String tarjetaNumero) {
+		this.tarjetaNumero = tarjetaNumero;
 	}
+
+
+
+
+
+	public String getEmail() {
+		return email;
+	}
+
+
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+
 
 	public String getTipoPago() {
 		return tipoPago;

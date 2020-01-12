@@ -24,10 +24,33 @@ public class Usuario implements Serializable{
 	
 	@Persistent(mappedBy = "usuario")
 	@Join
-	private List<Reserva> reservas = new ArrayList<>();
+	private List<Reserva> reservas;
 	
-	
-	
+	public void reservasToString() {
+		if(reservas.size()!=0) {
+			System.out.println("Reservas totales del usuario:" + reservas.size());
+			for(Reserva r : reservas) {
+				r.testToString();
+			}
+		}
+	}
+	public void testToString() {
+		System.out.println(nombre);
+		System.out.println(email);
+		System.out.println(edad);
+		System.out.println(tipoLogin);
+		System.out.println(aeropuertoPreferido);
+		System.out.println(password);
+
+	}
+	public void setAeropuertoPreferido(String aeropuertoPreferido) {
+		this.aeropuertoPreferido = aeropuertoPreferido;
+	}
+
+	public void setReservas(List<Reserva> reservas) {
+		this.reservas = reservas;
+	}
+
 	public String getPassword() {
 		return password;
 	}
@@ -37,6 +60,7 @@ public class Usuario implements Serializable{
 	}
 
 	public Usuario() {
+		reservas = new ArrayList<>();
 	}
 
 	public String getNombre() {
