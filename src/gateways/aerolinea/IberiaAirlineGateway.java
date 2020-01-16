@@ -9,7 +9,10 @@ import data.dto.VueloDTO;
 import gateways.IGatewayAerolinea;
 
 public class IberiaAirlineGateway implements IGatewayAerolinea {
-
+	static String IP = "127.0.0.1";
+	static String Puerto = "";
+	static String Service = "";
+	
 	@Override
 	public ArrayList<VueloDTO> getAllVuelos() {
 		// TODO Auto-generated method stub

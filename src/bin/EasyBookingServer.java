@@ -2,17 +2,25 @@ package bin;
 
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 import data.Reserva;
 import data.Usuario;
 import data.dto.DTOAssembler;
 import data.dto.UsuarioDTO;
+import data.dto.VueloDTO;
 import db.DataAccessObject;
+import services.AerolineaService;
+import services.AutentificationService;
+import services.PagoService;
 
 
 public class EasyBookingServer {
-
+	AerolineaService aerolineas = new AerolineaService();
+	AutentificationService autentification = new AutentificationService();
+	PagoService pago = new PagoService();
+	
 	public static void main(String[] args) {
 		System.out.println("inicio");
 		DataAccessObject db = new DataAccessObject();
@@ -66,4 +74,39 @@ public class EasyBookingServer {
 		
 		db.closeConection();
 	}
+	
+	public boolean reservarYpagar() {
+		
+		return false;
+	}
+	
+	public boolean login() {
+		return false;
+	}
+	
+	public boolean register() {
+		return false;
+	}
+	
+	public List<VueloDTO> buscarVuelo() {
+		return null;
+	}
+	
+	public ArrayList<VueloDTO> getAllVuelos(){
+			
+	}
+	
+	public VueloDTO buscarVuelo(String aeropuertoDestino, String aeropuertoOrigen, String fechaIda, String fechaVuelta, int asientos) {
+		
+	}
+	
+	public ArrayList<VueloDTO> buscarVuelosDesdeOrigen(String aeropuertoOrigen, String fecha, int asientos){
+		
+	}
+	
+	
+	public boolean reservarVuelo(VueloDTO vuelo, String nombre) {
+		
+	}
+
 }

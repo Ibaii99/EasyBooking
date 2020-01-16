@@ -17,4 +17,13 @@ public class AutentificationService {
 	}
 	
 	
+	public void registrar(String email, String password) {
+		autorizadores.get(0).registrar(email, password);
+		
+	}
+
+	
+	public boolean login(String email, String password) {
+		return autorizadores.get(0).login(email, password);
+	}
 }
