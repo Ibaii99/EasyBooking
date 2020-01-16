@@ -5,9 +5,12 @@ package bin;
 import java.util.ArrayList;
 import java.util.List;
 
+import data.Pago;
 import data.Reserva;
 import data.Usuario;
+import data.Vuelo;
 import data.dto.DTOAssembler;
+import data.dto.PagoDTO;
 import data.dto.UsuarioDTO;
 import data.dto.VueloDTO;
 import db.DataAccessObject;
@@ -17,13 +20,16 @@ import services.PagoService;
 
 
 public class EasyBookingServer {
-	AerolineaService aerolineas = new AerolineaService();
-	AutentificationService autentification = new AutentificationService();
-	PagoService pago = new PagoService();
+	private AerolineaService aerolineas = new AerolineaService();
+	private AutentificationService autentification = new AutentificationService();
+	private PagoService pago = new PagoService();
+	public static DataAccessObject db;
+	public static DTOAssembler assem;
 	
 	public static void main(String[] args) {
+		assem = new DTOAssembler();
+		db = new DataAccessObject();
 		System.out.println("inicio");
-		DataAccessObject db = new DataAccessObject();
 		db.createSomeDatos();
 		
 		for(Reserva reserva: db.getReservas()) {
@@ -75,38 +81,69 @@ public class EasyBookingServer {
 		db.closeConection();
 	}
 	
-	public boolean reservarYpagar() {
+	public boolean reservarYpagar(int precio, int plazas, String emailPaypal, VueloDTO vuelo, String emailUsuarioReserva, String nombreUsuario) {
+		if(pago.pagar(precio, emailPaypal) == true) {
+			if(aerolineas.reservarVuelo(vuelo, nombreUsuario, plazas) == true) {
+				PagoDTO p = new PagoDTO();
+				p.setEmail(emailPaypal);
+				p.setFecha("");
+				p.setNumeroAsientos(plazas);
+				p.setPaypalEmail(emailPaypal);
+				p.setPrecio(precio);
+				p.setTipoPago("paypal");
+				Pago pg = assem.disassemble(p);
+				db.store(pg);
+				Vuelo v = assem.disassemble(vuelo);
+				db.store(v);
+				Reserva r = new Reserva();
+				r.setFecha("");
+				r.setNumeroAsientos(plazas);
+				r.setPago(pg);
+				r.setTipoPago("paypal");
+				UsuarioDTO u = new UsuarioDTO();
+				u.setEmail(emailUsuarioReserva);
+				u.setNombre(nombreUsuario);
+				Usuario user = assem.disassemble(u);
+				r.setUsuario(user);
+				r.setVuelo(v);
+				db.store(r);
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	public boolean login(String email, String password) {
+		return autentification.login(email, password);
+	}
+	
+	public void register(String email, String password, String nombre, int edad, String aeropuertoPreferido) {
+		autentification.registrar(email, password);
 		
-		return false;
-	}
-	
-	public boolean login() {
-		return false;
-	}
-	
-	public boolean register() {
-		return false;
-	}
-	
-	public List<VueloDTO> buscarVuelo() {
-		return null;
-	}
-	
-	public ArrayList<VueloDTO> getAllVuelos(){
-			
+		Usuario user = new Usuario();
+		user.setEmail(email);
+		user.setNombre(nombre);
+		user.setAeropuertoPreferido(aeropuertoPreferido);
+		user.setEdad(edad);
+		user.setEmail(email);
+		user.setNombre(nombre);
+		user.setPassword(password);
+		user.setTipoLogin("google");
+		db.store(user);
+		
 	}
 	
 	public VueloDTO buscarVuelo(String aeropuertoDestino, String aeropuertoOrigen, String fechaIda, String fechaVuelta, int asientos) {
-		
+		return aerolineas.buscarVuelo(aeropuertoDestino, aeropuertoOrigen, fechaIda, fechaVuelta, asientos);
+	}
+	
+	public ArrayList<VueloDTO> getAllVuelos(){
+		return aerolineas.getAllVuelos();
 	}
 	
 	public ArrayList<VueloDTO> buscarVuelosDesdeOrigen(String aeropuertoOrigen, String fecha, int asientos){
-		
+		return aerolineas.buscarVuelosDesdeOrigen(aeropuertoOrigen, fecha, asientos);
 	}
 	
-	
-	public boolean reservarVuelo(VueloDTO vuelo, String nombre) {
-		
-	}
 
 }

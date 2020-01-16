@@ -35,6 +35,6 @@ public interface IGatewayAerolinea {
 	 * @param nombre Nombre del usuario que quiere reservar el vuelo
 	 * @return True si se ha reservado con exito, false si no
 	 */
-	public boolean reservarVuelo(VueloDTO vuelo, String nombre);
+	public boolean reservarVuelo(VueloDTO vuelo, String nombre, int plazas);
 
 }

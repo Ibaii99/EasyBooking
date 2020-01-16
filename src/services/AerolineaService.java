@@ -54,9 +54,9 @@ public class AerolineaService {
 		return vuelos;
 	}
 	
-	public boolean reservarVuelo(VueloDTO vuelo, String nombre){
+	public boolean reservarVuelo(VueloDTO vuelo, String nombre, int plazas){
 		for(IGatewayAerolinea aerolinea : aerolineas) {
-			if(aerolinea.reservarVuelo(vuelo, nombre) == true) return true;
+			if(aerolinea.reservarVuelo(vuelo, nombre, plazas) == true) return true;
 		}
 		return false;
 	}
