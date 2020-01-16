@@ -38,7 +38,6 @@ public class DataAccessObject {
 				tx.rollback();
 			}
 
-			pm.close();
 		}
 	}
 	
@@ -136,7 +135,7 @@ public class DataAccessObject {
 		
 	}
 	
-
+	
 	public List<Aerolinea> getAerolineas(){
 		List <Aerolinea> aero = new ArrayList<Aerolinea>();
 		PersistenceManager pm = pmf.getPersistenceManager();
@@ -155,7 +154,7 @@ public class DataAccessObject {
 			if (tx != null && tx.isActive()) {
 				tx.rollback();
 			}
-			pm.close();
+			
 		}
 		return aero;
 	}
@@ -180,7 +179,6 @@ public class DataAccessObject {
 			if (tx != null && tx.isActive()) {
 				tx.rollback();
 			}
-			pm.close();
 		}
 		return usr;
 	}
@@ -203,7 +201,7 @@ public class DataAccessObject {
 			if (tx != null && tx.isActive()) {
 				tx.rollback();
 			}
-			pm.close();
+			
 		}
 		return usr;
 	}
@@ -226,19 +224,21 @@ public class DataAccessObject {
 			if (tx != null && tx.isActive()) {
 				tx.rollback();
 			}
-			pm.close();
 		}
 		return usr;
 	}
 	
 	public List<Reserva> getReservas(){
-		ArrayList <Reserva> res = new ArrayList<Reserva>();
+		List <Reserva> res = new ArrayList<Reserva>();
 		PersistenceManager pm = pmf.getPersistenceManager();
 		Transaction tx = pm.currentTransaction();
 		try {
 			System.out.println("   * Retrieving an Extent for Reservas.");
 			tx.begin();
 			Extent<Reserva> extent = pm.getExtent(Reserva.class, true);
+			
+//			Query<Reserva> q = pm.newQuery(Reserva.class);
+//			res = q.executeList();
 			
 			for (Reserva product : extent) {
 				if(product != null) {
@@ -251,6 +251,7 @@ public class DataAccessObject {
 					reserva.setVuelo(v);
 					reserva.setUsuario(u);
 					//TODO
+					
 //					reserva.testToString();
 //					reserva.getUsuario().testToString();
 //					reserva.getPago().testToString();
@@ -258,6 +259,10 @@ public class DataAccessObject {
 //					System.out.println("------------------");
 					
 					res.add(reserva);
+//					res.get(0).testToString();
+//					res.get(0).getUsuario().testToString();
+//					res.get(0).getPago().testToString();
+//					res.get(0).getVuelo().testToString();
 				}
 			}
 			tx.commit();
@@ -267,10 +272,13 @@ public class DataAccessObject {
 			if (tx != null && tx.isActive()) {
 				tx.rollback();
 			}
-			pm.close();
+			
+			
 		}
 		return res;
 	}
 	
-	
+	public void closeConection() {
+		pmf.close();
+	}
 }

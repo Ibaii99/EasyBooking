@@ -1,6 +1,7 @@
 package bin;
 
 
+
 import java.util.List;
 
 import data.Reserva;
@@ -16,32 +17,44 @@ public class EasyBookingServer {
 		System.out.println("inicio");
 		DataAccessObject db = new DataAccessObject();
 		db.createSomeDatos();
-		List<Usuario> usr = db.getUsuarios();
-		List<Reserva> res = db.getReservas();
-		for(Reserva reserva: res) {
+		
+		for(Reserva reserva: db.getReservas()) {
 			//TODO
+			try {
+			System.out.println("asassasaassaassa");
 			reserva.testToString();
 			reserva.getUsuario().testToString();
 			reserva.getPago().testToString();
 			reserva.getVuelo().testToString();
 			System.out.println("------------------");
-			
-		}
+			} catch(Exception exc) { exc.printStackTrace();}
+			}
+		
 		DTOAssembler dto = new DTOAssembler();
-		for(Usuario e: usr) {
+		for(Usuario e: db.getUsuarios()) {
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("###Printing reserva");
 			e.reservasToString();
-			System.out.println("Printing usuario normal");
+			System.out.println("###Printing usuario" + e.getNombre());
 			e.testToString();
 			UsuarioDTO usrdto = dto.assemble(e);
 			System.out.println("Printing usuario DTO");
 			usrdto.testToString();
-			System.out.println("Printing usuario disassembled");
+			System.out.println("###Printing usuario disassembled");
 			Usuario usrdisassem = dto.disassemble(usrdto);
 			usrdisassem.testToString();
 			System.out.println("----------------------");
-			System.out.println("Reservas before");
+			System.out.println("### Reservas before");
 			e.reservasToString();
-			System.out.println("Reservas after");
+			System.out.println("### Reservas after");
 			try {
 			usrdisassem.reservasToString();
 			} catch (Exception ex) {
@@ -51,6 +64,6 @@ public class EasyBookingServer {
 			
 		}
 		
-		
+		db.closeConection();
 	}
 }
