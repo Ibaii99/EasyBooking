@@ -1,5 +1,6 @@
 package services;
 
+import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,8 +17,8 @@ public class PagoService {
 		pagos.add(paypal);
 	}
 	
-	public boolean pagar(int precio, String email) {
-		return pagos.get(0).realizarPago(precio, email);
+	public boolean pagar(int precio, String email, String contrasenya) throws RemoteException {
+		return pagos.get(0).realizarPago(precio, email, contrasenya);
 	}
 	
 }

@@ -81,34 +81,38 @@ public class EasyBookingServer {
 		db.closeConection();
 	}
 	
-	public boolean reservarYpagar(int precio, int plazas, String emailPaypal, VueloDTO vuelo, String emailUsuarioReserva, String nombreUsuario) {
-		if(pago.pagar(precio, emailPaypal) == true) {
-			if(aerolineas.reservarVuelo(vuelo, nombreUsuario, plazas) == true) {
-				PagoDTO p = new PagoDTO();
-				p.setEmail(emailPaypal);
-				p.setFecha("");
-				p.setNumeroAsientos(plazas);
-				p.setPaypalEmail(emailPaypal);
-				p.setPrecio(precio);
-				p.setTipoPago("paypal");
-				Pago pg = assem.disassemble(p);
-				db.store(pg);
-				Vuelo v = assem.disassemble(vuelo);
-				db.store(v);
-				Reserva r = new Reserva();
-				r.setFecha("");
-				r.setNumeroAsientos(plazas);
-				r.setPago(pg);
-				r.setTipoPago("paypal");
-				UsuarioDTO u = new UsuarioDTO();
-				u.setEmail(emailUsuarioReserva);
-				u.setNombre(nombreUsuario);
-				Usuario user = assem.disassemble(u);
-				r.setUsuario(user);
-				r.setVuelo(v);
-				db.store(r);
-				return true;
+	public boolean reservarYpagar(int precio, int plazas, String emailPaypal,String contrasenya, VueloDTO vuelo, String emailUsuarioReserva, String nombreUsuario) {
+		try {
+			if(pago.pagar(precio, emailPaypal, contrasenya) == true) {
+				if(aerolineas.reservarVuelo(vuelo, nombreUsuario, plazas) == true) {
+					PagoDTO p = new PagoDTO();
+					p.setEmail(emailPaypal);
+					p.setFecha("");
+					p.setNumeroAsientos(plazas);
+					p.setPaypalEmail(emailPaypal);
+					p.setPrecio(precio);
+					p.setTipoPago("paypal");
+					Pago pg = assem.disassemble(p);
+					db.store(pg);
+					Vuelo v = assem.disassemble(vuelo);
+					db.store(v);
+					Reserva r = new Reserva();
+					r.setFecha("");
+					r.setNumeroAsientos(plazas);
+					r.setPago(pg);
+					r.setTipoPago("paypal");
+					UsuarioDTO u = new UsuarioDTO();
+					u.setEmail(emailUsuarioReserva);
+					u.setNombre(nombreUsuario);
+					Usuario user = assem.disassemble(u);
+					r.setUsuario(user);
+					r.setVuelo(v);
+					db.store(r);
+					return true;
+				}
 			}
+		} catch (Exception e) {
+			System.err.println("- Error al pagar: " + e.getMessage());
 		}
 		return false;
 	}
