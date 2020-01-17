@@ -114,7 +114,12 @@ public class EasyBookingServer {
 	}
 	
 	public boolean login(String email, String password) {
-		return autentification.login(email, password);
+		if(autentification.login(email, password) ==  true){
+			for( Usuario u : db.getUsuarios()) {
+				if(u.isUser(email, password)== true) return true;
+			}
+		}
+		return false;
 	}
 	
 	public void register(String email, String password, String nombre, int edad, String aeropuertoPreferido) {

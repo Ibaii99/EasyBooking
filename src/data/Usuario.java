@@ -26,6 +26,11 @@ public class Usuario implements Serializable{
 	@Join
 	private List<Reserva> reservas;
 	
+	public boolean isUser(String mail, String password) {
+		if(this.email == nombre && this.password == password) return true;
+		return false;
+	}
+	
 	public void reservasToString() {
 		if(reservas.size()!=0) {
 			System.out.println("Reservas totales del usuario:" + reservas.size());
