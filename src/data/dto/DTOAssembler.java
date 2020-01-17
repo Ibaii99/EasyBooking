@@ -11,9 +11,6 @@ import data.Vuelo;
 import db.DataAccessObject;
 
 public class DTOAssembler {
-	//TODO los metodos de estas clases que contienen 
-	//informacion sobre otras no se obtienen desensamblando 
-	//esa clase, seria accediendo al dao y obteniendola de la base de datos
 	
 	public static AerolineaDTO assemble(Aerolinea a) {
 		AerolineaDTO dto = new AerolineaDTO();
@@ -124,7 +121,6 @@ public class DTOAssembler {
 					user.getNombre().equals(dto.getNombre())) {
 						u.setAeropuerto_preferido(user.getAeropuertoPreferido());
 						u.setEdad(user.getEdad());
-						u.setPassword(user.getPassword());
 						u.setTipoLogin(user.getTipoLogin());
 						u.setReservas(user.getReservas());
 			}

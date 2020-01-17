@@ -6,11 +6,13 @@ public class VueloDTO implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
-	private String nomAerolinea;
+	
 	private String aeropuertoDestino;
 	private String aeropuertoOrigen;
 	private String fecha;
 	private int numAsientos;
+	//Aerolinea
+	private String nomAerolinea;
 	
 	public VueloDTO() {
 		// TODO Auto-generated constructor stub

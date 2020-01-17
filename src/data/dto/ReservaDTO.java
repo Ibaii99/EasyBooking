@@ -15,6 +15,7 @@ public class ReservaDTO implements Serializable{
 	private String fecha; 
 	private String email;
 	private double precio;
+	//Pago
 	private String paypalEmail;
 	private String tarjetaNumero;
 	

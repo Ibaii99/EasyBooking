@@ -6,18 +6,21 @@ public class PagoDTO implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
+	//Atributos del pago
 	private String tipo;
 	private double precio;
-	private String paypalEmail;
 	private String tarjetaNumero;
 	private String tarjetaTipo;
 	private String tarjetaFechaCaducidad;
+	private String paypalEmail;
+	
+	
+	// Atributos de la reserva	
 	private String tipoPago;
 	private String fecha;
-	//private ReservaDTO reserva;
-	// Atributos de la reserva
 	private String email;
-	private int numeroAsientos;// Habria que mirar la clase Date de java
+	private int numeroAsientos;
+	
 	
 	
 	public PagoDTO() {

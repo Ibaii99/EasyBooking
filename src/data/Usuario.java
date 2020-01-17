@@ -20,14 +20,13 @@ public class Usuario implements Serializable{
 	private int edad;
 	private String tipoLogin;
 	private String aeropuertoPreferido;
-	private String password;
 	
 	@Persistent(mappedBy = "usuario")
 	@Join
 	private List<Reserva> reservas;
 	
-	public boolean isUser(String mail, String password) {
-		if(this.email == nombre && this.password == password) return true;
+	public boolean isUser(String mail) {
+		if(this.email == nombre) return true;
 		return false;
 	}
 	
@@ -45,7 +44,6 @@ public class Usuario implements Serializable{
 		System.out.println(edad);
 		System.out.println(tipoLogin);
 		System.out.println(aeropuertoPreferido);
-		System.out.println(password);
 
 	}
 	public void setAeropuertoPreferido(String aeropuertoPreferido) {
@@ -54,14 +52,6 @@ public class Usuario implements Serializable{
 
 	public void setReservas(List<Reserva> reservas) {
 		this.reservas = reservas;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
 	}
 
 	public Usuario() {

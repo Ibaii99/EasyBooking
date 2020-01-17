@@ -10,6 +10,7 @@ import javax.jdo.annotations.Persistent;
 public class Vuelo implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
+	
 	private String aeropuertoDestino;
 	private String aeropuertoOrigen;
 	private String fecha;

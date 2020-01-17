@@ -45,13 +45,13 @@ public class DataAccessObject {
 		Usuario u1 = new Usuario();
 		u1.setNombre("ibai");u1.setEmail("ibai.guillen@opendeusto.es");
 		u1.setEdad(20);u1.setAeropuerto_preferido("BIO");
-		u1.setPassword("asdasddasd"); u1.setTipoLogin("Google");
+		u1.setTipoLogin("Google");
 		
 		 
 		Usuario u2 = new Usuario();
 		u2.setNombre("Jon");u2.setEmail("jjj@jojo.com");
 		u2.setEdad(19);u1.setAeropuerto_preferido("BIO");
-		u2.setPassword("asdasddasd"); u2.setTipoLogin("Google");
+		u2.setTipoLogin("Google");
 		
 		Usuario u3 = new Usuario();
 		u3.setNombre("Gorka");u3.setEmail("gor@do.com");

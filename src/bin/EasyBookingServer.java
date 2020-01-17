@@ -116,7 +116,7 @@ public class EasyBookingServer {
 	public boolean login(String email, String password) {
 		if(autentification.login(email, password) ==  true){
 			for( Usuario u : db.getUsuarios()) {
-				if(u.isUser(email, password)== true) return true;
+				if(u.isUser(email)== true) return true;
 			}
 		}
 		return false;
@@ -132,7 +132,6 @@ public class EasyBookingServer {
 		user.setEdad(edad);
 		user.setEmail(email);
 		user.setNombre(nombre);
-		user.setPassword(password);
 		user.setTipoLogin("google");
 		db.store(user);
 		
