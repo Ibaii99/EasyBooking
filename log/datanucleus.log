@@ -2946,3 +2946,615 @@ org.datanucleus.exceptions.NucleusUserException: Objeto con id "data.Vuelo@f667f
 12:20:01,439 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
 12:20:01,802 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
 12:20:02,102 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+13:24:25,754 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+13:24:26,013 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+13:24:26,020 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+13:24:26,026 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+13:24:26,033 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+13:24:26,038 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+13:24:26,040 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+13:24:32,816 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+13:24:33,276 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@5f6722d3" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+13:24:33,284 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@b78a709" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+13:24:33,287 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@79145d5a" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+13:24:33,290 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@19ae6bb" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+13:24:33,298 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@726e5805" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+13:24:33,302 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@726e5805" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+13:24:33,307 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@726e5805" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+13:24:33,312 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@726e5805" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+13:24:33,315 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@726e5805" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+13:24:33,318 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@726e5805" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+13:25:42,932 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+13:25:43,401 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@5f6722d3" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+13:25:43,410 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@b78a709" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+13:25:43,414 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@79145d5a" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+13:25:43,420 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@19ae6bb" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+13:25:43,428 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@726e5805" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+13:25:43,433 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@726e5805" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+13:25:43,442 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@726e5805" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+13:25:43,447 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@726e5805" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+13:25:43,451 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@726e5805" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+13:25:43,455 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@726e5805" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+13:26:33,526 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+13:26:33,934 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@5f6722d3" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+13:26:33,942 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@b78a709" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+13:26:33,945 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@79145d5a" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+13:26:33,948 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@19ae6bb" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+13:26:33,953 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@726e5805" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+13:26:33,958 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@726e5805" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+13:26:33,963 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@726e5805" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+13:26:33,968 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@726e5805" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+13:26:33,972 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@726e5805" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+13:26:33,975 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@726e5805" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+13:27:24,234 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+13:27:24,713 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@5f6722d3" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+13:27:24,721 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@b78a709" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+13:27:24,725 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@79145d5a" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+13:27:24,728 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@19ae6bb" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+13:27:24,734 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@726e5805" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+13:27:24,739 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@726e5805" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+13:27:24,744 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@726e5805" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+13:27:24,749 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@726e5805" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+13:27:24,752 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@726e5805" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+13:27:24,755 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@726e5805" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+13:27:34,229 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+13:27:55,924 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+13:28:13,940 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+13:28:14,195 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+13:28:14,201 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+13:28:14,206 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+13:28:14,213 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+13:28:14,218 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+13:28:14,219 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+13:28:20,834 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+13:28:21,086 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+13:28:21,093 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+13:28:21,099 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+13:28:21,106 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+13:28:21,111 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+13:28:21,112 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+13:28:21,505 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Eliminación del esquema para clases
+13:28:21,506 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+13:28:21,506 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\datanucleus-api-jdo-5.2.2.jar
+13:28:21,506 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\datanucleus-cache-5.1.1.jar
+13:28:21,506 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\datanucleus-core-5.2.2.jar
+13:28:21,506 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\datanucleus-rdbms-5.2.1.jar
+13:28:21,507 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\javax.jdo-3.2.0-m12.jar
+13:28:21,507 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\log4j-1.2.14.jar
+13:28:21,507 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\mysql-connector-java-8.0.17.jar
+13:28:21,507 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\servidorAutorizacion.jar
+13:28:21,507 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\servidorPago.jar
+13:28:21,507 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin
+13:28:21,507 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\resources
+13:28:22,112 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+13:28:22,282 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+13:28:22,283 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\bin\EasyBookingServer.class
+13:28:22,283 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class
+13:28:22,283 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class
+13:28:22,283 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class
+13:28:22,283 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class
+13:28:22,283 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class
+13:28:22,283 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\AerolineaDTO.class
+13:28:22,283 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\DTOAssembler.class
+13:28:22,283 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\PagoDTO.class
+13:28:22,283 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\ReservaDTO.class
+13:28:22,283 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\UsuarioDTO.class
+13:28:22,283 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\VueloDTO.class
+13:28:22,283 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\db\DataAccessObject.class
+13:28:22,284 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\IGatewayAerolinea.class
+13:28:22,284 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\IGatewayAutorizacion.class
+13:28:22,284 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\IGatewayPago.class
+13:28:22,284 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\aerolinea\AerolineaFactory.class
+13:28:22,284 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\aerolinea\IberiaAirlineGateway.class
+13:28:22,284 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\aerolinea\NumeracionAerolinea.class
+13:28:22,284 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\aerolinea\RyanAirGateway.class
+13:28:22,284 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\autentification\GoogleGateway.class
+13:28:22,284 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\pago\PaypalGateway.class
+13:28:22,284 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\services\AerolineaService.class
+13:28:22,284 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\services\AutentificationService.class
+13:28:22,284 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\services\PagoService.class
+13:28:22,957 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+13:28:29,914 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+13:28:30,312 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+13:28:30,312 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+13:28:30,392 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+13:28:30,392 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+13:28:30,392 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+13:28:30,392 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+13:28:30,431 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+13:28:30,431 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+13:28:30,490 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+13:28:30,490 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+13:28:30,490 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+13:28:30,490 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+13:28:30,490 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+13:28:30,532 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+13:28:30,532 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+13:28:30,533 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+13:28:30,533 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+13:28:30,595 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+13:28:31,988 (main) INFO  [DataNucleus.JDO] - Exception thrown
+Objeto con id "data.Usuario@4a3329b9" es manejado por otro ExecutionContext
+org.datanucleus.exceptions.NucleusUserException: Objeto con id "data.Usuario@4a3329b9" es manejado por otro ExecutionContext
+	at org.datanucleus.ExecutionContextImpl.persistObjectInternal(ExecutionContextImpl.java:1931)
+	at org.datanucleus.ExecutionContextImpl.persistObjectWork(ExecutionContextImpl.java:1869)
+	at org.datanucleus.ExecutionContextImpl.persistObject(ExecutionContextImpl.java:1724)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.jdoMakePersistent(JDOPersistenceManager.java:712)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.makePersistent(JDOPersistenceManager.java:738)
+	at db.DataAccessObject.store(Unknown Source)
+	at db.DataAccessObject.createSomeDatos(Unknown Source)
+	at bin.EasyBookingServer.main(Unknown Source)
+13:28:32,025 (main) INFO  [DataNucleus.JDO] - Exception thrown
+Objeto con id "data.Reserva@5357c287" es manejado por otro ExecutionContext
+org.datanucleus.exceptions.NucleusUserException: Objeto con id "data.Reserva@5357c287" es manejado por otro ExecutionContext
+	at org.datanucleus.ExecutionContextImpl.persistObjectInternal(ExecutionContextImpl.java:1931)
+	at org.datanucleus.ExecutionContextImpl.persistObjectWork(ExecutionContextImpl.java:1869)
+	at org.datanucleus.ExecutionContextImpl.persistObject(ExecutionContextImpl.java:1724)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.jdoMakePersistent(JDOPersistenceManager.java:712)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.makePersistent(JDOPersistenceManager.java:738)
+	at db.DataAccessObject.store(Unknown Source)
+	at db.DataAccessObject.createSomeDatos(Unknown Source)
+	at bin.EasyBookingServer.main(Unknown Source)
+13:28:32,026 (main) INFO  [DataNucleus.JDO] - Exception thrown
+Objeto con id "data.Reserva@25748410" es manejado por otro ExecutionContext
+org.datanucleus.exceptions.NucleusUserException: Objeto con id "data.Reserva@25748410" es manejado por otro ExecutionContext
+	at org.datanucleus.ExecutionContextImpl.persistObjectInternal(ExecutionContextImpl.java:1931)
+	at org.datanucleus.ExecutionContextImpl.persistObjectWork(ExecutionContextImpl.java:1869)
+	at org.datanucleus.ExecutionContextImpl.persistObject(ExecutionContextImpl.java:1724)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.jdoMakePersistent(JDOPersistenceManager.java:712)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.makePersistent(JDOPersistenceManager.java:738)
+	at db.DataAccessObject.store(Unknown Source)
+	at db.DataAccessObject.createSomeDatos(Unknown Source)
+	at bin.EasyBookingServer.main(Unknown Source)
+13:28:32,027 (main) INFO  [DataNucleus.JDO] - Exception thrown
+Objeto con id "data.Pago@5ad10c1a" es manejado por otro ExecutionContext
+org.datanucleus.exceptions.NucleusUserException: Objeto con id "data.Pago@5ad10c1a" es manejado por otro ExecutionContext
+	at org.datanucleus.ExecutionContextImpl.persistObjectInternal(ExecutionContextImpl.java:1931)
+	at org.datanucleus.ExecutionContextImpl.persistObjectWork(ExecutionContextImpl.java:1869)
+	at org.datanucleus.ExecutionContextImpl.persistObject(ExecutionContextImpl.java:1724)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.jdoMakePersistent(JDOPersistenceManager.java:712)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.makePersistent(JDOPersistenceManager.java:738)
+	at db.DataAccessObject.store(Unknown Source)
+	at db.DataAccessObject.createSomeDatos(Unknown Source)
+	at bin.EasyBookingServer.main(Unknown Source)
+13:28:32,027 (main) INFO  [DataNucleus.JDO] - Exception thrown
+Objeto con id "data.Pago@2783717b" es manejado por otro ExecutionContext
+org.datanucleus.exceptions.NucleusUserException: Objeto con id "data.Pago@2783717b" es manejado por otro ExecutionContext
+	at org.datanucleus.ExecutionContextImpl.persistObjectInternal(ExecutionContextImpl.java:1931)
+	at org.datanucleus.ExecutionContextImpl.persistObjectWork(ExecutionContextImpl.java:1869)
+	at org.datanucleus.ExecutionContextImpl.persistObject(ExecutionContextImpl.java:1724)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.jdoMakePersistent(JDOPersistenceManager.java:712)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.makePersistent(JDOPersistenceManager.java:738)
+	at db.DataAccessObject.store(Unknown Source)
+	at db.DataAccessObject.createSomeDatos(Unknown Source)
+	at bin.EasyBookingServer.main(Unknown Source)
+13:28:32,028 (main) INFO  [DataNucleus.JDO] - Exception thrown
+Objeto con id "data.Aerolinea@3829ac1" es manejado por otro ExecutionContext
+org.datanucleus.exceptions.NucleusUserException: Objeto con id "data.Aerolinea@3829ac1" es manejado por otro ExecutionContext
+	at org.datanucleus.ExecutionContextImpl.persistObjectInternal(ExecutionContextImpl.java:1931)
+	at org.datanucleus.ExecutionContextImpl.persistObjectWork(ExecutionContextImpl.java:1869)
+	at org.datanucleus.ExecutionContextImpl.persistObject(ExecutionContextImpl.java:1724)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.jdoMakePersistent(JDOPersistenceManager.java:712)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.makePersistent(JDOPersistenceManager.java:738)
+	at db.DataAccessObject.store(Unknown Source)
+	at db.DataAccessObject.createSomeDatos(Unknown Source)
+	at bin.EasyBookingServer.main(Unknown Source)
+13:28:32,029 (main) INFO  [DataNucleus.JDO] - Exception thrown
+Objeto con id "data.Vuelo@22d6f11" es manejado por otro ExecutionContext
+org.datanucleus.exceptions.NucleusUserException: Objeto con id "data.Vuelo@22d6f11" es manejado por otro ExecutionContext
+	at org.datanucleus.ExecutionContextImpl.persistObjectInternal(ExecutionContextImpl.java:1931)
+	at org.datanucleus.ExecutionContextImpl.persistObjectWork(ExecutionContextImpl.java:1869)
+	at org.datanucleus.ExecutionContextImpl.persistObject(ExecutionContextImpl.java:1724)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.jdoMakePersistent(JDOPersistenceManager.java:712)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.makePersistent(JDOPersistenceManager.java:738)
+	at db.DataAccessObject.store(Unknown Source)
+	at db.DataAccessObject.createSomeDatos(Unknown Source)
+	at bin.EasyBookingServer.main(Unknown Source)
+13:28:32,141 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+13:28:32,837 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+13:28:33,310 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+13:28:33,708 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:43:18,550 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+20:43:18,800 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+20:43:18,807 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+20:43:18,815 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+20:43:18,822 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+20:43:18,829 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+20:43:18,830 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+20:43:24,092 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+20:43:24,362 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+20:43:24,370 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+20:43:24,376 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+20:43:24,383 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+20:43:24,390 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+20:43:24,392 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+20:43:24,802 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Eliminación del esquema para clases
+20:43:24,803 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+20:43:24,804 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\datanucleus-api-jdo-5.2.2.jar
+20:43:24,804 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\datanucleus-cache-5.1.1.jar
+20:43:24,804 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\datanucleus-core-5.2.2.jar
+20:43:24,804 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\datanucleus-rdbms-5.2.1.jar
+20:43:24,804 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\javax.jdo-3.2.0-m12.jar
+20:43:24,804 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\log4j-1.2.14.jar
+20:43:24,804 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\mysql-connector-java-8.0.17.jar
+20:43:24,804 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\servidorAutorizacion.jar
+20:43:24,804 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\servidorPago.jar
+20:43:24,804 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin
+20:43:24,804 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\resources
+20:43:25,525 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:43:25,698 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+20:43:25,699 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\bin\EasyBookingServer.class
+20:43:25,699 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class
+20:43:25,699 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class
+20:43:25,699 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class
+20:43:25,699 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class
+20:43:25,699 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class
+20:43:25,699 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\AerolineaDTO.class
+20:43:25,699 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\DTOAssembler.class
+20:43:25,699 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\PagoDTO.class
+20:43:25,699 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\ReservaDTO.class
+20:43:25,699 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\UsuarioDTO.class
+20:43:25,699 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\VueloDTO.class
+20:43:25,699 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\db\DataAccessObject.class
+20:43:25,699 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\IGatewayAerolinea.class
+20:43:25,699 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\IGatewayAutorizacion.class
+20:43:25,700 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\IGatewayPago.class
+20:43:25,700 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\aerolinea\AerolineaFactory.class
+20:43:25,700 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\aerolinea\IberiaAirlineGateway.class
+20:43:25,700 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\aerolinea\NumeracionAerolinea.class
+20:43:25,700 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\aerolinea\RyanAirGateway.class
+20:43:25,700 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\autentification\GoogleGateway.class
+20:43:25,700 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\pago\PaypalGateway.class
+20:43:25,700 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\services\AerolineaService.class
+20:43:25,700 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\services\AutentificationService.class
+20:43:25,700 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\services\PagoService.class
+20:43:26,398 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+20:43:33,475 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+20:43:33,812 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+20:43:33,819 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+20:43:33,833 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+20:43:33,842 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+20:43:33,852 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+20:43:33,853 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+20:43:34,341 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+20:43:34,342 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+20:43:34,343 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\datanucleus-api-jdo-5.2.2.jar
+20:43:34,343 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\datanucleus-cache-5.1.1.jar
+20:43:34,343 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\datanucleus-core-5.2.2.jar
+20:43:34,343 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\datanucleus-rdbms-5.2.1.jar
+20:43:34,343 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\javax.jdo-3.2.0-m12.jar
+20:43:34,343 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\log4j-1.2.14.jar
+20:43:34,343 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\mysql-connector-java-8.0.17.jar
+20:43:34,343 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\servidorAutorizacion.jar
+20:43:34,343 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\servidorPago.jar
+20:43:34,343 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin
+20:43:34,343 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\resources
+20:43:35,221 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:43:35,422 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+20:43:35,422 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\bin\EasyBookingServer.class
+20:43:35,422 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class
+20:43:35,422 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class
+20:43:35,422 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class
+20:43:35,422 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class
+20:43:35,422 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class
+20:43:35,422 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\AerolineaDTO.class
+20:43:35,422 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\DTOAssembler.class
+20:43:35,422 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\PagoDTO.class
+20:43:35,422 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\ReservaDTO.class
+20:43:35,422 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\UsuarioDTO.class
+20:43:35,422 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\VueloDTO.class
+20:43:35,423 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\db\DataAccessObject.class
+20:43:35,423 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\IGatewayAerolinea.class
+20:43:35,423 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\IGatewayAutorizacion.class
+20:43:35,423 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\IGatewayPago.class
+20:43:35,423 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\aerolinea\AerolineaFactory.class
+20:43:35,423 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\aerolinea\IberiaAirlineGateway.class
+20:43:35,423 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\aerolinea\NumeracionAerolinea.class
+20:43:35,423 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\aerolinea\RyanAirGateway.class
+20:43:35,423 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\autentification\GoogleGateway.class
+20:43:35,423 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\pago\PaypalGateway.class
+20:43:35,423 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\services\AerolineaService.class
+20:43:35,423 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\services\AutentificationService.class
+20:43:35,423 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\services\PagoService.class
+20:43:35,829 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:43:35,831 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:43:35,921 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:43:35,921 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:43:35,921 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:43:35,921 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:43:35,992 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:43:35,992 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:43:36,039 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:43:36,039 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:43:36,039 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:43:36,039 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:43:36,039 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:43:36,098 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:43:36,098 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:43:36,098 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:43:36,098 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:43:36,176 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+20:43:37,322 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+20:43:48,848 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:43:49,030 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:43:49,656 (main) INFO  [DataNucleus.JDO] - Exception thrown
+Objeto con id "data.Usuario@5d018107" es manejado por otro ExecutionContext
+org.datanucleus.exceptions.NucleusUserException: Objeto con id "data.Usuario@5d018107" es manejado por otro ExecutionContext
+	at org.datanucleus.ExecutionContextImpl.persistObjectInternal(ExecutionContextImpl.java:1931)
+	at org.datanucleus.ExecutionContextImpl.persistObjectWork(ExecutionContextImpl.java:1869)
+	at org.datanucleus.ExecutionContextImpl.persistObject(ExecutionContextImpl.java:1724)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.jdoMakePersistent(JDOPersistenceManager.java:712)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.makePersistent(JDOPersistenceManager.java:738)
+	at db.DataAccessObject.store(Unknown Source)
+	at db.DataAccessObject.createSomeDatos(Unknown Source)
+	at bin.EasyBookingServer.main(Unknown Source)
+20:43:49,689 (main) INFO  [DataNucleus.JDO] - Exception thrown
+Objeto con id "data.Reserva@350ec41e" es manejado por otro ExecutionContext
+org.datanucleus.exceptions.NucleusUserException: Objeto con id "data.Reserva@350ec41e" es manejado por otro ExecutionContext
+	at org.datanucleus.ExecutionContextImpl.persistObjectInternal(ExecutionContextImpl.java:1931)
+	at org.datanucleus.ExecutionContextImpl.persistObjectWork(ExecutionContextImpl.java:1869)
+	at org.datanucleus.ExecutionContextImpl.persistObject(ExecutionContextImpl.java:1724)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.jdoMakePersistent(JDOPersistenceManager.java:712)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.makePersistent(JDOPersistenceManager.java:738)
+	at db.DataAccessObject.store(Unknown Source)
+	at db.DataAccessObject.createSomeDatos(Unknown Source)
+	at bin.EasyBookingServer.main(Unknown Source)
+20:43:49,690 (main) INFO  [DataNucleus.JDO] - Exception thrown
+Objeto con id "data.Reserva@5536379e" es manejado por otro ExecutionContext
+org.datanucleus.exceptions.NucleusUserException: Objeto con id "data.Reserva@5536379e" es manejado por otro ExecutionContext
+	at org.datanucleus.ExecutionContextImpl.persistObjectInternal(ExecutionContextImpl.java:1931)
+	at org.datanucleus.ExecutionContextImpl.persistObjectWork(ExecutionContextImpl.java:1869)
+	at org.datanucleus.ExecutionContextImpl.persistObject(ExecutionContextImpl.java:1724)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.jdoMakePersistent(JDOPersistenceManager.java:712)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.makePersistent(JDOPersistenceManager.java:738)
+	at db.DataAccessObject.store(Unknown Source)
+	at db.DataAccessObject.createSomeDatos(Unknown Source)
+	at bin.EasyBookingServer.main(Unknown Source)
+20:43:49,691 (main) INFO  [DataNucleus.JDO] - Exception thrown
+Objeto con id "data.Pago@470a696f" es manejado por otro ExecutionContext
+org.datanucleus.exceptions.NucleusUserException: Objeto con id "data.Pago@470a696f" es manejado por otro ExecutionContext
+	at org.datanucleus.ExecutionContextImpl.persistObjectInternal(ExecutionContextImpl.java:1931)
+	at org.datanucleus.ExecutionContextImpl.persistObjectWork(ExecutionContextImpl.java:1869)
+	at org.datanucleus.ExecutionContextImpl.persistObject(ExecutionContextImpl.java:1724)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.jdoMakePersistent(JDOPersistenceManager.java:712)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.makePersistent(JDOPersistenceManager.java:738)
+	at db.DataAccessObject.store(Unknown Source)
+	at db.DataAccessObject.createSomeDatos(Unknown Source)
+	at bin.EasyBookingServer.main(Unknown Source)
+20:43:49,691 (main) INFO  [DataNucleus.JDO] - Exception thrown
+Objeto con id "data.Pago@3f1c5af9" es manejado por otro ExecutionContext
+org.datanucleus.exceptions.NucleusUserException: Objeto con id "data.Pago@3f1c5af9" es manejado por otro ExecutionContext
+	at org.datanucleus.ExecutionContextImpl.persistObjectInternal(ExecutionContextImpl.java:1931)
+	at org.datanucleus.ExecutionContextImpl.persistObjectWork(ExecutionContextImpl.java:1869)
+	at org.datanucleus.ExecutionContextImpl.persistObject(ExecutionContextImpl.java:1724)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.jdoMakePersistent(JDOPersistenceManager.java:712)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.makePersistent(JDOPersistenceManager.java:738)
+	at db.DataAccessObject.store(Unknown Source)
+	at db.DataAccessObject.createSomeDatos(Unknown Source)
+	at bin.EasyBookingServer.main(Unknown Source)
+20:43:49,692 (main) INFO  [DataNucleus.JDO] - Exception thrown
+Objeto con id "data.Aerolinea@63192798" es manejado por otro ExecutionContext
+org.datanucleus.exceptions.NucleusUserException: Objeto con id "data.Aerolinea@63192798" es manejado por otro ExecutionContext
+	at org.datanucleus.ExecutionContextImpl.persistObjectInternal(ExecutionContextImpl.java:1931)
+	at org.datanucleus.ExecutionContextImpl.persistObjectWork(ExecutionContextImpl.java:1869)
+	at org.datanucleus.ExecutionContextImpl.persistObject(ExecutionContextImpl.java:1724)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.jdoMakePersistent(JDOPersistenceManager.java:712)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.makePersistent(JDOPersistenceManager.java:738)
+	at db.DataAccessObject.store(Unknown Source)
+	at db.DataAccessObject.createSomeDatos(Unknown Source)
+	at bin.EasyBookingServer.main(Unknown Source)
+20:43:49,693 (main) INFO  [DataNucleus.JDO] - Exception thrown
+Objeto con id "data.Vuelo@376a312c" es manejado por otro ExecutionContext
+org.datanucleus.exceptions.NucleusUserException: Objeto con id "data.Vuelo@376a312c" es manejado por otro ExecutionContext
+	at org.datanucleus.ExecutionContextImpl.persistObjectInternal(ExecutionContextImpl.java:1931)
+	at org.datanucleus.ExecutionContextImpl.persistObjectWork(ExecutionContextImpl.java:1869)
+	at org.datanucleus.ExecutionContextImpl.persistObject(ExecutionContextImpl.java:1724)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.jdoMakePersistent(JDOPersistenceManager.java:712)
+	at org.datanucleus.api.jdo.JDOPersistenceManager.makePersistent(JDOPersistenceManager.java:738)
+	at db.DataAccessObject.store(Unknown Source)
+	at db.DataAccessObject.createSomeDatos(Unknown Source)
+	at bin.EasyBookingServer.main(Unknown Source)
+20:44:22,981 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:44:23,146 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:44:23,581 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4c2cc639" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+20:44:23,588 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@47605f2f" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+20:44:23,593 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@37bd68c3" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+20:44:23,596 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@5827af16" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+20:44:23,601 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@f0e995e" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:44:23,606 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@f0e995e" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:44:23,613 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@f0e995e" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:44:23,618 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@f0e995e" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:44:23,621 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@f0e995e" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:44:23,633 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@f0e995e" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:46:52,462 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:46:52,621 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:46:53,097 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@72ea6193" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+20:46:53,105 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@7adf16aa" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+20:46:53,110 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4e517165" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+20:46:53,115 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@7e3f95fe" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+20:46:53,122 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:46:53,126 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:46:53,132 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:46:53,137 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:46:53,141 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:46:53,151 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:47:46,706 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:47:46,865 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:47:47,310 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@72ea6193" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+20:47:47,319 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@7adf16aa" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+20:47:47,322 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4e517165" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+20:47:47,325 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@7e3f95fe" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+20:47:47,331 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:47:47,335 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:47:47,339 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:47:47,346 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:47:47,350 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:47:47,361 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:48:33,478 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:48:33,641 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:48:34,064 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@72ea6193" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+20:48:34,072 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@7adf16aa" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+20:48:34,076 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4e517165" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+20:48:34,080 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@7e3f95fe" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+20:48:34,086 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:48:34,090 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:48:34,096 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:48:34,101 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:48:34,104 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:48:34,114 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:49:10,185 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:49:10,353 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:49:10,784 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@45905bff" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+20:49:10,792 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@58bf8650" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+20:49:10,795 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@6a66a204" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+20:49:10,798 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2c7d121c" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+20:49:10,804 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@4c6daf0" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:49:10,808 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@4c6daf0" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:49:10,814 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@4c6daf0" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:49:10,819 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@4c6daf0" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:49:10,823 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@4c6daf0" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:49:10,834 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@4c6daf0" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:50:03,436 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:50:03,614 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:50:04,138 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@72ea6193" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+20:50:04,145 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@7adf16aa" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+20:50:04,148 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4e517165" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+20:50:04,152 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@7e3f95fe" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+20:50:04,159 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:50:04,163 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:50:04,169 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:50:04,174 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:50:04,177 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:50:04,189 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:50:27,106 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:50:27,273 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:50:27,705 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@72ea6193" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+20:50:27,714 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@7adf16aa" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+20:50:27,717 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4e517165" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+20:50:27,720 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@7e3f95fe" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+20:50:27,726 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:50:27,731 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:50:27,737 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:50:27,744 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:50:27,747 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:50:27,759 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@1991f767" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+20:56:56,423 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:56:56,579 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:59:37,221 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+20:59:37,388 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:00:43,285 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:00:43,477 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:01:04,565 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:01:04,709 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:02:53,318 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:02:53,478 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:04:32,090 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:04:32,248 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:04:51,520 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:04:51,675 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:04:59,385 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:04:59,550 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:07:32,341 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:07:32,536 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:07:45,432 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:07:45,617 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:10:53,006 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:10:53,159 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:11:43,736 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:11:43,897 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:11:53,548 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:11:53,702 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:12:07,813 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:12:07,984 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:12:20,737 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:12:20,912 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:12:32,076 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+21:12:32,235 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:03:08,934 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:03:09,108 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:03:52,181 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+23:03:52,481 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+23:03:52,491 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+23:03:52,501 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+23:03:52,507 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+23:03:52,513 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+23:03:52,514 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+23:04:02,949 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:04:03,211 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:04:03,709 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4097cac" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+23:04:03,720 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@47605f2f" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+23:04:03,723 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@242aa8d9" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+23:04:03,725 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@45cff11c" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+23:04:03,734 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@30f5a68a" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:04:03,738 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@30f5a68a" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:04:03,744 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@30f5a68a" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:04:03,750 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@30f5a68a" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:04:03,753 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@30f5a68a" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:04:03,756 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@30f5a68a" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:05:47,521 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+23:05:47,833 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+23:05:47,840 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+23:05:47,847 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+23:05:47,857 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+23:05:47,862 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+23:05:47,863 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+23:05:54,296 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:05:54,478 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:05:54,948 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4097cac" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+23:05:54,956 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@47605f2f" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+23:05:54,959 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@242aa8d9" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+23:05:54,963 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@45cff11c" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+23:05:54,969 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@30f5a68a" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:05:54,973 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@30f5a68a" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:05:54,979 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@30f5a68a" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:05:54,984 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@30f5a68a" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:05:54,986 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@30f5a68a" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:05:54,996 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@30f5a68a" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:07:43,647 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:07:43,835 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:07:44,273 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@25a6944c" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+23:07:44,281 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@60d1a32f" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+23:07:44,288 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@ea9b7c6" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+23:07:44,291 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@3b77a04f" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+23:07:44,298 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@47db5fa5" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:07:44,302 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@47db5fa5" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:07:44,309 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@47db5fa5" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:07:44,315 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@47db5fa5" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:07:44,319 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@47db5fa5" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:07:44,332 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@47db5fa5" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:08:35,551 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:08:35,725 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:08:36,158 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@25a6944c" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+23:08:36,166 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@60d1a32f" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+23:08:36,170 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@ea9b7c6" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+23:08:36,173 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@3b77a04f" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+23:08:36,179 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@47db5fa5" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:08:36,184 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@47db5fa5" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:08:36,190 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@47db5fa5" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:08:36,196 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@47db5fa5" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:08:36,199 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@47db5fa5" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:08:36,210 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@47db5fa5" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:09:32,190 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:09:32,385 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:09:32,978 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@25a6944c" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+23:09:32,987 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@60d1a32f" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+23:09:32,991 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@ea9b7c6" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+23:09:32,994 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@3b77a04f" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+23:09:33,000 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@47db5fa5" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:09:33,005 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@47db5fa5" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:09:33,011 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@47db5fa5" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:09:33,018 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@47db5fa5" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:09:33,022 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@47db5fa5" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:09:33,035 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@47db5fa5" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:10:03,497 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:10:03,687 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:10:04,208 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@25a6944c" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+23:10:04,217 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@60d1a32f" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+23:10:04,220 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@ea9b7c6" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+23:10:04,226 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@3b77a04f" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+23:10:04,233 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@47db5fa5" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:10:04,238 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@47db5fa5" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:10:04,245 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@47db5fa5" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:10:04,250 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@47db5fa5" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:10:04,253 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@47db5fa5" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+23:10:04,265 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@47db5fa5" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'

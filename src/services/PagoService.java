@@ -14,7 +14,7 @@ public class PagoService {
 	public PagoService() {
 		pagos = new ArrayList<IGatewayPago>();
 		PaypalGateway paypal = new PaypalGateway();
-		pagos.add(paypal);
+		pagos.add(0, paypal);
 	}
 	
 	public boolean pagar(int precio, String email, String contrasenya) throws RemoteException {

@@ -19,7 +19,6 @@ public class IberiaAirlineGateway implements IGatewayAerolinea {
 		return null;
 	}
 
-	@Override
 	public VueloDTO buscarVuelo(String aeropuertoDestino, String aeropuertoOrigen, String fechaIda, String fechaVuelta,
 			int asientos) {
 		// TODO Auto-generated method stub
@@ -37,6 +36,12 @@ public class IberiaAirlineGateway implements IGatewayAerolinea {
 	public boolean reservarVuelo(VueloDTO vuelo, String nombre, int plazas) {
 		// TODO Auto-generated method stub
 		return false;
+	}
+
+	@Override
+	public VueloDTO buscarVuelo(String aeropuertoDestino, String aeropuertoOrigen, String fecha, int asientos) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	

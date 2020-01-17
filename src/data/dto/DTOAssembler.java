@@ -11,6 +11,8 @@ import data.Vuelo;
 import db.DataAccessObject;
 
 public class DTOAssembler {
+
+	private static DataAccessObject db = new DataAccessObject();
 	
 	public static AerolineaDTO assemble(Aerolinea a) {
 		AerolineaDTO dto = new AerolineaDTO();
@@ -28,6 +30,7 @@ public class DTOAssembler {
 	
 	public static PagoDTO assemble(Pago p) {
 		PagoDTO dto = new PagoDTO();
+		
 		dto.setPrecio(p.getPrecio());
 		dto.setTipo(p.getTipo());
 		dto.setPaypalEmail(p.getPaypalEmail());
@@ -45,24 +48,24 @@ public class DTOAssembler {
 	
 	public static Pago disassemble(PagoDTO dto) {
 		Pago p = new Pago();
-		p.setPaypalEmail(dto.getPaypalEmail());
-		p.setPrecio(dto.getPrecio());
-		
-		DataAccessObject db = new DataAccessObject();
-		List<Reserva> reservas = db.getReservas();
-		for(Reserva reserva : reservas) {
-			if(reserva.getFecha().equals(dto.getFecha()) && 
-					reserva.getNumeroAsientos() == dto.getNumeroAsientos() && 
-						reserva.getUsuario().getEmail().equals(dto.getEmail())) {
-							p.setReserva(reserva);
-				
-			}
-		}
+		p.setPaypalEmail(dto.getPaypalEmail());	
 		p.setPrecio(dto.getPrecio());		
 		p.setTarjetaFechaCaducidad(dto.getTarjetaFechaCaducidad());
 		p.setTarjetaNumero(dto.getTarjetaNumero());
 		p.setTarjetaTipo(dto.getTarjetaTipo());
 		p.setTipo(dto.getTipo());
+		
+		List<Reserva> reservas = db.getReservas();
+		
+		for(Reserva reserva : reservas) {
+			if(		reserva.getFecha().equals(dto.getFecha()) && 
+					reserva.getNumeroAsientos() == dto.getNumeroAsientos() && 
+					reserva.getUsuario().getEmail().equals(dto.getEmail())	) 
+			{
+					p.setReserva(reserva);
+			}
+		}
+		
 		return p;
 	} 
 	
@@ -86,16 +89,17 @@ public class DTOAssembler {
 		r.setNumeroAsientos(dto.getNumeroAsientos());
 		r.setTipoPago(dto.getTipoPago());
 		
-		DataAccessObject db = new DataAccessObject();
 		List<Reserva> reservas = db.getReservas();
+		
 		for(Reserva reserva : reservas) {
-			if(reserva.getPago().getPrecio()== dto.getPrecio() &&
+			if(		reserva.getPago().getPrecio()== dto.getPrecio() &&
 					reserva.getPago().getPaypalEmail().equals(dto.getPaypalEmail()) &&
-						reserva.getPago().getTarjetaNumero().contentEquals(dto.getTarjetaNumero()) &&
-							reserva.getUsuario().getEmail().equals(dto.getEmail())) {
-								r.setPago(reserva.getPago());
-								r.setUsuario(r.getUsuario());
-								r.setVuelo(r.getVuelo());
+					reserva.getPago().getTarjetaNumero().contentEquals(dto.getTarjetaNumero()) &&
+					reserva.getUsuario().getEmail().equals(dto.getEmail())	) 
+			{
+					r.setPago(reserva.getPago());
+					r.setUsuario(r.getUsuario());
+					r.setVuelo(r.getVuelo());
 			}
 		}
 		
@@ -114,15 +118,16 @@ public class DTOAssembler {
 		Usuario u = new Usuario();
 		u.setEmail(dto.getEmail());
 		u.setNombre(dto.getNombre());
-		DataAccessObject db = new DataAccessObject();
+		
 		List<Usuario> usuarios = db.getUsuarios();
 		for(Usuario user: usuarios) {
-			if(user.getEmail().equals(dto.getEmail()) && 
-					user.getNombre().equals(dto.getNombre())) {
-						u.setAeropuerto_preferido(user.getAeropuertoPreferido());
-						u.setEdad(user.getEdad());
-						u.setTipoLogin(user.getTipoLogin());
-						u.setReservas(user.getReservas());
+			if(		user.getEmail().equals(dto.getEmail()) && 
+					user.getNombre().equals(dto.getNombre())) 
+			{
+					u.setAeropuerto_preferido(user.getAeropuertoPreferido());
+					u.setEdad(user.getEdad());
+					u.setTipoLogin(user.getTipoLogin());
+					u.setReservas(user.getReservas());
 			}
 		}
 		
@@ -141,23 +146,25 @@ public class DTOAssembler {
 	
 	public static Vuelo disassemble(VueloDTO dto) {
 		Vuelo v = new Vuelo();
-		DataAccessObject db = new DataAccessObject();
-		List<Vuelo> vuelos = db.getVuelos();
-		for(Vuelo vuelo : vuelos) {
-			if(vuelo.getAerolinea().getNombre().equals(dto.getNomAerolinea()) &&
-					vuelo.getAeropuertoOrigen().equals(dto.getAeropuertoOrigen()) &&
-						vuelo.getAeropuertoDestino().equals(dto.getAeropuertoDestino()) &&
-							vuelo.getFecha().equals(dto.getFecha()) &&
-								vuelo.getNumAsientos()==dto.getNumAsientos()) {
-									v.setAerolinea(vuelo.getAerolinea());
-									v.setReservas(vuelo.getReservas());
-			}
-				
-		}
+		
 		v.setAeropuertoDestino(dto.getAeropuertoDestino());
 		v.setAeropuertoOrigen(dto.getAeropuertoOrigen());
 		v.setFecha(dto.getFecha());
 		v.setNumAsientos(dto.getNumAsientos());
+		
+		List<Vuelo> vuelos = db.getVuelos();
+		for(Vuelo vuelo : vuelos) {
+			if(		vuelo.getAerolinea().getNombre().equals(dto.getNomAerolinea()) &&
+					vuelo.getAeropuertoOrigen().equals(dto.getAeropuertoOrigen()) &&
+					vuelo.getAeropuertoDestino().equals(dto.getAeropuertoDestino()) &&
+					vuelo.getFecha().equals(dto.getFecha()) &&
+					vuelo.getNumAsientos()==dto.getNumAsientos()) 
+			{
+					v.setAerolinea(vuelo.getAerolinea());
+					v.setReservas(vuelo.getReservas());
+			}	
+		}
+
 		return v;
 	}
 	

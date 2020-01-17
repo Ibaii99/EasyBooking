@@ -2,6 +2,7 @@ package bin;
 
 
 
+import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,30 +21,24 @@ import services.PagoService;
 
 
 public class EasyBookingServer {
+	
 	private AerolineaService aerolineas = new AerolineaService();
 	private AutentificationService autentification = new AutentificationService();
-	private PagoService pago = new PagoService();
+	private static PagoService pago;
 	public static DataAccessObject db;
 	public static DTOAssembler assem;
 	
 	public static void main(String[] args) {
+		//pago = new PagoService(); //Descomentar para usarlo
 		assem = new DTOAssembler();
 		db = new DataAccessObject();
 		System.out.println("inicio");
 		db.createSomeDatos();
 		
-		for(Reserva reserva: db.getReservas()) {
-			//TODO
-			try {
-			System.out.println("asassasaassaassa");
-			reserva.testToString();
-			reserva.getUsuario().testToString();
-			reserva.getPago().testToString();
-			reserva.getVuelo().testToString();
-			System.out.println("------------------");
-			} catch(Exception exc) { exc.printStackTrace();}
-			}
 		
+		//register("ibai2.guillen@opendeusto.es","1qwerty78","ibai2",22,"BIO")
+		
+		/*
 		DTOAssembler dto = new DTOAssembler();
 		for(Usuario e: db.getUsuarios()) {
 			System.out.println("|");
@@ -77,7 +72,7 @@ public class EasyBookingServer {
 			System.out.println("------------------------------\n");
 			
 		}
-		
+		*/
 		db.closeConection();
 	}
 	
@@ -128,7 +123,6 @@ public class EasyBookingServer {
 	
 	public void register(String email, String password, String nombre, int edad, String aeropuertoPreferido) {
 		autentification.registrar(email, password);
-		
 		Usuario user = new Usuario();
 		user.setEmail(email);
 		user.setNombre(nombre);
@@ -153,5 +147,14 @@ public class EasyBookingServer {
 		return aerolineas.buscarVuelosDesdeOrigen(aeropuertoOrigen, fecha, asientos);
 	}
 	
+	//Funciona
+	/** Con un email te devuelve la lista de Reservas de ese usuario
+	 * @param email
+	 * @return
+	 */
+	public List<Reserva> getReservasByUser(String email) {
+		Usuario u = db.getUserByEmail(email);
+		return u.getReservas();
+	}
 
 }

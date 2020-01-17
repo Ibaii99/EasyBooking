@@ -18,13 +18,14 @@ import data.Vuelo;
 
 public class DataAccessObject {
 	private PersistenceManagerFactory pmf;
+	private PersistenceManager pm;
 	
 	public DataAccessObject() {
 		pmf = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
+		pm = pmf.getPersistenceManager();
 	}
 	
 	public void store(Object u) {
-		PersistenceManager pm = pmf.getPersistenceManager();
 		Transaction tx = pm.currentTransaction();
 		try {
 			tx.begin();
@@ -133,7 +134,7 @@ public class DataAccessObject {
 	
 	public List<Aerolinea> getAerolineas(){
 		List <Aerolinea> aero = new ArrayList<Aerolinea>();
-		PersistenceManager pm = pmf.getPersistenceManager();
+		
 		Transaction tx = pm.currentTransaction();
 		try {
 			System.out.println("   * Retrieving an Extent for Airline.");
@@ -158,7 +159,6 @@ public class DataAccessObject {
 	
 	public List<Usuario> getUsuarios(){
 		List <Usuario> usr = new ArrayList<Usuario>();
-		PersistenceManager pm = pmf.getPersistenceManager();
 		Transaction tx = pm.currentTransaction();
 		try {
 			System.out.println("   * Retrieving an Extent for Usuarios.");
@@ -180,7 +180,6 @@ public class DataAccessObject {
 	
 	public List<Pago> getPagos(){
 		List <Pago> usr = new ArrayList<Pago>();
-		PersistenceManager pm = pmf.getPersistenceManager();
 		Transaction tx = pm.currentTransaction();
 		try {
 			System.out.println("   * Retrieving an Extent for Usuarios.");
@@ -203,7 +202,6 @@ public class DataAccessObject {
 	
 	public List<Vuelo> getVuelos(){
 		List <Vuelo> usr = new ArrayList<Vuelo>();
-		PersistenceManager pm = pmf.getPersistenceManager();
 		Transaction tx = pm.currentTransaction();
 		try {
 			System.out.println("   * Retrieving an Extent for Usuarios.");
@@ -225,16 +223,12 @@ public class DataAccessObject {
 	
 	public List<Reserva> getReservas(){
 		List <Reserva> res = new ArrayList<Reserva>();
-		PersistenceManager pm = pmf.getPersistenceManager();
 		Transaction tx = pm.currentTransaction();
 		try {
 			System.out.println("   * Retrieving an Extent for Reservas.");
 			tx.begin();
 			Extent<Reserva> extent = pm.getExtent(Reserva.class, true);
-			
-//			Query<Reserva> q = pm.newQuery(Reserva.class);
-//			res = q.executeList();
-			
+				
 			for (Reserva product : extent) {
 				if(product != null) {
 					Reserva reserva = product;
@@ -247,17 +241,7 @@ public class DataAccessObject {
 					reserva.setUsuario(u);
 					//TODO
 					
-//					reserva.testToString();
-//					reserva.getUsuario().testToString();
-//					reserva.getPago().testToString();
-//					reserva.getVuelo().testToString();
-//					System.out.println("------------------");
-					
 					res.add(reserva);
-//					res.get(0).testToString();
-//					res.get(0).getUsuario().testToString();
-//					res.get(0).getPago().testToString();
-//					res.get(0).getVuelo().testToString();
 				}
 			}
 			tx.commit();
@@ -273,6 +257,16 @@ public class DataAccessObject {
 		return res;
 	}
 	
+	public Usuario getUserByEmail(String email) {
+		List<Usuario> usr = getUsuarios();
+		for(Usuario u: usr) {
+			if(u.getEmail().equals(email)) {
+				return u;
+			}
+		}
+		return null;
+		
+	}
 	public void closeConection() {
 		pmf.close();
 	}
