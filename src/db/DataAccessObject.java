@@ -114,11 +114,6 @@ public class DataAccessObject {
 		p1.setReserva(r2);
 
 		
-		
-		
-		u1.addReserva(r1);
-		u2.addReserva(r2);
-		
 		store(u1);
 		store(u2);
 		store(u3);
