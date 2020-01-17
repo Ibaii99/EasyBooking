@@ -21,7 +21,7 @@ public interface IGatewayAerolinea {
 	 * @param asientos
 	 * @return Devuelve una clase vuelo que cumpla con las caracteristicas descritas
 	 */
-	public VueloDTO buscarVuelo(String aeropuertoDestino, String aeropuertoOrigen, String fechaIda, String fechaVuelta, int asientos);
+	public VueloDTO buscarVuelo(String aeropuertoDestino, String aeropuertoOrigen, String fecha, int asientos);
 	/**
 	 * @param aeropuertoOrigen Aeropuerto de Origen
 	 * @param fecha Fecha de partida del vuelo

@@ -32,10 +32,10 @@ public class AerolineaService {
 		return vuelos;
 	}
 	 
-	public VueloDTO buscarVuelo(String aeropuertoDestino, String aeropuertoOrigen, String fechaIda, String fechaVuelta, int asientos){
+	public VueloDTO buscarVuelo(String aeropuertoDestino, String aeropuertoOrigen, String fecha, int asientos){
 		VueloDTO vuelo = null;
 		for(IGatewayAerolinea aerolinea : aerolineas) {
-			VueloDTO v = aerolinea.buscarVuelo(aeropuertoDestino, aeropuertoOrigen, fechaIda, fechaVuelta, asientos);
+			VueloDTO v = aerolinea.buscarVuelo(aeropuertoDestino, aeropuertoOrigen, fecha, asientos);
 			if(v != null) {
 				vuelo = v;
 			}
