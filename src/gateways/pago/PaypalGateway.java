@@ -26,4 +26,9 @@ public class PaypalGateway implements IGatewayPago{
 		return server.realizarPago(precio, email, contrasenya);
 	}
 
+	@Override
+	public boolean tieneFondos(int precio, String email, String contrasenya) throws RemoteException {
+		return server.tieneFondos(precio, email, contrasenya);
+	}
+
 }

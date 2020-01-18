@@ -3,7 +3,9 @@ package bin;
 
 
 import java.rmi.RemoteException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import data.Pago;
@@ -34,8 +36,6 @@ public class EasyBookingServer {
 		db = new DataAccessObject();
 		System.out.println("inicio");
 		db.createSomeDatos();
-		
-		
 		//register("ibai2.guillen@opendeusto.es","1qwerty78","ibai2",22,"BIO")
 		
 		/*
@@ -76,35 +76,46 @@ public class EasyBookingServer {
 		db.closeConection();
 	}
 	
-	public boolean reservarYpagar(int precio, int plazas, String emailPaypal,String contrasenya, VueloDTO vuelo, String emailUsuarioReserva, String nombreUsuario) {
+	public boolean reservarYpagar(int precio, int plazas, String emailPaypal,String contrasenya, VueloDTO vuelo, String emailUsuarioReserva) {
 		try {
-			if(pago.pagar(precio, emailPaypal, contrasenya) == true) {
-				if(aerolineas.reservarVuelo(vuelo, nombreUsuario, plazas) == true) {
-					PagoDTO p = new PagoDTO();
-					p.setEmail(emailPaypal);
-					p.setFecha("");
-					p.setNumeroAsientos(plazas);
+			if(pago.tieneFondos(precio, emailPaypal, contrasenya) == true) {
+				//if(aerolineas.reservarVuelo(vuelo, plazas) == true) {
+					SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");  
+				    Date date = new Date();  
+					String fecha = formatter.format(date);
+					
+					Usuario u = new Usuario();
+					u = db.getUserByEmail(emailUsuarioReserva);
+					
+					Vuelo v = assem.disassemble(vuelo);
+					
+					Pago p = new Pago();
+					Reserva r = new Reserva();
+									
+					r.setFecha(fecha);
+					r.setNumeroAsientos(plazas);
+					
+					r.setTipoPago("paypal");
+					r.setUsuario(u);
+					r.setVuelo(v);
+					
 					p.setPaypalEmail(emailPaypal);
 					p.setPrecio(precio);
-					p.setTipoPago("paypal");
-					Pago pg = assem.disassemble(p);
-					db.store(pg);
-					Vuelo v = assem.disassemble(vuelo);
-					db.store(v);
-					Reserva r = new Reserva();
-					r.setFecha("");
-					r.setNumeroAsientos(plazas);
-					r.setPago(pg);
-					r.setTipoPago("paypal");
-					UsuarioDTO u = new UsuarioDTO();
-					u.setEmail(emailUsuarioReserva);
-					u.setNombre(nombreUsuario);
-					Usuario user = assem.disassemble(u);
-					r.setUsuario(user);
-					r.setVuelo(v);
+					p.setTipo("paypal");
+
+					r.setPago(p);
+					p.setReserva(r);
+					
+//					p.setTarjetaFechaCaducidad(tarjetaFechaCaducidad);
+//					p.setTarjetaNumero(tarjetaNumero);
+//					p.setTarjetaTipo(tarjetaTipo);
 					db.store(r);
+					db.store(p);
+					db.store(v);
+					
+					pago.pagar(precio, emailPaypal, contrasenya);
 					return true;
-				}
+				//}
 			}
 		} catch (Exception e) {
 			System.err.println("- Error al pagar: " + e.getMessage());

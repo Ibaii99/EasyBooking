@@ -21,4 +21,9 @@ public class PagoService {
 		return pagos.get(0).realizarPago(precio, email, contrasenya);
 	}
 	
+	public boolean tieneFondos(int precio, String email, String contrasenya) throws RemoteException {
+		return pagos.get(0).tieneFondos(precio, email, contrasenya);
+	}
+	
+	
 }
