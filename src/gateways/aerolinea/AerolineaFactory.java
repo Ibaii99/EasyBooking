@@ -11,20 +11,21 @@ public class AerolineaFactory {
 	 *  Aerolineas.
 	 */
 	private ArrayList<IGatewayAerolinea> gatewaysAerolineas;
-	NumeracionAerolinea allAerolineas;
+	private NumeracionAerolinea allAerolineas;
 	
 	public ArrayList<IGatewayAerolinea> getGatewaysAerolineas() {
 		return gatewaysAerolineas;
 	}
 
 	public AerolineaFactory() {
-		NumeracionAerolinea allAerolineas = new NumeracionAerolinea();
+		allAerolineas = new NumeracionAerolinea();
 		allAerolineas.loadAerolineas();
+		gatewaysAerolineas = new ArrayList<IGatewayAerolinea>();
 		initializeGateways();
 	}
 	
 	public void initializeGateways() {
-		gatewaysAerolineas = new ArrayList<IGatewayAerolinea>();
+		
 		
 		for (String e : allAerolineas.getCodAerolineas()) {
 			switch (e) {

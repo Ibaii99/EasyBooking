@@ -1,6 +1,7 @@
 package services;
 
 
+import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,18 +22,17 @@ public class AerolineaService {
 		aerolineas = factory.getGatewaysAerolineas();	
 	}
 	
-	public ArrayList<VueloDTO> getAllVuelos(){
-		ArrayList<VueloDTO> vuelos = new ArrayList<VueloDTO>();
-		for(IGatewayAerolinea aerolinea : aerolineas) {
-			ArrayList<VueloDTO> vue = aerolinea.getAllVuelos();
-			for(VueloDTO v : vue) {
-				vuelos.add(v);
+	public ArrayList<VueloDTO> getAllVuelos() throws RemoteException{
+		ArrayList<VueloDTO> a = new ArrayList<VueloDTO>();
+		for(IGatewayAerolinea i : aerolineas) {
+			for(VueloDTO v : i.getAllVuelos()) {
+				a.add(v);
 			}
 		}
-		return vuelos;
+		return a;
 	}
 	 
-	public VueloDTO buscarVuelo(String aeropuertoDestino, String aeropuertoOrigen, String fecha, String fechaVuelta, int asientos){
+	public VueloDTO buscarVuelo(String aeropuertoDestino, String aeropuertoOrigen, String fecha, String fechaVuelta, int asientos) throws RemoteException{
 		VueloDTO vuelo = null;
 		for(IGatewayAerolinea aerolinea : aerolineas) {
 			VueloDTO v = aerolinea.buscarVuelo(aeropuertoDestino, aeropuertoOrigen, fecha, asientos);
@@ -43,7 +43,7 @@ public class AerolineaService {
 		return vuelo;
 	}
 	 
-	public ArrayList<VueloDTO> buscarVuelosDesdeOrigen(String aeropuertoOrigen, String fecha, int asientos){
+	public ArrayList<VueloDTO> buscarVuelosDesdeOrigen(String aeropuertoOrigen, String fecha, int asientos) throws RemoteException{
 		ArrayList<VueloDTO> vuelos = new ArrayList<VueloDTO>();
 		for(IGatewayAerolinea aerolinea : aerolineas) {
 			ArrayList<VueloDTO> vue = aerolinea.buscarVuelosDesdeOrigen(aeropuertoOrigen, fecha, asientos);
@@ -54,7 +54,7 @@ public class AerolineaService {
 		return vuelos;
 	}
 	
-	public boolean reservarVuelo(VueloDTO vuelo, String nombre, int plazas){
+	public boolean reservarVuelo(VueloDTO vuelo, String nombre, int plazas) throws RemoteException{
 		for(IGatewayAerolinea aerolinea : aerolineas) {
 			if(aerolinea.reservarVuelo(vuelo, nombre, plazas) == true) return true;
 		}

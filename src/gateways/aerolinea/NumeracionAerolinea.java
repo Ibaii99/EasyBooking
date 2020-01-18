@@ -25,8 +25,12 @@ public class NumeracionAerolinea {
 	}
 	
 	public void loadAerolineas() {
+//		String[] aerolineas = {
+//				"IBE",
+//				"RYR"
+//			};
+//		
 		String[] aerolineas = {
-				"IBE",
 				"RYR"
 			};
 		cantidadAerolineas = 2;

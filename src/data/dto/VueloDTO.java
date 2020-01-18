@@ -11,6 +11,7 @@ public class VueloDTO implements Serializable{
 	private String aeropuertoOrigen;
 	private String fecha;
 	private int numAsientos;
+	private String numVuelo;
 	//Aerolinea
 	private String nomAerolinea;
 	
@@ -31,6 +32,14 @@ public class VueloDTO implements Serializable{
 	}
 
 
+
+	public String getNumVuelo() {
+		return numVuelo;
+	}
+
+	public void setNumVuelo(String numVuelo) {
+		this.numVuelo = numVuelo;
+	}
 
 	public void setNomAerolinea(String nomAerolinea) {
 		this.nomAerolinea = nomAerolinea;

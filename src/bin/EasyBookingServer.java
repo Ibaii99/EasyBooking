@@ -24,7 +24,7 @@ import services.PagoService;
 
 public class EasyBookingServer {
 	
-	private AerolineaService aerolineas = new AerolineaService();
+	private static AerolineaService aerolineas = new AerolineaService();
 	private AutentificationService autentification = new AutentificationService();
 	private static PagoService pago;
 	public static DataAccessObject db;
@@ -37,7 +37,14 @@ public class EasyBookingServer {
 		System.out.println("inicio");
 		db.createSomeDatos();
 		//register("ibai2.guillen@opendeusto.es","1qwerty78","ibai2",22,"BIO")
-		
+		try {
+			for(VueloDTO v : aerolineas.getAllVuelos()) {
+				v.testToString();
+			}
+		} catch (RemoteException e) {
+			System.out.println("Error"+ e.getMessage());
+			e.printStackTrace();
+		}
 		/*
 		DTOAssembler dto = new DTOAssembler();
 		for(Usuario e: db.getUsuarios()) {
@@ -146,15 +153,15 @@ public class EasyBookingServer {
 		
 	}
 	
-	public VueloDTO buscarVuelo(String aeropuertoDestino, String aeropuertoOrigen, String fechaIda, String fechaVuelta, int asientos) {
+	public VueloDTO buscarVuelo(String aeropuertoDestino, String aeropuertoOrigen, String fechaIda, String fechaVuelta, int asientos) throws RemoteException {
 		return aerolineas.buscarVuelo(aeropuertoDestino, aeropuertoOrigen, fechaIda, fechaVuelta, asientos);
 	}
 	
-	public ArrayList<VueloDTO> getAllVuelos(){
+	public ArrayList<VueloDTO> getAllVuelos() throws RemoteException{
 		return aerolineas.getAllVuelos();
 	}
 	
-	public ArrayList<VueloDTO> buscarVuelosDesdeOrigen(String aeropuertoOrigen, String fecha, int asientos){
+	public ArrayList<VueloDTO> buscarVuelosDesdeOrigen(String aeropuertoOrigen, String fecha, int asientos) throws RemoteException{
 		return aerolineas.buscarVuelosDesdeOrigen(aeropuertoOrigen, fecha, asientos);
 	}
 	
