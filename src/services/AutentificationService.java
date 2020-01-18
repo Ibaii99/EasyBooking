@@ -1,5 +1,6 @@
 package services;
 
+import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,13 +18,13 @@ public class AutentificationService {
 	}
 	
 	
-	public void registrar(String email, String password) {
+	public void registrar(String email, String password) throws RemoteException{
 		autorizadores.get(0).registrar(email, password);
 		
 	}
 
 	
-	public boolean login(String email, String password) {
+	public boolean login(String email, String password) throws RemoteException{
 		return autorizadores.get(0).login(email, password);
 	}
 }

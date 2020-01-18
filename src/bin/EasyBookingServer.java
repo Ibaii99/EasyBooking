@@ -112,7 +112,7 @@ public class EasyBookingServer {
 		return false;
 	}
 	
-	public boolean login(String email, String password) {
+	public boolean login(String email, String password) throws RemoteException {
 		if(autentification.login(email, password) ==  true){
 			for( Usuario u : db.getUsuarios()) {
 				if(u.isUser(email)== true) return true;
@@ -121,7 +121,7 @@ public class EasyBookingServer {
 		return false;
 	}
 	
-	public void register(String email, String password, String nombre, int edad, String aeropuertoPreferido) {
+	public void register(String email, String password, String nombre, int edad, String aeropuertoPreferido) throws RemoteException {
 		autentification.registrar(email, password);
 		Usuario user = new Usuario();
 		user.setEmail(email);
