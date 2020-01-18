@@ -8,7 +8,7 @@ import server.remote.IServidorPago;
 public class PaypalGateway implements IGatewayPago{
 
 	static String IP = "127.0.0.1";
-	static String Puerto = "1009";
+	static String Puerto = "1099";
 	static String ServiceName = "ServidorPago";
 	
 	private IServidorPago server;
