@@ -139,17 +139,20 @@ public class EasyBookingServer {
 		return false;
 	}
 	
-	public void register(String email, String password, String nombre, int edad, String aeropuertoPreferido) throws RemoteException {
-		autentification.registrar(email, password);
-		Usuario user = new Usuario();
-		user.setEmail(email);
-		user.setNombre(nombre);
-		user.setAeropuertoPreferido(aeropuertoPreferido);
-		user.setEdad(edad);
-		user.setEmail(email);
-		user.setNombre(nombre);
-		user.setTipoLogin("google");
-		db.store(user);
+	public boolean register(String email, String password, String nombre, int edad, String aeropuertoPreferido) throws RemoteException {
+		if(autentification.login(email, password) == true) {
+			Usuario user = new Usuario();
+			user.setEmail(email);
+			user.setNombre(nombre);
+			user.setAeropuertoPreferido(aeropuertoPreferido);
+			user.setEdad(edad);
+			user.setEmail(email);
+			user.setNombre(nombre);
+			user.setTipoLogin("google");
+			db.store(user);
+			return true;
+		}
+		return false;
 		
 	}
 	
