@@ -21,21 +21,26 @@ public class IberiaAirlineGateway implements IGatewayAerolinea {
 	static String ServiceName = "Aerolinea_Iberia";
 	private Socket socket;
 	
-	 public IberiaAirlineGateway() {
-		// TODO Auto-generated constructor stub
-			
-		 
+	public IberiaAirlineGateway() {
+		 try (Socket tcpSocket = new Socket(IP, Puerto)){
+			 
+		} catch (UnknownHostException e) {
+			System.err.println("# TCPSocketClient: Socket error: " + e.getMessage());
+		} catch (EOFException e) {
+			System.err.println("# TCPSocketClient: EOF error: " + e.getMessage());
+		} catch (IOException e) {
+			System.err.println("# TCPSocketClient: IO error: " + e.getMessage());
+		}
 	}
 
 	@Override
 	public boolean reservarVuelo(String codVuelo, String nombre, int plazas) throws RemoteException {
-		// TODO Auto-generated method stub
 		String parametros = codVuelo + ";" + nombre + ";" + plazas;
 		boolean r = false;
 		
 		try {
 			System.out.println(IP+":"+Puerto);
-			socket = new Socket(this.IP, this.Puerto);
+			socket = new Socket(IP, Puerto);
 			DataOutputStream out = new DataOutputStream(socket.getOutputStream());
 			out.writeUTF(parametros);
 			DataInputStream in = new DataInputStream(socket.getInputStream());
@@ -50,7 +55,6 @@ public class IberiaAirlineGateway implements IGatewayAerolinea {
 			}
 		}
 		return r;
-		
 	}
 
 	@Override
@@ -58,7 +62,7 @@ public class IberiaAirlineGateway implements IGatewayAerolinea {
 		// TODO Auto-generated method stub
 		ArrayList<VueloDTO> r = new ArrayList<>();;
 
-		try (Socket tcpSocket = new Socket(this.IP, this.Puerto);
+		try (Socket tcpSocket = new Socket(IP, Puerto);
 			    ObjectInputStream in = new ObjectInputStream(tcpSocket.getInputStream());
 				DataOutputStream out = new DataOutputStream(tcpSocket.getOutputStream())){
 
@@ -88,17 +92,15 @@ public class IberiaAirlineGateway implements IGatewayAerolinea {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		// TODO Auto-generated method stub
 		return r;	}
 
 	@Override
 	public VueloDTO getVuelo(String codVuelo) throws RemoteException {
-		// TODO Auto-generated method stub
+		
 		VueloDTO v = null;
 		String parametros = codVuelo;;
 
-
-		try (Socket tcpSocket = new Socket(this.IP, this.Puerto);
+		try (Socket tcpSocket = new Socket(IP, Puerto);
 			    ObjectInputStream in = new ObjectInputStream(tcpSocket.getInputStream());
 				DataOutputStream out = new DataOutputStream(tcpSocket.getOutputStream())){
 
@@ -106,7 +108,7 @@ public class IberiaAirlineGateway implements IGatewayAerolinea {
 			VueloDTO vueloIberia =new VueloDTO();
 			vueloIberia =  (VueloDTO) in.readObject(); 
 
-			 v = new VueloDTO();
+			v = new VueloDTO();
 
 			v.setNumVuelo(vueloIberia.getNumVuelo());
 			v.setNumAsientos(vueloIberia.getNumAsientos());
@@ -126,12 +128,8 @@ public class IberiaAirlineGateway implements IGatewayAerolinea {
 		} catch (IOException e) {
 			System.err.println("# TCPSocketClient: IO error: " + e.getMessage());
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		// TODO Auto-generated m
-
-
 return v;
 		
 	}
@@ -139,12 +137,10 @@ return v;
 	@Override
 	public VueloDTO buscarVuelo(String aeropuertoDestino, String aeropuertoOrigen, String fecha, int asientos)
 			throws RemoteException {
-		// TODO Auto-generated method stub
 		VueloDTO v = null;
 		String parametros = aeropuertoDestino + ";" + aeropuertoOrigen + ";" + fecha +";" +asientos;
 
-
-		try (Socket tcpSocket = new Socket(this.IP, this.Puerto);
+		try (Socket tcpSocket = new Socket(IP, Puerto);
 			    ObjectInputStream in = new ObjectInputStream(tcpSocket.getInputStream());
 				DataOutputStream out = new DataOutputStream(tcpSocket.getOutputStream())){
 
@@ -161,10 +157,6 @@ return v;
 			v.setFecha(vueloIberia.getFecha());
 			v.setNomAerolinea(vueloIberia.getNomAerolinea());		
 
-
-
-
-
 		}catch (UnknownHostException e) {
 			System.err.println("# TCPSocketClient: Socket error: " + e.getMessage());
 		} catch (EOFException e) {
@@ -172,12 +164,8 @@ return v;
 		} catch (IOException e) {
 			System.err.println("# TCPSocketClient: IO error: " + e.getMessage());
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		// TODO Auto-generated m
-
-
 return v;
 	}
 
@@ -186,9 +174,9 @@ return v;
 			throws RemoteException {
 		String parametros = aeropuertoOrigen + ";" +  fecha + ";" + asientos;
 		System.out.println(parametros);
-		ArrayList<VueloDTO> r = new ArrayList<>();;
+		ArrayList<VueloDTO> r = new ArrayList<>();
 
-		try (Socket tcpSocket = new Socket(this.IP, this.Puerto);
+		try (Socket tcpSocket = new Socket(IP, Puerto);
 			    ObjectInputStream in = new ObjectInputStream(tcpSocket.getInputStream());
 				DataOutputStream out = new DataOutputStream(tcpSocket.getOutputStream())){
 
@@ -206,8 +194,6 @@ return v;
 				v.setNomAerolinea(vueloIberia.get(i).getNomAerolinea());		
 				r.add(v);
 			}
-
-
 		}catch (UnknownHostException e) {
 			System.err.println("# TCPSocketClient: Socket error: " + e.getMessage());
 		} catch (EOFException e) {
@@ -215,13 +201,9 @@ return v;
 		} catch (IOException e) {
 			System.err.println("# TCPSocketClient: IO error: " + e.getMessage());
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		// TODO Auto-generated method stub
-		
 		return r;
-	
 	}
 
 }
