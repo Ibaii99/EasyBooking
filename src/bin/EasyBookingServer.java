@@ -74,11 +74,18 @@ public class EasyBookingServer extends UnicastRemoteObject implements IEasyBooki
 
 	@Override
 	public boolean login(String email, String password) throws RemoteException {
+		System.out.println("Request login()");
+		System.out.println("Email: " + email);
+		System.out.println("Pass: "+ password);
 		if(autentification.login(email, password) ==  true){
 			for( Usuario u : db.getUsuarios()) {
-				if(u.isUser(email)== true) return true;
+				if(u.isUser(email)== true) {
+					System.out.println("Usuario en BD");
+					return true;
+				}
 			}
 		}
+		System.out.println("Usuario no esta en BD");
 		return false;
 	}
 	
@@ -101,7 +108,7 @@ public class EasyBookingServer extends UnicastRemoteObject implements IEasyBooki
 	}
 	
 	@Override
-	public boolean reservarYpagar(int precio, int plazas, String emailPaypal,String contrasenyaPaypal, String codigoVuelo, String emailUsuarioReserva) {
+	public boolean reservarYpagar(int precio, int plazas, String emailPaypal,String contrasenyaPaypal, String codigoVuelo, String emailUsuarioReserva) throws RemoteException  {
 		try {
 			if(pago.tieneFondos(precio, emailPaypal, contrasenyaPaypal) == true) {
 				if(aerolineas.reservarVuelo(codigoVuelo, emailUsuarioReserva, plazas) == true) {
@@ -171,7 +178,7 @@ public class EasyBookingServer extends UnicastRemoteObject implements IEasyBooki
 	
 	
 	@Override
-	public List<ReservaDTO> getReservasByUser(String email){
+	public List<ReservaDTO> getReservasByUser(String email) throws RemoteException {
 		Usuario u = db.getUserByEmail(email);
 		List<ReservaDTO> r = new ArrayList<ReservaDTO>();
 		for(Reserva res : u.getReservas()) {
@@ -181,7 +188,7 @@ public class EasyBookingServer extends UnicastRemoteObject implements IEasyBooki
 	}
 	
 	@Override
-	public UsuarioDTO getUserInfo(String email) {
+	public UsuarioDTO getUserInfo(String email)  throws RemoteException{
 		Usuario u = db.getUserByEmail(email);
 		return assem.assemble(u);
 	}

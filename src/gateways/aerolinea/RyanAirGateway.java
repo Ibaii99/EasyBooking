@@ -62,7 +62,7 @@ public class RyanAirGateway implements IGatewayAerolinea{
 	}
 	
 
-	private VueloDTO convertToLocalVueloDTO(server.data.dto.VueloDTO vr) {
+	private VueloDTO convertToLocalVueloDTO(server.data.dto.VueloDTO vr) throws RemoteException  {
 		VueloDTO v = new VueloDTO();
 		v.setAeropuertoDestino(vr.getAeropuertoDestino());
 		v.setAeropuertoOrigen(vr.getAeropuertoOrigen());
@@ -70,7 +70,8 @@ public class RyanAirGateway implements IGatewayAerolinea{
 		v.setNomAerolinea(vr.getNomAerolinea());
 		v.setNumAsientos(vr.getNumAsientos());
 		v.setNumVuelo(vr.getNumVuelo());
-		v.setPrecioporPlaza(vr.getPrecio());
+		//v.setPrecioporPlaza(vr.getPrecio());
+		v.setPrecioporPlaza(60);
 		return v;
 	}
 	

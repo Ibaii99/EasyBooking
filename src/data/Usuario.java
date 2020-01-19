@@ -26,7 +26,7 @@ public class Usuario implements Serializable{
 	private List<Reserva> reservas;
 	
 	public boolean isUser(String mail) {
-		if(this.email == nombre) return true;
+		if(this.email.equals(mail)) return true;
 		return false;
 	}
 	

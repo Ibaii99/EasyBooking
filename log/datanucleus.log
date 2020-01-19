@@ -3583,3 +3583,229 @@ org.datanucleus.exceptions.NucleusUserException: Objeto con id "data.Vuelo@376a3
 17:08:20,329 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
 18:20:28,839 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
 18:20:29,192 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+18:51:04,398 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+18:51:04,707 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+18:51:04,715 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+18:51:04,721 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+18:51:04,729 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+18:51:04,736 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+18:51:04,737 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+18:51:13,345 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+18:51:13,656 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+18:51:13,664 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+18:51:13,670 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+18:51:13,678 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+18:51:13,685 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+18:51:13,687 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+18:51:14,095 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Eliminación del esquema para clases
+18:51:14,097 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+18:51:14,098 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\Aerolinea_Iberia.jar
+18:51:14,099 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\Aerolinea_Ryanair.jar
+18:51:14,100 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\datanucleus-api-jdo-5.2.2.jar
+18:51:14,100 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\datanucleus-cache-5.1.1.jar
+18:51:14,100 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\datanucleus-core-5.2.2.jar
+18:51:14,101 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\datanucleus-rdbms-5.2.1.jar
+18:51:14,101 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\javax.jdo-3.2.0-m12.jar
+18:51:14,101 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\log4j-1.2.14.jar
+18:51:14,102 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\mysql-connector-java-8.0.17.jar
+18:51:14,102 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\servidorAutorizacion.jar
+18:51:14,102 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\servidorPago.jar
+18:51:14,102 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin
+18:51:14,103 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\resources
+18:51:14,755 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+18:51:15,009 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+18:51:15,009 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\bin\EasyBookingServer.class
+18:51:15,009 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\bin\IEasyBookingServer.class
+18:51:15,010 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class
+18:51:15,010 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class
+18:51:15,010 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class
+18:51:15,010 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class
+18:51:15,011 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class
+18:51:15,011 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\AerolineaDTO.class
+18:51:15,011 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\DTOAssembler.class
+18:51:15,011 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\PagoDTO.class
+18:51:15,012 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\ReservaDTO.class
+18:51:15,012 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\UsuarioDTO.class
+18:51:15,012 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\VueloDTO.class
+18:51:15,012 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\db\DataAccessObject.class
+18:51:15,012 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\IGatewayAerolinea.class
+18:51:15,013 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\IGatewayAutorizacion.class
+18:51:15,013 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\IGatewayPago.class
+18:51:15,013 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\aerolinea\AerolineaFactory.class
+18:51:15,013 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\aerolinea\IberiaAirlineGateway.class
+18:51:15,013 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\aerolinea\NumeracionAerolinea.class
+18:51:15,014 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\aerolinea\RyanAirGateway.class
+18:51:15,014 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\autentification\GoogleGateway.class
+18:51:15,015 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\pago\PaypalGateway.class
+18:51:15,015 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\services\AerolineaService.class
+18:51:15,015 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\services\AutentificationService.class
+18:51:15,016 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\services\PagoService.class
+18:51:16,648 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+18:58:45,662 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+18:58:45,966 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+18:58:45,974 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+18:58:45,980 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+18:58:45,988 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+18:58:45,994 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+18:58:45,996 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+18:58:53,380 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+18:58:53,700 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+18:58:53,709 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+18:58:53,715 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+18:58:53,723 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+18:58:53,730 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+18:58:53,732 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+18:58:54,135 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+18:58:54,138 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+18:58:54,139 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\Aerolinea_Iberia.jar
+18:58:54,139 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\Aerolinea_Ryanair.jar
+18:58:54,139 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\datanucleus-api-jdo-5.2.2.jar
+18:58:54,139 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\datanucleus-cache-5.1.1.jar
+18:58:54,141 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\datanucleus-core-5.2.2.jar
+18:58:54,141 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\datanucleus-rdbms-5.2.1.jar
+18:58:54,141 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\javax.jdo-3.2.0-m12.jar
+18:58:54,142 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\log4j-1.2.14.jar
+18:58:54,142 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\mysql-connector-java-8.0.17.jar
+18:58:54,142 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\servidorAutorizacion.jar
+18:58:54,142 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\servidorPago.jar
+18:58:54,143 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin
+18:58:54,143 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\resources
+18:58:54,807 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+18:58:55,071 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+18:58:55,094 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\bin\EasyBookingServer.class
+18:58:55,095 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\bin\IEasyBookingServer.class
+18:58:55,095 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class
+18:58:55,096 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class
+18:58:55,096 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class
+18:58:55,096 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class
+18:58:55,097 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class
+18:58:55,097 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\AerolineaDTO.class
+18:58:55,097 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\DTOAssembler.class
+18:58:55,097 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\PagoDTO.class
+18:58:55,098 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\ReservaDTO.class
+18:58:55,098 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\UsuarioDTO.class
+18:58:55,098 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\VueloDTO.class
+18:58:55,098 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\db\DataAccessObject.class
+18:58:55,099 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\IGatewayAerolinea.class
+18:58:55,099 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\IGatewayAutorizacion.class
+18:58:55,099 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\IGatewayPago.class
+18:58:55,100 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\aerolinea\AerolineaFactory.class
+18:58:55,100 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\aerolinea\IberiaAirlineGateway.class
+18:58:55,100 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\aerolinea\NumeracionAerolinea.class
+18:58:55,100 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\aerolinea\RyanAirGateway.class
+18:58:55,100 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\autentification\GoogleGateway.class
+18:58:55,101 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\pago\PaypalGateway.class
+18:58:55,101 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\services\AerolineaService.class
+18:58:55,101 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\services\AutentificationService.class
+18:58:55,101 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\services\PagoService.class
+18:58:55,493 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+18:58:55,494 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+18:58:55,638 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+18:58:55,644 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+18:58:55,644 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+18:58:55,644 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+18:58:55,645 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+18:58:55,779 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+18:58:55,789 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+18:58:55,905 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+18:58:55,916 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+18:58:55,916 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+18:58:55,917 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+18:58:55,917 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+18:58:56,055 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+18:58:56,055 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+18:58:56,055 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+18:58:56,056 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+18:58:56,261 (main) WARN  [DataNucleus.Datastore] - SQL Warning : 'BINARY as attribute of a type' is deprecated and will be removed in a future release. Please use a CHARACTER SET clause with _bin collation instead
+18:59:00,566 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+19:05:13,211 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:05:13,461 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:08:04,687 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:08:05,021 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:15:20,769 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:15:21,087 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:19:49,488 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:19:49,779 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:20:23,223 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:20:23,557 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:35:50,859 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:35:51,844 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:36:45,747 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+19:36:46,045 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+19:36:46,054 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+19:36:46,061 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+19:36:46,069 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+19:36:46,075 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+19:36:46,077 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+19:36:51,857 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+19:36:52,356 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+19:36:52,365 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+19:36:52,375 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+19:36:52,387 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+19:36:52,394 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+19:36:52,396 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+19:36:52,801 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Creación del esquema para clases
+19:36:52,803 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Classpath
+19:36:52,804 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\Aerolinea_Iberia.jar
+19:36:52,804 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\Aerolinea_Ryanair.jar
+19:36:52,804 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\datanucleus-api-jdo-5.2.2.jar
+19:36:52,804 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\datanucleus-cache-5.1.1.jar
+19:36:52,805 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\datanucleus-core-5.2.2.jar
+19:36:52,805 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\datanucleus-rdbms-5.2.1.jar
+19:36:52,805 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\javax.jdo-3.2.0-m12.jar
+19:36:52,805 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\log4j-1.2.14.jar
+19:36:52,805 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\mysql-connector-java-8.0.17.jar
+19:36:52,806 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\servidorAutorizacion.jar
+19:36:52,806 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\lib\servidorPago.jar
+19:36:52,807 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin
+19:36:52,807 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\resources
+19:36:53,568 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:36:53,909 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool : Ficheros
+19:36:53,909 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\bin\EasyBookingServer.class
+19:36:53,909 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\bin\IEasyBookingServer.class
+19:36:53,909 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class
+19:36:53,910 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class
+19:36:53,910 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class
+19:36:53,910 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class
+19:36:53,911 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class
+19:36:53,911 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\AerolineaDTO.class
+19:36:53,912 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\DTOAssembler.class
+19:36:53,912 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\PagoDTO.class
+19:36:53,912 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\ReservaDTO.class
+19:36:53,912 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\UsuarioDTO.class
+19:36:53,913 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\dto\VueloDTO.class
+19:36:53,913 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\db\DataAccessObject.class
+19:36:53,913 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\IGatewayAerolinea.class
+19:36:53,913 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\IGatewayAutorizacion.class
+19:36:53,914 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\IGatewayPago.class
+19:36:53,914 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\aerolinea\AerolineaFactory.class
+19:36:53,914 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\aerolinea\IberiaAirlineGateway.class
+19:36:53,914 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\aerolinea\NumeracionAerolinea.class
+19:36:53,914 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\aerolinea\RyanAirGateway.class
+19:36:53,915 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\autentification\GoogleGateway.class
+19:36:53,915 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\gateways\pago\PaypalGateway.class
+19:36:53,915 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\services\AerolineaService.class
+19:36:53,915 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\services\AutentificationService.class
+19:36:53,916 (main) INFO  [DataNucleus.SchemaTool] - >>  C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\services\PagoService.class
+19:36:54,582 (main) INFO  [DataNucleus.SchemaTool] - DataNucleus SchemaTool ha terminado con exito
+19:37:00,516 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:37:01,070 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:37:59,735 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:38:00,097 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+19:38:00,679 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@dcfda20" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+19:38:00,686 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@71e5f61d" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+19:38:00,689 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@6a62689d" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+19:38:00,692 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@69c79f09" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+19:38:00,698 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@35fe2125" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+19:38:00,703 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@35fe2125" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+19:38:00,708 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@35fe2125" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+19:38:00,712 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@35fe2125" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+19:38:00,716 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@35fe2125" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+19:38:00,727 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@35fe2125" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+19:40:04,972 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+19:40:05,281 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+19:40:05,291 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+19:40:05,299 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+19:40:05,310 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+19:40:05,318 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+19:40:05,320 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
