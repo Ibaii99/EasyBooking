@@ -46,7 +46,8 @@ public class AerolineaFactory {
 	
 	private void initializeIberia() {
 		IberiaAirlineGateway iberia = new IberiaAirlineGateway();
-		gatewaysAerolineas.add(iberia);
+		//TODO descomentarlo para ver si iberia va bien, si da un error de null es que no esta recibiendo nada
+		//gatewaysAerolineas.add(iberia);
 	}
 	
 	private void initializeRyanAir() {

@@ -27,6 +27,7 @@ public class AerolineaService {
 		for(IGatewayAerolinea i : aerolineas) {
 			for(VueloDTO v : i.getAllVuelos()) {
 				a.add(v);
+				v.testToString();
 			}
 		}
 		return a;

@@ -29,7 +29,8 @@ public class NumeracionAerolinea {
 				"IBE",
 				"RYR"
 			};
-		
+	
+
 		cantidadAerolineas = 2;
 		this.codAerolineas = aerolineas;
 		

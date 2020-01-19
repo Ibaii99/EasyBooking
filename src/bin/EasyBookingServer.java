@@ -167,6 +167,7 @@ public class EasyBookingServer extends UnicastRemoteObject implements IEasyBooki
 	
 	@Override
 	public List<VueloDTO> getAllVuelos() throws RemoteException{
+		System.out.println("Request: +getAllVuelos()");
 		return aerolineas.getAllVuelos();
 	}
 	
