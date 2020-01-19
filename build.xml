@@ -23,7 +23,6 @@
     <target name="1.compile" description="Builds the source code">
     	<delete dir="${bin.dir}"/>
     	<mkdir dir="${bin.dir}"/>
-    	
     	<javac srcdir="${src.dir}" destdir="${bin.dir}" classpathref="classpath" includeantruntime="false" fork="true">
             <include name="**/*.java"/>
          </javac>

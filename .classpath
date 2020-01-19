@@ -12,5 +12,6 @@
 	<classpathentry kind="lib" path="lib/servidorAutorizacion.jar"/>
 	<classpathentry kind="lib" path="lib/servidorPago.jar"/>
 	<classpathentry kind="lib" path="lib/Aerolinea_Ryanair.jar"/>
+	<classpathentry kind="lib" path="lib/Aerolinea_Iberia.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

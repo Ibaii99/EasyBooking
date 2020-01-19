@@ -2,7 +2,9 @@ package bin;
 
 
 
+import java.rmi.Naming;
 import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -18,38 +20,57 @@ import data.dto.ReservaDTO;
 import data.dto.UsuarioDTO;
 import data.dto.VueloDTO;
 import db.DataAccessObject;
+import server.remote.IServidorPago;
 import services.AerolineaService;
 import services.AutentificationService;
 import services.PagoService;
 
 
-public class EasyBookingServer implements IEasyBookingServer{
+public class EasyBookingServer extends UnicastRemoteObject implements IEasyBookingServer{
 	
+	private static final long serialVersionUID = 1L;
 	private static AerolineaService aerolineas = new AerolineaService();
 	private AutentificationService autentification = new AutentificationService();
 	private static PagoService pago;
 	public static DataAccessObject db;
 	public static DTOAssembler assem;
-	
+
 	public static void main(String[] args){
+		if (args.length != 3) {
+			System.out.println("usage: java [policy] [codebase] server.Server [host] [port] [server]");
+			System.exit(0);
+		}
+		
+		if (System.getSecurityManager() == null) {
+			System.setSecurityManager(new SecurityManager());
+		}
+		
+		String name = "//" + args[0] + ":" + args[1] + "/" + args[2];
+		
+		try {
+			IEasyBookingServer server = new EasyBookingServer();
+			Naming.rebind(name, server);
+			System.out.println("* Server '" + name + "' active and waiting...");
+		} catch (Exception e) {
+			System.err.println("- Exception running the server: " + e.getMessage());
+			e.printStackTrace();
+		}
+	}
+	
+	protected EasyBookingServer() throws RemoteException {
+		super();
+		
 		pago = new PagoService(); //Descomentar para usarlo
 		assem = new DTOAssembler();
 		db = new DataAccessObject();
 		
 		System.out.println("inicio");
 		db.createSomeDatos();
-		try {
-			for(VueloDTO v : aerolineas.getAllVuelos()) {
-				v.testToString();
-			}
-		} catch (RemoteException e) {
-			System.out.println("Error"+ e.getMessage());
-			e.printStackTrace();
-		}
-		
-		db.closeConection();
 	}
 	
+	public void closeDB() {
+		db.closeConection();
+	}
 
 	@Override
 	public boolean login(String email, String password) throws RemoteException {

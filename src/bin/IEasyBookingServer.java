@@ -1,5 +1,6 @@
 package bin;
 
+import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +10,7 @@ import data.dto.ReservaDTO;
 import data.dto.UsuarioDTO;
 import data.dto.VueloDTO;
 
-public interface IEasyBookingServer {
+public interface IEasyBookingServer extends Remote {
 
 	public boolean login(String email, String password) throws RemoteException;
 	public boolean register(String email, String password, String nombre, int edad, String aeropuertoPreferido) throws RemoteException;

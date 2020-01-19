@@ -1,5 +1,6 @@
 package gateways.aerolinea;
 
+import java.net.Socket;
 import java.rmi.RemoteException;
 import java.util.List;
 
@@ -7,6 +8,17 @@ import data.dto.VueloDTO;
 import gateways.IGatewayAerolinea;
 
 public class IberiaAirlineGateway implements IGatewayAerolinea {
+	
+	static String IP = "127.0.0.1";
+	static int Puerto = 1099;
+	static String ServiceName = "Aerolinea_Iberia";
+	private Socket socket;
+	
+	 public IberiaAirlineGateway() {
+		// TODO Auto-generated constructor stub
+			
+		 
+	}
 
 	@Override
 	public boolean reservarVuelo(String codVuelo, String nombre, int plazas) throws RemoteException {
@@ -39,7 +51,5 @@ public class IberiaAirlineGateway implements IGatewayAerolinea {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
-
 
 }
