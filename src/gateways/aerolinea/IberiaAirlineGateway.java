@@ -1,19 +1,27 @@
 package gateways.aerolinea;
 
 import java.rmi.RemoteException;
-import java.util.ArrayList;
-import java.util.Date;
+import java.util.List;
 
-import Ryanair.VueloRyanair;
-import data.Vuelo;
-import data.dto.UsuarioDTO;
 import data.dto.VueloDTO;
 import gateways.IGatewayAerolinea;
 
 public class IberiaAirlineGateway implements IGatewayAerolinea {
 
 	@Override
-	public ArrayList<VueloDTO> getAllVuelos() throws RemoteException {
+	public boolean reservarVuelo(String codVuelo, String nombre, int plazas) throws RemoteException {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<VueloDTO> getAllVuelos() throws RemoteException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public VueloDTO getVuelo(String codVuelo) throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -26,22 +34,12 @@ public class IberiaAirlineGateway implements IGatewayAerolinea {
 	}
 
 	@Override
-	public ArrayList<VueloDTO> buscarVuelosDesdeOrigen(String aeropuertoOrigen, String fecha, int asientos)
+	public List<VueloDTO> buscarVuelosDesdeOrigen(String aeropuertoOrigen, String fecha, int asientos)
 			throws RemoteException {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
-	public boolean reservarVuelo(VueloDTO vuelo, String nombre, int plazas) throws RemoteException {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	
-	
-	
-	
 
 
 }

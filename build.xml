@@ -4,6 +4,7 @@
     <property name="bin.dir" location="bin"/>
 	<property name="lib.dir" location="lib"/>
 	<property name="dist.dir" location="dist"/>
+   	<property name="build.dir" location="bin"/>
 	<property name="resources.dir" location="resources"/>
 	<property name="server.Name" value="EasyBooking"/>
 	<property name="rmiregistry.IP" value="127.0.0.1"/>
@@ -28,9 +29,12 @@
          </javac>
     </target>
 	
-	<target name="2.export-jar" depends="1.compile" description="Export the project into a .jar file">
-		<jar destfile="${dist.dir}/${export.file}" basedir="${bin.dir}" includes="es/deusto/ingenieria/sd/datanucleus/jdo/remote/I**.class, es/deusto/ingenieria/sd/datanucleus/jdo/data/*.class"/>
+	<target name="2.export" depends="1.compile" description="Export the project into a .jar file">
+		<delete dir="${dist.dir}"/>
+		<mkdir dir="${dist.dir}"/>
+		<jar destfile="${dist.dir}/${export.file}" basedir="${build.dir}" excludes="**/EasyBooking.class"/>
     </target>	
+    
 	
 	<target name="3.enhance-classes" depends="1.compile" description="Adds JDO code to the persisten compiled classes">
     	<taskdef name="enhancer" classpathref="classpath" classname="org.datanucleus.enhancer.EnhancerTask"/>
