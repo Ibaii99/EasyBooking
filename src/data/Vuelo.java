@@ -17,6 +17,8 @@ public class Vuelo implements Serializable{
 	private int numAsientos;
 	private Aerolinea aerolinea; 
 	private String numVuelo;
+
+	private int precioporPlaza;
 	
 	@Persistent(mappedBy = "vuelo")
 	private List<Reserva> reservas = new ArrayList<>();
@@ -51,6 +53,14 @@ public class Vuelo implements Serializable{
 
 	public String getNumVuelo() {
 		return numVuelo;
+	}
+
+	public int getPrecioporPlaza() {
+		return precioporPlaza;
+	}
+
+	public void setPrecioporPlaza(int precioporPlaza) {
+		this.precioporPlaza = precioporPlaza;
 	}
 
 	public void setNumVuelo(String numVuelo) {

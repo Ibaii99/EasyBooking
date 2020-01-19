@@ -141,6 +141,7 @@ public class DTOAssembler {
 		dto.setFecha(v.getFecha());
 		dto.setNumAsientos(v.getNumAsientos());
 		dto.setNomAerolinea(v.getAerolinea().getNombre());
+		dto.setPrecioporPlaza(v.getPrecioporPlaza());
 		return dto;
 	}
 	
@@ -151,7 +152,7 @@ public class DTOAssembler {
 		v.setAeropuertoOrigen(dto.getAeropuertoOrigen());
 		v.setFecha(dto.getFecha());
 		v.setNumAsientos(dto.getNumAsientos());
-		
+		v.setPrecioporPlaza(dto.getPrecioporPlaza());
 		List<Vuelo> vuelos = db.getVuelos();
 		for(Vuelo vuelo : vuelos) {
 			if(		vuelo.getAerolinea().getNombre().equals(dto.getNomAerolinea()) &&

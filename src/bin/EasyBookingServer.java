@@ -14,6 +14,7 @@ import data.Usuario;
 import data.Vuelo;
 import data.dto.DTOAssembler;
 import data.dto.PagoDTO;
+import data.dto.ReservaDTO;
 import data.dto.UsuarioDTO;
 import data.dto.VueloDTO;
 import db.DataAccessObject;
@@ -22,7 +23,7 @@ import services.AutentificationService;
 import services.PagoService;
 
 
-public class EasyBookingServer {
+public class EasyBookingServer implements IEasyBookingServer{
 	
 	private static AerolineaService aerolineas = new AerolineaService();
 	private AutentificationService autentification = new AutentificationService();
@@ -30,13 +31,13 @@ public class EasyBookingServer {
 	public static DataAccessObject db;
 	public static DTOAssembler assem;
 	
-	public static void main(String[] args) {
-		//pago = new PagoService(); //Descomentar para usarlo
+	public static void main(String[] args){
+		pago = new PagoService(); //Descomentar para usarlo
 		assem = new DTOAssembler();
 		db = new DataAccessObject();
+		
 		System.out.println("inicio");
 		db.createSomeDatos();
-		//register("ibai2.guillen@opendeusto.es","1qwerty78","ibai2",22,"BIO")
 		try {
 			for(VueloDTO v : aerolineas.getAllVuelos()) {
 				v.testToString();
@@ -45,48 +46,44 @@ public class EasyBookingServer {
 			System.out.println("Error"+ e.getMessage());
 			e.printStackTrace();
 		}
-		/*
-		DTOAssembler dto = new DTOAssembler();
-		for(Usuario e: db.getUsuarios()) {
-			System.out.println("|");
-			System.out.println("|");
-			System.out.println("|");
-			System.out.println("|");
-			System.out.println("|");
-			System.out.println("|");
-			System.out.println("|");
-			System.out.println("|");
-			System.out.println("|");
-			System.out.println("###Printing reserva");
-			e.reservasToString();
-			System.out.println("###Printing usuario" + e.getNombre());
-			e.testToString();
-			UsuarioDTO usrdto = dto.assemble(e);
-			System.out.println("Printing usuario DTO");
-			usrdto.testToString();
-			System.out.println("###Printing usuario disassembled");
-			Usuario usrdisassem = dto.disassemble(usrdto);
-			usrdisassem.testToString();
-			System.out.println("----------------------");
-			System.out.println("### Reservas before");
-			e.reservasToString();
-			System.out.println("### Reservas after");
-			try {
-			usrdisassem.reservasToString();
-			} catch (Exception ex) {
-				ex.printStackTrace();
-			}
-			System.out.println("------------------------------\n");
-			
-		}
-		*/
+		
 		db.closeConection();
 	}
 	
-	public boolean reservarYpagar(int precio, int plazas, String emailPaypal,String contrasenya, VueloDTO vuelo, String emailUsuarioReserva) {
+
+	@Override
+	public boolean login(String email, String password) throws RemoteException {
+		if(autentification.login(email, password) ==  true){
+			for( Usuario u : db.getUsuarios()) {
+				if(u.isUser(email)== true) return true;
+			}
+		}
+		return false;
+	}
+	
+	
+	@Override
+	public boolean register(String email, String password, String nombre, int edad, String aeropuertoPreferido) throws RemoteException {
+		if(autentification.login(email, password) == true) {
+			Usuario user = new Usuario();
+			user.setEmail(email);
+			user.setNombre(nombre);
+			user.setAeropuertoPreferido(aeropuertoPreferido);
+			user.setEdad(edad);
+			user.setEmail(email);
+			user.setNombre(nombre);
+			user.setTipoLogin("google");
+			db.store(user);
+			return true;
+		}
+		return false;
+	}
+	
+	@Override
+	public boolean reservarYpagar(int precio, int plazas, String emailPaypal,String contrasenyaPaypal, String codigoVuelo, String emailUsuarioReserva) {
 		try {
-			if(pago.tieneFondos(precio, emailPaypal, contrasenya) == true) {
-				//if(aerolineas.reservarVuelo(vuelo, plazas) == true) {
+			if(pago.tieneFondos(precio, emailPaypal, contrasenyaPaypal) == true) {
+				if(aerolineas.reservarVuelo(codigoVuelo, emailUsuarioReserva, plazas) == true) {
 					SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");  
 				    Date date = new Date();  
 					String fecha = formatter.format(date);
@@ -94,7 +91,8 @@ public class EasyBookingServer {
 					Usuario u = new Usuario();
 					u = db.getUserByEmail(emailUsuarioReserva);
 					
-					Vuelo v = assem.disassemble(vuelo);
+					VueloDTO vue = aerolineas.getVuelo(codigoVuelo);
+					Vuelo v = assem.disassemble(vue);
 					
 					Pago p = new Pago();
 					Reserva r = new Reserva();
@@ -113,16 +111,13 @@ public class EasyBookingServer {
 					r.setPago(p);
 					p.setReserva(r);
 					
-//					p.setTarjetaFechaCaducidad(tarjetaFechaCaducidad);
-//					p.setTarjetaNumero(tarjetaNumero);
-//					p.setTarjetaTipo(tarjetaTipo);
 					db.store(r);
 					db.store(p);
 					db.store(v);
 					
-					pago.pagar(precio, emailPaypal, contrasenya);
+					pago.pagar(precio, emailPaypal, contrasenyaPaypal);
 					return true;
-				//}
+				}
 			}
 		} catch (Exception e) {
 			System.err.println("- Error al pagar: " + e.getMessage());
@@ -130,52 +125,49 @@ public class EasyBookingServer {
 		return false;
 	}
 	
-	public boolean login(String email, String password) throws RemoteException {
-		if(autentification.login(email, password) ==  true){
-			for( Usuario u : db.getUsuarios()) {
-				if(u.isUser(email)== true) return true;
-			}
-		}
-		return false;
+	@Override
+	public List<VueloDTO> buscarVueloIda(String aeropuertoDestino, String aeropuertoOrigen, String fechaIda, int asientos) throws RemoteException {
+		// TODO Auto-generated method stub
+		return aerolineas.buscarVueloIda(aeropuertoDestino, aeropuertoOrigen, fechaIda, asientos);
 	}
 	
-	public boolean register(String email, String password, String nombre, int edad, String aeropuertoPreferido) throws RemoteException {
-		if(autentification.login(email, password) == true) {
-			Usuario user = new Usuario();
-			user.setEmail(email);
-			user.setNombre(nombre);
-			user.setAeropuertoPreferido(aeropuertoPreferido);
-			user.setEdad(edad);
-			user.setEmail(email);
-			user.setNombre(nombre);
-			user.setTipoLogin("google");
-			db.store(user);
-			return true;
-		}
-		return false;
-		
+	
+	@Override
+	public List<VueloDTO> buscarVueloIdaYVuelta(String aeropuertoDestino, String aeropuertoOrigen, String fechaIda, String fechaVuelta, int asientos) throws RemoteException {
+		return aerolineas.buscarVueloIdaYVuelta(aeropuertoDestino, aeropuertoOrigen, fechaIda, fechaVuelta, asientos);
 	}
 	
-	public VueloDTO buscarVuelo(String aeropuertoDestino, String aeropuertoOrigen, String fechaIda, String fechaVuelta, int asientos) throws RemoteException {
-		return aerolineas.buscarVuelo(aeropuertoDestino, aeropuertoOrigen, fechaIda, fechaVuelta, asientos);
-	}
-	
-	public ArrayList<VueloDTO> getAllVuelos() throws RemoteException{
+	@Override
+	public List<VueloDTO> getAllVuelos() throws RemoteException{
 		return aerolineas.getAllVuelos();
 	}
 	
-	public ArrayList<VueloDTO> buscarVuelosDesdeOrigen(String aeropuertoOrigen, String fecha, int asientos) throws RemoteException{
+	@Override
+	public List<VueloDTO> buscarVuelosDesdeOrigen(String aeropuertoOrigen, String fecha, int asientos) throws RemoteException{
 		return aerolineas.buscarVuelosDesdeOrigen(aeropuertoOrigen, fecha, asientos);
 	}
 	
-	//Funciona
-	/** Con un email te devuelve la lista de Reservas de ese usuario
-	 * @param email
-	 * @return
-	 */
-	public List<Reserva> getReservasByUser(String email) {
+	
+	
+	@Override
+	public List<ReservaDTO> getReservasByUser(String email){
 		Usuario u = db.getUserByEmail(email);
-		return u.getReservas();
+		List<ReservaDTO> r = new ArrayList<ReservaDTO>();
+		for(Reserva res : u.getReservas()) {
+			r.add(assem.assemble(res));
+		}
+		return r;
+	}
+	
+	@Override
+	public UsuarioDTO getUserInfo(String email) {
+		Usuario u = db.getUserByEmail(email);
+		return assem.assemble(u);
+	}
+
+	@Override
+	public VueloDTO getVueloInfo(String codVuelo) throws RemoteException {
+		return aerolineas.getVuelo(codVuelo);
 	}
 
 }

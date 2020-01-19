@@ -32,21 +32,21 @@ public class AerolineaService {
 		return a;
 	}
 	 
-	public VueloDTO buscarVuelo(String aeropuertoDestino, String aeropuertoOrigen, String fecha, String fechaVuelta, int asientos) throws RemoteException{
-		VueloDTO vuelo = null;
+	public List<VueloDTO> buscarVueloIda(String aeropuertoDestino, String aeropuertoOrigen, String fecha, int asientos) throws RemoteException{
+		List<VueloDTO> vuelo = new ArrayList<VueloDTO>();
 		for(IGatewayAerolinea aerolinea : aerolineas) {
 			VueloDTO v = aerolinea.buscarVuelo(aeropuertoDestino, aeropuertoOrigen, fecha, asientos);
 			if(v != null) {
-				vuelo = v;
+				vuelo.add(v);
 			}
 		}
 		return vuelo;
 	}
 	 
-	public ArrayList<VueloDTO> buscarVuelosDesdeOrigen(String aeropuertoOrigen, String fecha, int asientos) throws RemoteException{
-		ArrayList<VueloDTO> vuelos = new ArrayList<VueloDTO>();
+	public List<VueloDTO> buscarVuelosDesdeOrigen(String aeropuertoOrigen, String fecha, int asientos) throws RemoteException{
+		List<VueloDTO> vuelos = new ArrayList<VueloDTO>();
 		for(IGatewayAerolinea aerolinea : aerolineas) {
-			ArrayList<VueloDTO> vue = aerolinea.buscarVuelosDesdeOrigen(aeropuertoOrigen, fecha, asientos);
+			List<VueloDTO> vue = aerolinea.buscarVuelosDesdeOrigen(aeropuertoOrigen, fecha, asientos);
 			for(VueloDTO v : vue) {
 				vuelos.add(v);
 			}
@@ -54,12 +54,30 @@ public class AerolineaService {
 		return vuelos;
 	}
 	
-	public boolean reservarVuelo(VueloDTO vuelo, String nombre, int plazas) throws RemoteException{
+	public boolean reservarVuelo(String codigoVuelo, String nombre, int plazas) throws RemoteException{
 		for(IGatewayAerolinea aerolinea : aerolineas) {
-			if(aerolinea.reservarVuelo(vuelo, nombre, plazas) == true) return true;
+			if(aerolinea.reservarVuelo(codigoVuelo, nombre, plazas) == true) return true;
 		}
 		return false;
 	}
+	
+
+	public VueloDTO getVuelo(String codVuelo) throws RemoteException{
+		for(IGatewayAerolinea aerolinea : aerolineas) {
+			if(aerolinea.getVuelo(codVuelo) != null) return aerolinea.getVuelo(codVuelo);
+		}
+		return null;
+	}
+	
+	public List<VueloDTO> buscarVueloIdaYVuelta(String aeropuertoDestino, String aeropuertoOrigen, String fechaIda, String fechaVuelta, int asientos) throws RemoteException {
+		List<VueloDTO> v = buscarVueloIda(aeropuertoDestino, aeropuertoOrigen, fechaIda, asientos);
+		for(VueloDTO vue : buscarVueloIda(aeropuertoOrigen, aeropuertoDestino, fechaVuelta, asientos)) {
+			v.add(vue);
+		}
+		return v;
+	}
+	
+	
 	
 
 	
