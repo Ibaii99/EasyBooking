@@ -45,8 +45,8 @@ public class AerolineaFactory {
 	}
 	
 	private void initializeIberia() {
-		//IberiaAirlineGateway iberia = new IberiaAirlineGateway();
-		//gatewaysAerolineas.add(iberia);
+		IberiaAirlineGateway iberia = new IberiaAirlineGateway();
+		gatewaysAerolineas.add(iberia);
 	}
 	
 	private void initializeRyanAir() {
