@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class VueloDTO implements Serializable{
 
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 8829744013340172113L;
 	
 	
 	private String aeropuertoDestino;

@@ -36,6 +36,7 @@ public class EasyBookingServer extends UnicastRemoteObject implements IEasyBooki
 	public static DTOAssembler assem;
 
 	public static void main(String[] args){
+		/*
 		if (args.length != 3) {
 			System.out.println("usage: java [policy] [codebase] server.Server [host] [port] [server]");
 			System.exit(0);
@@ -54,6 +55,18 @@ public class EasyBookingServer extends UnicastRemoteObject implements IEasyBooki
 		} catch (Exception e) {
 			System.err.println("- Exception running the server: " + e.getMessage());
 			e.printStackTrace();
+		}*/
+		try {
+			
+			System.out.println(aerolineas.getAllVuelos().size());
+			
+		for(VueloDTO v : aerolineas.getAllVuelos()) {
+			v.testToString();
+		}
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("erropr"+ e.getMessage());
+			e.printStackTrace();
 		}
 	}
 	
@@ -65,7 +78,8 @@ public class EasyBookingServer extends UnicastRemoteObject implements IEasyBooki
 		db = new DataAccessObject();
 		
 		System.out.println("inicio");
-		db.createSomeDatos();
+		//db.createSomeDatos();
+		
 	}
 	
 	public void closeDB() {

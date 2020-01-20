@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import data.Aerolinea;
+import data.Vuelo;
 import data.dto.VueloDTO;
 import gateways.IGatewayAerolinea;
 import gateways.aerolinea.AerolineaFactory;
@@ -13,7 +14,7 @@ import gateways.aerolinea.AerolineaFactory;
 public class AerolineaService {
 //TODO Implement Aerolinea object function
 	
-	private List<IGatewayAerolinea> aerolineas;
+	private List<IGatewayAerolinea> aerolineas = new ArrayList<IGatewayAerolinea>();
 
 	
 	public AerolineaService() {
@@ -32,7 +33,9 @@ public class AerolineaService {
 		}
 		return a;
 	}
-	 
+
+
+	
 	public List<VueloDTO> buscarVueloIda(String aeropuertoDestino, String aeropuertoOrigen, String fecha, int asientos) throws RemoteException{
 		List<VueloDTO> vuelo = new ArrayList<VueloDTO>();
 		for(IGatewayAerolinea aerolinea : aerolineas) {

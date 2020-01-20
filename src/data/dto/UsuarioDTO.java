@@ -6,7 +6,7 @@ import data.Reserva;
 
 public class UsuarioDTO implements Serializable{
 
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 8829744013340172113L;
 	
 	private String nombre;	
 	private String email;

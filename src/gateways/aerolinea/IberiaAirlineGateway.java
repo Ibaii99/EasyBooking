@@ -17,7 +17,7 @@ import gateways.IGatewayAerolinea;
 public class IberiaAirlineGateway implements IGatewayAerolinea {
 	
 	static String IP = "127.0.0.1";
-	static int Puerto = 1099;
+	static int Puerto = 1024;
 	static String ServiceName = "Aerolinea_Iberia";
 	private Socket socket;
 	

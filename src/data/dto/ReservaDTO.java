@@ -8,7 +8,7 @@ import data.Vuelo;
 
 public class ReservaDTO implements Serializable{
 
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 8829744013340172113L;
 	
 	private String tipoPago;
 	private int numeroAsientos;

@@ -25,20 +25,18 @@ public class AerolineaFactory {
 	}
 	
 	public void initializeGateways() {
-		
-		
 		for (String e : allAerolineas.getCodAerolineas()) {
 			switch (e) {
-			case "IBE":
-				initializeIberia();
-				break;
-				
-			case "RYR":
-				initializeRyanAir();
-				break;
-	
-			default:
-				throw new IllegalArgumentException("Unexpected value: " + e);
+				case "IBE":
+					initializeIberia();
+					break;
+					
+				case "RYR":
+					initializeRyanAir();
+					break;
+		
+				default:
+					throw new IllegalArgumentException("Unexpected value: " + e);
 			}
 		}
 		
@@ -46,7 +44,6 @@ public class AerolineaFactory {
 	
 	private void initializeIberia() {
 		IberiaAirlineGateway iberia = new IberiaAirlineGateway();
-		//TODO descomentarlo para ver si iberia va bien, si da un error de null es que no esta recibiendo nada
 		gatewaysAerolineas.add(iberia);
 	}
 	
