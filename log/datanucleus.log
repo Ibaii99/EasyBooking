@@ -3941,3 +3941,281 @@ org.datanucleus.exceptions.NucleusUserException: Objeto con id "data.Vuelo@376a3
 23:57:19,244 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
 23:57:19,480 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
 >>>>>>> branch 'master' of https://github.com/Ibaii99/EasyBooking.git
+01:25:37,941 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+01:25:38,275 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+01:25:38,283 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+01:25:38,289 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+01:25:38,296 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+01:25:38,303 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+01:25:38,304 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+01:25:44,256 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:25:44,625 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:25:45,286 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@6d304f9d" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+01:25:45,295 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2ce86164" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+01:25:45,299 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4602c2a9" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+01:25:45,302 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ca25c47" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+01:25:45,308 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@94f6bfb" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:25:45,313 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@94f6bfb" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:25:45,318 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@94f6bfb" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:25:45,322 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@94f6bfb" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:25:45,325 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@94f6bfb" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:25:45,335 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@94f6bfb" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:29:46,611 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+01:29:46,908 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+01:29:46,917 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+01:29:46,924 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+01:29:46,932 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+01:29:46,939 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+01:29:46,941 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+01:29:51,327 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:29:51,693 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:29:52,645 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@6d304f9d" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+01:29:52,657 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2ce86164" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+01:29:52,661 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4602c2a9" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+01:29:52,665 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ca25c47" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+01:29:52,673 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@94f6bfb" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:29:52,684 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@94f6bfb" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:29:52,689 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@94f6bfb" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:29:52,696 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@94f6bfb" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:29:52,701 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@94f6bfb" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:29:52,716 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@94f6bfb" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:33:36,029 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+01:33:36,315 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+01:33:36,324 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+01:33:36,331 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+01:33:36,339 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+01:33:36,346 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+01:33:36,347 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+01:33:40,383 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:33:40,710 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:33:41,363 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@6d304f9d" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+01:33:41,372 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2ce86164" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+01:33:41,375 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4602c2a9" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+01:33:41,378 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ca25c47" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+01:33:41,383 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@94f6bfb" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:33:41,387 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@94f6bfb" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:33:41,392 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@94f6bfb" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:33:41,397 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@94f6bfb" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:33:41,400 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@94f6bfb" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:33:41,411 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@94f6bfb" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:34:23,589 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:34:23,907 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:34:24,459 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@37b70343" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+01:34:24,470 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4a9f80d3" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+01:34:24,473 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@9635fa" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+01:34:24,476 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@71e5f61d" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+01:34:24,481 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@6865c751" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:34:24,485 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@6865c751" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:34:24,491 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@6865c751" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:34:24,496 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@6865c751" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:34:24,499 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@6865c751" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:34:24,509 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@6865c751" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:34:46,428 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:34:46,737 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:34:47,762 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@37b70343" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+01:34:47,771 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4a9f80d3" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+01:34:47,775 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@9635fa" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+01:34:47,777 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@71e5f61d" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+01:34:47,783 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@6865c751" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:34:47,788 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@6865c751" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:34:47,795 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@6865c751" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:34:47,800 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@6865c751" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:34:47,803 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@6865c751" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:34:47,814 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@6865c751" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:40:27,262 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+01:40:27,571 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+01:40:27,580 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+01:40:27,587 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+01:40:27,596 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+01:40:27,603 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+01:40:27,604 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+01:40:31,947 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:40:32,244 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:40:32,843 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@6d304f9d" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
+01:40:32,850 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@2ce86164" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'jjj@jojo.com' for key 'PRIMARY'
+01:40:32,853 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@4602c2a9" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'gor@do.com' for key 'PRIMARY'
+01:40:32,856 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@1ca25c47" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'yeray@elcrack.com' for key 'PRIMARY'
+01:40:32,863 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@94f6bfb" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:40:32,867 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@94f6bfb" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:40:32,872 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@94f6bfb" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:40:32,877 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@94f6bfb" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:40:32,880 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@94f6bfb" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:40:32,892 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@94f6bfb" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+01:42:43,857 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+01:42:44,167 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+01:42:44,175 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+01:42:44,181 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+01:42:44,189 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+01:42:44,195 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+01:42:44,197 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+01:42:48,568 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:42:48,937 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:43:53,960 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+01:43:54,610 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+01:43:54,620 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+01:43:54,634 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+01:43:54,650 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+01:43:54,658 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+01:43:54,660 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+01:43:59,198 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:43:59,541 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:44:29,090 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:44:29,422 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:44:47,391 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+01:44:47,719 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+01:44:47,728 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+01:44:47,734 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+01:44:47,742 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+01:44:47,749 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+01:44:47,750 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+01:44:52,258 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:44:52,584 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:46:00,106 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+01:46:00,406 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+01:46:00,415 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+01:46:00,423 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+01:46:00,435 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+01:46:00,443 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+01:46:00,445 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+01:46:06,020 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:46:06,402 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:47:38,853 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+01:47:39,155 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+01:47:39,163 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+01:47:39,170 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+01:47:39,178 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+01:47:39,184 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+01:47:39,185 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+01:47:44,614 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:47:44,863 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:48:39,993 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+01:48:40,349 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+01:48:40,357 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+01:48:40,363 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+01:48:40,371 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+01:48:40,378 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+01:48:40,379 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+01:48:45,210 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:48:45,534 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:50:04,681 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+01:50:04,974 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+01:50:04,983 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+01:50:04,990 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+01:50:04,997 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+01:50:05,004 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+01:50:05,006 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+01:50:09,589 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:50:09,893 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:52:59,318 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+01:52:59,623 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+01:52:59,631 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+01:52:59,637 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+01:52:59,645 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+01:52:59,651 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+01:52:59,653 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+01:53:04,617 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:53:04,885 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:55:38,855 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+01:55:39,179 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+01:55:39,194 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+01:55:39,201 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+01:55:39,211 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+01:55:39,223 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+01:55:39,225 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+01:56:12,221 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+01:56:12,567 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+02:00:05,610 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+02:00:05,956 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+02:00:05,965 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+02:00:05,971 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+02:00:05,979 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+02:00:05,986 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+02:00:05,987 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+02:00:10,231 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+02:00:10,543 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+02:02:04,138 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+02:02:04,456 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+02:02:04,464 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+02:02:04,470 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+02:02:04,477 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+02:02:04,485 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+02:02:04,486 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+02:02:09,605 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+02:02:09,887 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+02:10:03,776 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+02:10:04,305 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+02:10:04,319 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+02:10:04,332 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+02:10:04,357 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+02:10:04,370 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+02:10:04,372 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+02:10:07,168 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+02:10:07,471 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+02:10:40,536 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+02:10:40,828 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+02:11:48,240 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+02:11:48,568 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+02:11:48,579 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+02:11:48,586 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+02:11:48,596 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+02:11:48,604 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+02:11:48,605 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+02:11:53,707 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+02:11:54,181 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+02:16:10,918 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+02:16:11,213 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+02:16:11,223 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+02:16:11,229 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+02:16:11,237 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+02:16:11,243 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+02:16:11,245 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+02:16:15,923 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+02:16:16,197 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+02:19:54,061 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+02:19:54,488 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+02:22:05,889 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+02:22:06,205 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+02:23:41,389 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+02:23:41,703 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+02:23:41,712 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+02:23:41,719 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+02:23:41,729 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+02:23:41,736 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+02:23:41,738 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+02:23:46,488 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+02:23:47,069 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+02:31:36,481 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+02:31:36,813 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+02:31:36,822 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+02:31:36,829 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+02:31:36,837 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+02:31:36,847 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+02:31:36,849 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+03:03:48,251 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+03:03:48,553 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+03:03:48,561 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+03:03:48,566 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+03:03:48,574 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+03:03:48,581 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+03:03:48,582 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+04:51:54,520 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+04:51:54,963 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+04:51:54,974 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+04:51:54,981 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+04:51:54,997 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+04:51:55,006 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+04:51:55,007 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+05:21:42,372 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+05:21:42,757 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+05:21:42,766 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+05:21:42,773 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+05:21:42,779 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+05:21:42,786 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+05:21:42,788 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+05:31:48,958 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 5.2.2) para el API "JDO" utilisando el JRE "{2}"
+05:31:49,281 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Aerolinea.class" con definicion enhanced
+05:31:49,290 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Pago.class" con definicion enhanced
+05:31:49,296 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Reserva.class" con definicion enhanced
+05:31:49,304 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
+05:31:49,311 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
+05:31:49,313 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.

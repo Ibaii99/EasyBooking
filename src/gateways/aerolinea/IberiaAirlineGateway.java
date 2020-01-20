@@ -44,6 +44,9 @@ public class IberiaAirlineGateway implements IGatewayAerolinea {
 			DataOutputStream out = new DataOutputStream(socket.getOutputStream());
 			out.writeUTF(parametros);
 			DataInputStream in = new DataInputStream(socket.getInputStream());
+			System.out.println("Metodo reservarVuelo" +in);
+	
+			
 			r = Boolean.parseBoolean(in.readUTF());
 		}catch (Exception e) {
 			e.printStackTrace();
@@ -103,6 +106,7 @@ public class IberiaAirlineGateway implements IGatewayAerolinea {
 		try (Socket tcpSocket = new Socket(IP, Puerto);
 			    ObjectInputStream in = new ObjectInputStream(tcpSocket.getInputStream());
 				DataOutputStream out = new DataOutputStream(tcpSocket.getOutputStream())){
+			System.out.println("Metodo getVuelo" +in);
 
 			out.writeUTF(parametros);
 			VueloDTO vueloIberia =new VueloDTO();
@@ -144,6 +148,7 @@ return v;
 			    ObjectInputStream in = new ObjectInputStream(tcpSocket.getInputStream());
 				DataOutputStream out = new DataOutputStream(tcpSocket.getOutputStream())){
 
+			System.out.println("Metodo buscarVuelo " +in);
 			out.writeUTF(parametros);
 			VueloDTO vueloIberia =new VueloDTO();
 			vueloIberia =  (VueloDTO) in.readObject(); 
@@ -174,7 +179,7 @@ return v;
 			throws RemoteException {
 		String parametros = aeropuertoOrigen + ";" +  fecha + ";" + asientos;
 		System.out.println(parametros);
-		ArrayList<VueloDTO> r = new ArrayList<>();
+		List<VueloDTO> r = new ArrayList<>();
 
 		try (Socket tcpSocket = new Socket(IP, Puerto);
 			    ObjectInputStream in = new ObjectInputStream(tcpSocket.getInputStream());

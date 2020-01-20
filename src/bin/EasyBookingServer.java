@@ -56,7 +56,7 @@ public class EasyBookingServer extends UnicastRemoteObject implements IEasyBooki
 			System.err.println("- Exception running the server: " + e.getMessage());
 			e.printStackTrace();
 		}*/
-		try {
+		/*try {
 			
 			System.out.println(aerolineas.getAllVuelos().size());
 			
@@ -66,6 +66,16 @@ public class EasyBookingServer extends UnicastRemoteObject implements IEasyBooki
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("erropr"+ e.getMessage());
+			e.printStackTrace();
+		}*/
+		try {
+			for( VueloDTO v: aerolineas.buscarVueloIda("BCN", "BIO", "20/01/19", 3)) {
+				v.testToString();
+			}
+		
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			System.out.println("erorr: " + e.getMessage());
 			e.printStackTrace();
 		}
 	}

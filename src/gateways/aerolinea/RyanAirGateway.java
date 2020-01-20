@@ -50,8 +50,6 @@ public class RyanAirGateway implements IGatewayAerolinea{
 
 	@Override
 	public VueloDTO getVuelo(String codVuelo) throws RemoteException {
-		if(server.getVuelo(codVuelo)== null) return null;
-		
 		return convertToLocalVueloDTO(server.getVuelo(codVuelo));	
 	}
 
@@ -63,16 +61,20 @@ public class RyanAirGateway implements IGatewayAerolinea{
 	
 
 	private VueloDTO convertToLocalVueloDTO(server.data.dto.VueloDTO vr) throws RemoteException  {
-		VueloDTO v = new VueloDTO();
-		v.setAeropuertoDestino(vr.getAeropuertoDestino());
-		v.setAeropuertoOrigen(vr.getAeropuertoOrigen());
-		v.setFecha(vr.getFecha());
-		v.setNomAerolinea(vr.getNomAerolinea());
-		v.setNumAsientos(vr.getNumAsientos());
-		v.setNumVuelo(vr.getNumVuelo());
-		//v.setPrecioporPlaza(vr.getPrecio());
-		v.setPrecioporPlaza(60);
-		return v;
+		if (vr != null) {
+			VueloDTO v = new VueloDTO();
+			v.setAeropuertoDestino(vr.getAeropuertoDestino());
+			v.setAeropuertoOrigen(vr.getAeropuertoOrigen());
+			v.setFecha(vr.getFecha());
+			v.setNomAerolinea(vr.getNomAerolinea());
+			v.setNumAsientos(vr.getNumAsientos());
+			v.setNumVuelo(vr.getNumVuelo());
+			//v.setPrecioporPlaza(vr.getPrecio());
+			v.setPrecioporPlaza(60);
+			return v;
+		} else {
+		return null;
+		}
 	}
 	
 
