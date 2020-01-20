@@ -3922,6 +3922,7 @@ org.datanucleus.exceptions.NucleusUserException: Objeto con id "data.Vuelo@376a3
 21:09:37,997 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Usuario.class" con definicion enhanced
 21:09:38,005 (main) INFO  [DataNucleus.Enhancer] - Escribiendo el archivo de clase "C:\Users\ibaig_vi6j6bo\git\EasyBooking\bin\data\Vuelo.class" con definicion enhanced
 21:09:38,006 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 5 clases.
+<<<<<<< HEAD
 21:09:42,842 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
 21:09:43,131 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
 21:09:43,834 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Usuario@dcfda20" con SQL "INSERT INTO `USUARIO` (`AEROPUERTOPREFERIDO`,`EDAD`,`NOMBRE`,`TIPOLOGIN`,`EMAIL`) VALUES (?,?,?,?,?)" ha tirado un error : Duplicate entry 'ibai.guillen@opendeusto.es' for key 'PRIMARY'
@@ -3934,3 +3935,9 @@ org.datanucleus.exceptions.NucleusUserException: Objeto con id "data.Vuelo@376a3
 21:09:43,876 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@35fe2125" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
 21:09:43,880 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@35fe2125" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
 21:09:43,890 (main) WARN  [DataNucleus.Datastore.Persist] - Persistencia del objeto "data.Aerolinea@35fe2125" con SQL "INSERT INTO `AEROLINEA` (`NOMBRE`,`CODAEROLINEA`) VALUES (?,?)" ha tirado un error : Duplicate entry 'IBE' for key 'PRIMARY'
+=======
+23:55:43,373 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:55:43,721 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:57:19,244 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+23:57:19,480 (main) WARN  [DataNucleus.Datastore] - Default type for java type of java.math.BigInteger was previously jdbc-type=NUMERIC but this is not provided by the JDBC driver! Please report this to the DataNucleus developers
+>>>>>>> branch 'master' of https://github.com/Ibaii99/EasyBooking.git
